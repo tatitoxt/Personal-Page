@@ -74,7 +74,7 @@ Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js 
 - **Impacto & Stack:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
 
 ### **5. DockNuke — Utilidad de Limpieza Inteligente y Optimización de Docker en Go**
-Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run, filtrado de retención y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker (+85 commits retroactivos).  
+Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run, filtrado de retención y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker.  
 - **Impacto & Stack:** Go (1.22+), SDK Engine Docker, Cobra CLI, Concurrencia, Motor Dry-Run.
 
 ### **5. NeuraDash — Dashboard Analítico en Tiempo Real**
