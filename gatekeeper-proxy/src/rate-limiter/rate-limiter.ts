@@ -19,7 +19,8 @@ export class RateLimiterEngine {
   constructor(globalConfig: RateLimiterConfig) {
     this.globalConfig = globalConfig;
     // Periodic cleanup of stale entries every 60 seconds
-    setInterval(() => this.cleanup(), 60000);
+    const cleanupTimer = setInterval(() => this.cleanup(), 60000);
+    if (cleanupTimer.unref) cleanupTimer.unref();
   }
 
   public updateGlobalConfig(globalConfig: RateLimiterConfig): void {

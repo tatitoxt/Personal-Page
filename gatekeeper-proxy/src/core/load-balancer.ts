@@ -15,7 +15,8 @@ export class LoadBalancer {
   constructor(routes: RouteConfig[]) {
     this.updateRoutes(routes);
     // Periodically run background health checks every 10 seconds
-    setInterval(() => this.runHealthChecks(), 10000);
+    const healthTimer = setInterval(() => this.runHealthChecks(), 10000);
+    if (healthTimer.unref) healthTimer.unref();
   }
 
   public updateRoutes(routes: RouteConfig[]): void {
