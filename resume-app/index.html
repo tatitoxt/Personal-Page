@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fausto Pastura — Vintage Swag Tech Showcase</title>
+  <meta name="description" content="Technical Showcase & Portfolio of Fausto Pastura - Salesforce Consultant & Forward Deployed AI Engineer.">
+  
+  <!-- Monospace & Sans Vintage Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Newsreader:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mode-portfolio lang-en">
+
+  <!-- ANIMATED GRAPH PAPER CANVAS -->
+  <canvas id="vintageCanvas"></canvas>
+
+  <!-- TOP RETRO CAMERA OSD HEADER (PERMANENT FAVORED HUD) -->
+  <header class="app-header no-print">
+    <div class="header-container">
+      <div class="brand">
+        <span class="rec-indicator" id="recIndicator">● REC 00:00:00</span>
+        <span class="brand-badge">FAUSTO PASTURA</span>
+        <span class="brand-subtitle">[ ISO 800 | 4:3 | 24FPS ]</span>
+      </div>
+
+      <div class="controls-group">
+        <!-- View Switcher -->
+        <div class="segmented-control">
+          <button id="btnViewPortfolio" class="seg-btn active" title="Vintage Swag View">
+            <i class="fa-solid fa-gem"></i> VINTAGE SHOWCASE
+          </button>
+          <button id="btnViewATS" class="seg-btn" title="Executive ATS Print View">
+            <i class="fa-solid fa-file-lines"></i> HARVARD ATS
+          </button>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="segmented-control">
+          <button id="btnLangEN" class="seg-btn active">EN</button>
+          <button id="btnLangES" class="seg-btn">ES</button>
+        </div>
+
+        <!-- Actions -->
+        <button id="btnCopyMD" class="action-btn" title="Copy raw Markdown to Clipboard">
+          <i class="fa-solid fa-copy"></i> <span class="btn-text">RAW MD</span>
+        </button>
+
+        <button id="btnPrintPDF" class="action-btn primary" title="Export as High-Quality PDF">
+          <i class="fa-solid fa-print"></i> <span class="btn-text">PRINT / PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN PAGE WRAPPER -->
+  <main class="resume-wrapper">
+    
+    <!-- METRIC HIGHLIGHTS STRIP -->
+    <div class="metrics-strip portfolio-only no-print">
+      <div class="vintage-card">
+        <div class="vintage-card-label"><span>[METRIC.01]</span><span>B2B_PIPELINES</span></div>
+        <div class="metric-num">19+</div>
+        <div class="metric-desc" data-en="Active B2B n8n Pipelines" data-es="Flujos n8n B2B Activos">Active B2B n8n Pipelines</div>
+      </div>
+
+      <div class="vintage-card">
+        <div class="vintage-card-label"><span>[METRIC.02]</span><span>OPS_SAVINGS</span></div>
+        <div class="metric-num">70%+</div>
+        <div class="metric-desc" data-en="Agency Overhead Cut" data-es="Ahorro Operativo Agencias">Agency Overhead Cut</div>
+      </div>
+
+      <div class="vintage-card">
+        <div class="vintage-card-label"><span>[METRIC.03]</span><span>DATA_ACCURACY</span></div>
+        <div class="metric-num">90%+</div>
+        <div class="metric-desc" data-en="CRM Data Errors Reduced" data-es="Disminución Errores CRM">CRM Data Errors Cut</div>
+      </div>
+
+      <div class="vintage-card">
+        <div class="vintage-card-label"><span>[METRIC.04]</span><span>LEAD_QUAL</span></div>
+        <div class="metric-num">&lt;30s</div>
+        <div class="metric-desc" data-en="Instant B2B Lead Booking" data-es="Calificación B2B Instantánea">Instant B2B Lead Booking</div>
+      </div>
+    </div>
+
+    <!-- ATS DOCUMENT VIEW -->
+    <article class="resume-document" id="resumeDoc">
+      
+      <!-- GRID CONTAINER (VINTAGE ARCHITECTURE) -->
+      <div class="showcase-grid portfolio-only no-print">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar-left">
+          
+          <!-- About Me Widget -->
+          <div class="widget">
+            <div class="widget-header">
+              <span>[IDENTITY.01]</span>
+              <span>PROFILE</span>
+            </div>
+            <div class="widget-body">
+              <div class="profile-avatar-box">
+                <i class="fa-solid fa-user-gear avatar-icon"></i>
+              </div>
+              <p class="profile-name">Fausto Pastura</p>
+              <table class="info-table">
+                <tr>
+                  <td class="info-key">Role</td>
+                  <td>Salesforce & FDE AI Engineer</td>
+                </tr>
+                <tr>
+                  <td class="info-key">Method</td>
+                  <td>Self-Taught (First Principles)</td>
+                </tr>
+                <tr>
+                  <td class="info-key">Location</td>
+                  <td>Buenos Aires, Argentina</td>
+                </tr>
+                <tr>
+                  <td class="info-key">Languages</td>
+                  <td>ES (Native), EN (B2+)</td>
+                </tr>
+                <tr>
+                  <td class="info-key">Focus</td>
+                  <td>Attio, Salesforce & AI Agents</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Core Competencies Widget -->
+          <div class="widget">
+            <div class="widget-header">
+              <span>[MODULES.02]</span>
+              <span>SWAG_STACK</span>
+            </div>
+            <div class="widget-body tag-cloud">
+              <span class="tech-pill gold">Salesforce Apex</span>
+              <span class="tech-pill gold">Attio CRM Architecture</span>
+              <span class="tech-pill gold">CRM Data Migrations</span>
+              <span class="tech-pill gold">LWC / SOQL</span>
+              <span class="tech-pill cloudflare"><i class="fa-solid fa-bolt"></i> Cloudflare Workers / Pages</span>
+              <span class="tech-pill aws"><i class="fa-brands fa-aws"></i> AWS EC2 / S3 / Lambda</span>
+              <span class="tech-pill patina">AgentFlow</span>
+              <span class="tech-pill patina">TermaAI</span>
+              <span class="tech-pill patina">n8n Architecture</span>
+              <span class="tech-pill patina">AI Agents</span>
+              <span class="tech-pill">Next.js 16</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">FastVault (Rust)</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">PostgreSQL / RLS</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">Redis</span>
+            </div>
+          </div>
+
+          <!-- Contact Widget -->
+          <div class="widget">
+            <div class="widget-header">
+              <span>[COMM.03]</span>
+              <span>LINKS</span>
+            </div>
+            <div class="widget-body">
+              <div class="social-list">
+                <a href="mailto:fausto@caldentech.llc" class="social-link">
+                  <i class="fa-solid fa-envelope" style="color:var(--text-black);"></i>
+                  <span>fausto@caldentech.llc</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fausto-pastura-582828369/" target="_blank" class="social-link">
+                  <i class="fa-brands fa-linkedin" style="color:#0a66c2;"></i>
+                  <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://www.orkelya.xyz" target="_blank" class="social-link">
+                  <i class="fa-solid fa-globe" style="color:var(--cloudflare-orange);"></i>
+                  <span>orkelya.xyz</span>
+                </a>
+                <a href="https://github.com/tatitoxt" target="_blank" class="social-link">
+                  <i class="fa-brands fa-github" style="color:var(--text-black);"></i>
+                  <span>github.com/tatitoxt</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- CENTER MAIN COLUMN -->
+        <div class="main-column">
+          
+          <!-- Post Card 1: Intro / Summary -->
+          <div class="post-card">
+            <div class="post-header">
+              <span class="post-title">[SYS_INTRO] // EXECUTIVE SUMMARY</span>
+              <span class="post-date">DATE: 2026.08.06</span>
+            </div>
+            <div class="post-body">
+              <p class="summary-text lang-content-en">
+                Hey, I'm <strong>Fausto Pastura</strong>. I work as a <strong>Salesforce Consultant</strong> and <strong>Forward Deployed AI Engineer (FDE)</strong>. 100% <strong>self-taught the hard way</strong> — learning by building, breaking, and scaling production systems from first principles.
+              </p>
+              <p class="summary-text lang-content-es">
+                Hola, soy <strong>Fausto Pastura</strong>. Trabajo como <strong>Consultor Salesforce</strong> e <strong>Ingeniero Forward Deployed de IA (FDE)</strong>. 100% <strong>autodidacta a fuerza de práctica (*self-taught the hard way*)</strong> — aprendiendo al construir, optimizar y escalar sistemas reales en producción.
+              </p>
+              <p class="lang-content-en">
+                Over 3 years of hands-on expertise engineering enterprise CRM solutions (Apex, LWC, SOQL, Flow Automation), complex <strong>CRM Data Migrations & Attio CRM Integrations</strong>, multi-tenant platforms (Next.js 16, FastAPI, Supabase RLS), open-source developer tooling (AgentFlow, TermaAI, FastVault), and 19+ production-grade n8n automation pipelines that <strong>cut agency operational overhead by over 70%</strong> and <strong>reduced manual CRM data errors by 90%+</strong>.
+              </p>
+              <p class="lang-content-es">
+                Más de 3 años de experiencia implementando soluciones CRM empresariales (Apex, LWC, SOQL, Automatización con Flows), <strong>Migraciones Masivas de CRM & Arquitectura en Attio CRM</strong>, plataformas cloud multitenant (Next.js 16, FastAPI, Supabase RLS), herramientas open-source para desarrolladores (AgentFlow, TermaAI, FastVault) y 19+ tuberías de automatización en n8n en producción que <strong>redujeron los costos operativos de agencias en más de un 70%</strong> y <strong>disminuyeron errores manuales en CRM en más de un 90%</strong>.
+              </p>
+            </div>
+            <div class="post-footer">
+              <span class="post-tag">salesforce</span>
+              <span class="post-tag">attio-crm</span>
+              <span class="post-tag">crm-migrations</span>
+              <span class="post-tag">fde</span>
+              <span class="post-tag">ai-agents</span>
+              <span class="post-tag">n8n</span>
+            </div>
+          </div>
+
+          <!-- Post Card 2: Client & Partner Deployments -->
+          <div class="post-card">
+            <div class="post-header">
+              <span class="post-title">[SYS_DEPLOY] // DEPLOYMENTS & CLIENTS</span>
+              <span class="post-date">STATUS: ACTIVE</span>
+            </div>
+            <div class="post-body">
+              <div class="clients-grid">
+                <div class="client-mini-card">
+                  <span class="client-name"><i class="fa-solid fa-cloud-bolt" style="color:var(--salesforce-blue);"></i> Salesforce & Attio CRM</span>
+                  <span class="client-category">Sales, Service Cloud & Attio</span>
+                  <span class="client-comment" data-en="Apex Triggers, LWC, Attio Custom Objects & Data Migrations. Cut manual errors by 90%+ & saved 15+ hrs/wk." data-es="Triggers Apex, LWC, Objetos en Attio y Migraciones de Datos. Reducción del 90%+ en errores y ahorro de 15+ hs/sem.">Apex Triggers, LWC, Attio Custom Objects & Data Migrations. Cut manual errors by 90%+ & saved 15+ hrs/wk.</span>
+                </div>
+
+                <a href="https://www.orkelya.xyz" target="_blank" class="client-mini-card">
+                  <span class="client-name"><i class="fa-solid fa-bolt" style="color:var(--cloudflare-orange);"></i> Orkelya.xyz</span>
+                  <span class="client-category">Multi-Tenant AI Platform</span>
+                  <span class="client-comment" data-en="Next.js 16, FastAPI, Supabase RLS, Turnstile protection, Sub-800ms speed, 0 security flaws." data-es="Next.js 16, FastAPI, Supabase RLS, protección Turnstile, Tiempos &lt;800ms, 0 fallas de seguridad.">Next.js 16, FastAPI, Supabase RLS, Turnstile protection, Sub-800ms speed, 0 security flaws.</span>
+                </a>
+
+                <div class="client-mini-card">
+                  <span class="client-name"><i class="fa-solid fa-gears" style="color:var(--text-black);"></i> Agency Solutions</span>
+                  <span class="client-category">Docker & n8n Ops</span>
+                  <span class="client-comment" data-en="19 n8n workflows self-hosted on Docker containers. Cut agency operational overhead by 70%+ & saved 20+ hrs/wk." data-es="19 workflows n8n alojados en contenedores Docker. Reducción del 70%+ en costos operativos y ahorro de 20+ hs/sem.">19 n8n workflows self-hosted on Docker containers. Cut agency operational overhead by 70%+ & saved 20+ hrs/wk.</span>
+                </div>
+
+                <div class="client-mini-card">
+                  <span class="client-name"><i class="fa-solid fa-diagram-project" style="color:var(--emerald-green);"></i> Workflows B2B</span>
+                  <span class="client-category">Business Automation</span>
+                  <span class="client-comment" data-en="B2B lead qualification & automated triage. Streamlined client onboarding & multi-channel CRM sync." data-es="Calificación de leads B2B y triaje automatizado. Onboarding acelerado y sincronización CRM multicanal.">B2B lead qualification & automated triage. Streamlined client onboarding & multi-channel CRM sync.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Card 3: Tech Stack -->
+          <div class="post-card">
+            <div class="post-header">
+              <span class="post-title">[SYS_STACK] // TECHNICAL STACK SPECS</span>
+              <span class="post-date">VERSION: 2026.8</span>
+            </div>
+            <div class="post-body stack-body">
+              
+              <div class="stack-group">
+                <span class="stack-label">[ SALESFORCE, ATTIO & CRM ARCHITECTURE ]</span>
+                <div class="stack-list">
+                  <span class="tech-pill gold">Sales Cloud & Service Cloud</span>
+                  <span class="tech-pill gold">Attio CRM Architecture</span>
+                  <span class="tech-pill gold">Large-Scale CRM Data Migrations</span>
+                  <span class="tech-pill gold">HubSpot / Pipedrive to Salesforce / Attio</span>
+                  <span class="tech-pill gold">Lightning Web Components (LWC)</span>
+                  <span class="tech-pill gold">Apex Triggers & Controllers</span>
+                  <span class="tech-pill gold">Flow Automation & Process Builder</span>
+                  <span class="tech-pill gold">SOQL, SOSL & Data Loader</span>
+                  <span class="tech-pill gold">REST / SOAP Integration APIs</span>
+                </div>
+              </div>
+
+              <div class="stack-group">
+                <span class="stack-label">[ CLOUDFLARE ECOSYSTEM ]</span>
+                <div class="stack-list">
+                  <span class="tech-pill cloudflare"><i class="fa-solid fa-bolt"></i> Cloudflare Workers (Edge)</span>
+                  <span class="tech-pill cloudflare">Cloudflare Pages</span>
+                  <span class="tech-pill cloudflare">Workers KV & D1 (Serverless)</span>
+                  <span class="tech-pill cloudflare">Cloudflare Turnstile</span>
+                </div>
+              </div>
+
+              <div class="stack-group">
+                <span class="stack-label">[ AWS ECOSYSTEM ]</span>
+                <div class="stack-list">
+                  <span class="tech-pill aws"><i class="fa-brands fa-aws"></i> AWS EC2</span>
+                  <span class="tech-pill aws">AWS S3 Storage</span>
+                  <span class="tech-pill aws">AWS Lambda (Serverless)</span>
+                  <span class="tech-pill aws">AWS CloudFront CDN</span>
+                </div>
+              </div>
+
+              <div class="stack-group">
+                <span class="stack-label">[ AI & AUTOMATION ]</span>
+                <div class="stack-list">
+                  <span class="tech-pill patina">n8n Workflow Architecture</span>
+                  <span class="tech-pill patina">OpenAI & Claude LLM APIs</span>
+                  <span class="tech-pill patina">Autonomous AI Agents</span>
+                  <span class="tech-pill patina">RAG Pipelines</span>
+                  <span class="tech-pill patina">LangChain</span>
+                  <span class="tech-pill patina">WhatsApp Evolution API</span>
+                  <span class="tech-pill patina">Redis Session Caching</span>
+                </div>
+              </div>
+
+              <div class="stack-group">
+                <span class="stack-label">[ LANGUAGES & FULL-STACK ]</span>
+                <div class="stack-list">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Rust</span>
+                  <span class="tech-pill">Go</span>
+                  <span class="tech-pill">C# / Java</span>
+                  <span class="tech-pill">SQL (PostgreSQL, SQLite, MongoDB)</span>
+                  <span class="tech-pill">Next.js 16/15</span>
+                  <span class="tech-pill">React 19</span>
+                  <span class="tech-pill">FastAPI</span>
+                  <span class="tech-pill">Express.js / Node.js</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">Docker</span>
+                  <span class="tech-pill">Supabase (PostgreSQL RLS)</span>
+                  <span class="tech-pill">Vercel & Render</span>
+                  <span class="tech-pill">GitHub Actions CI/CD</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Post Card 4: Systems & Projects -->
+          <div class="post-card">
+            <div class="post-header">
+              <span class="post-title">[SYS_PROJECTS] // FEATURED SYSTEMS & OPEN-SOURCE</span>
+              <span class="post-date">COUNT: 07</span>
+            </div>
+            <div class="post-body">
+              <ul class="project-showcase-list">
+                <li>
+                  <strong class="proj-title">01 // AgentFlow — AI & Multimodal Agent Framework</strong>
+                  <p class="lang-content-en">Lightweight Python framework designed to orchestrate multimodal AI agents with persistent vector memory, tool-calling execution pipelines, and autonomous reasoning loops.</p>
+                  <p class="lang-content-es">Framework ligero en Python diseñado para orquestar agentes de IA multimodales con memoria vectorial persistente, tuberías de ejecución de herramientas y bucles de razonamiento autónomo.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH STACK ]</span>
+                    <span>Python, LangChain, OpenAI/Claude APIs, Redis Vector Embeddings.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">02 // TermaAI — Terminal AI CLI Assistant</strong>
+                  <p class="lang-content-en">Interactive command-line AI assistant that generates, validates, and safely executes complex Bash & Shell scripts directly in the terminal with real-time dry-run security checks.</p>
+                  <p class="lang-content-es">Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts complejos en Bash y Shell de forma segura directamente en la terminal con comprobaciones previas.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH STACK ]</span>
+                    <span>Python, Rich CLI, OpenAI API, Shell Security Sandbox.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">03 // FastVault — Encrypted CLI Secrets Manager in Rust</strong>
+                  <p class="lang-content-en">High-performance command-line secrets manager written in Rust with AES-256-GCM encryption, master key derivation (Argon2id), and zero-knowledge memory safety.</p>
+                  <p class="lang-content-es">Gestor de secretos ultrarrápido para terminal escrito en Rust con cifrado AES-256-GCM, derivación de clave maestra con Argon2id y seguridad de memoria de cero asignación residual.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH STACK ]</span>
+                    <span>Rust, Argon2id, AES-256-GCM, Cargo.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">04 // NeuraDash — Real-Time Analytics Dashboard</strong>
+                  <p class="lang-content-en">Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.</p>
+                  <p class="lang-content-es">Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH STACK ]</span>
+                    <span>Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">05 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
+                  <p class="lang-content-en">Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing connected directly with Google Workspace, Gmail, and Jira.</p>
+                  <p class="lang-content-es">Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación conectada a Google Workspace, Gmail y Jira.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ IMPACT METRICS ]</span>
+                    <span class="lang-content-en">Cut agency operational overhead by 70%+, saved 20+ hours of weekly manual reporting, and maintained 99.9% uptime for international partners across London and Johannesburg.</span>
+                    <span class="lang-content-es">Reducción del 70%+ en costos operativos de agencia, ahorro de 20+ horas semanales de reportes manuales y 99.9% de disponibilidad operativa para socios internacionales en Londres y Johannesburgo.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">06 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
+                  <p class="lang-content-en">Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and full responsive design.</p>
+                  <p class="lang-content-es">Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ IMPACT METRICS ]</span>
+                    <span class="lang-content-en">Sub-second page performance (&lt;800ms), Supabase RLS security, Turnstile anti-bot protection, and 35% faster B2B lead response.</span>
+                    <span class="lang-content-es">Velocidad de carga sub-segundo (&lt;800ms), seguridad en Supabase RLS, protección Turnstile y +35% velocidad de respuesta en leads B2B.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">07 // Salesforce & Attio Enterprise Integration Gateway</strong>
+                  <p class="lang-content-en">Developed a custom Apex, LWC, and Attio API integration framework connecting Salesforce & Attio CRM with payment webhooks and automated billing platforms.</p>
+                  <p class="lang-content-es">Desarrollo de un framework personalizado de integración en Apex, LWC y API de Attio que conecta Salesforce & Attio CRM con webhooks de pago y plataformas de facturación automatizada.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ IMPACT METRICS ]</span>
+                    <span class="lang-content-en">Automated 100% of billing record synchronization, reduced manual CRM data entry errors by over 90%, and eliminated manual reconciliation steps between platforms.</span>
+                    <span class="lang-content-es">Sincronización automatizada del 100% de registros de facturación, disminución del 90%+ en errores de carga manual en CRM y eliminación de pasos de conciliación manual.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- HARVARD ATS PRINT LAYOUT -->
+      <div class="ats-print-content">
+        <header class="doc-header">
+          <h1 class="candidate-name">FAUSTO PASTURA</h1>
+          <p class="candidate-title" data-en="Salesforce Consultant & Forward Deployed AI Engineer" data-es="Consultor Salesforce & Ingeniero Forward Deployed de IA">
+            Salesforce Consultant & Forward Deployed AI Engineer
+          </p>
+          
+          <div class="contact-bar">
+            <span>Buenos Aires, Argentina</span> |
+            <span>fausto@caldentech.llc</span> |
+            <span>linkedin.com/in/fausto-pastura-582828369</span> |
+            <span>orkelya.xyz</span> |
+            <span>github.com/tatitoxt</span>
+          </div>
+        </header>
+
+        <hr class="doc-divider">
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="PROFESSIONAL SUMMARY" data-es="RESUMEN PROFESIONAL">PROFESSIONAL SUMMARY</h2>
+          <p class="summary-text lang-content-en">
+            Results-driven <strong>Salesforce & Attio CRM Consultant and Forward Deployed AI Engineer (FDE)</strong> with a strong engineering philosophy rooted in learning by doing (<em>self-taught the hard way</em>). Over 3 years of hands-on expertise building enterprise CRM solutions, large-scale CRM data migrations, autonomous AI agents, multi-tenant cloud platforms, developer tooling, and large-scale workflow automations.
+          </p>
+          <p class="summary-text lang-content-es">
+            <strong>Consultor Salesforce & Attio CRM e Ingeniero Forward Deployed de IA (FDE)</strong> con una sólida filosofía de ingeniería fundamentada en el aprendizaje autodidacta a través de la práctica directa (<em>self-taught the hard way</em>). Más de 3 años de experiencia construyendo soluciones CRM empresariales, migraciones masivas de datos en CRM, agentes autónomos de IA, plataformas cloud multitenant y automatizaciones a gran escala.
+          </p>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="SELF-TAUGHT LEARNING PHILOSOPHY & MINDSET" data-es="FILOSOFÍA Y METODOLOGÍA AUTODIDACTA (SELF-TAUGHT)">SELF-TAUGHT LEARNING PHILOSOPHY & MINDSET</h2>
+          <ul class="bullet-list lang-content-en">
+            <li><strong>First-Principles Problem Solving:</strong> Gained software engineering skills through relentless self-study, reading official documentation, inspecting open-source codebases, and building production systems.</li>
+            <li><strong>Forward Deployed Mindset:</strong> Ability to bridge business strategy with deep technical execution, directly interfacing with clients to scope, build, and deploy production-grade software and AI integrations.</li>
+            <li><strong>Rapid Technology Adoption:</strong> Ability to learn and deploy new technology stacks (Next.js 16, FastAPI, n8n, Salesforce Apex/LWC, Attio CRM, Docker, Redis, Rust) in days to solve urgent business challenges.</li>
+          </ul>
+          <ul class="bullet-list lang-content-es">
+            <li><strong>Resolución desde Primeros Principios:</strong> Desarrollo de habilidades de ingeniería mediante el estudio independiente, lectura de documentación oficial y construcción de software en producción.</li>
+            <li><strong>Mentalidad Forward Deployed (FDE):</strong> Capacidad para unir la estrategia de negocio con la ejecución técnica profunda, trabajando directamente con clientes para diseñar, integrar y desplegar soluciones de software e IA.</li>
+            <li><strong>Adopción Rápida Tecnológica:</strong> Capacidad para aprender y desplegar nuevos stacks (Next.js 16, FastAPI, n8n, Salesforce Apex/LWC, Attio CRM, Docker, Redis, Rust) en cuestión de días.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="TECHNICAL SKILLS & COMPETENCIES" data-es="HABILIDADES TÉCNICAS Y COMPETENCIAS">TECHNICAL SKILLS & COMPETENCIES</h2>
+          <p class="skill-category"><strong>Salesforce, Attio & CRM Architecture:</strong> Sales Cloud, Service Cloud, Attio CRM, Large-Scale CRM Data Migrations (HubSpot/Pipedrive to Salesforce/Attio), Apex Triggers, LWC, Flows, SOQL, Data Loader, REST/SOAP APIs</p>
+          <p class="skill-category"><strong>Languages:</strong> Python, TypeScript, JavaScript, Apex (Salesforce), SOQL, SOSL, SQL, C, C++, Rust, Go, C#, Java, HTML5, CSS3, Bash</p>
+          <p class="skill-category"><strong>Cloud & Edge (Cloudflare & AWS):</strong> Cloudflare Workers, Pages, Zero Trust, D1 SQL, Turnstile, AWS EC2, S3, Lambda, ECS, CloudFront, Route53</p>
+          <p class="skill-category"><strong>AI, Agent & Automation:</strong> AgentFlow, TermaAI, FastVault (Rust), n8n Workflow Architecture, OpenAI/Claude APIs, RAG, LangChain, Redis</p>
+          <p class="skill-category"><strong>Full-Stack & Databases:</strong> Next.js 16/15, React 19, FastAPI, Node.js, Express, Tailwind CSS, Supabase, PostgreSQL, MongoDB, Docker, Vercel, Render</p>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="PROFESSIONAL EXPERIENCE" data-es="EXPERIENCIA PROFESIONAL">PROFESSIONAL EXPERIENCE</h2>
+          
+          <div class="experience-item">
+            <div class="exp-header">
+              <strong>Salesforce & Attio CRM Consultant — Enterprise CRM Consulting</strong>
+              <span class="exp-date">Jan 2023 – Present</span>
+            </div>
+            <ul class="bullet-list lang-content-en">
+              <li>Engineered end-to-end Salesforce and Attio CRM solutions across Sales Cloud and Service Cloud, developing custom Apex code, LWC components, custom Attio objects, and automated Flows.</li>
+              <li>Executed large-scale CRM data migration projects from HubSpot/Pipedrive into Salesforce & Attio, reducing manual data errors by 90%+ and saving 15+ team hours weekly.</li>
+            </ul>
+            <ul class="bullet-list lang-content-es">
+              <li>Implementación de soluciones Salesforce y Attio CRM en Sales Cloud y Service Cloud con código Apex, LWC, objetos en Attio y automatizaciones.</li>
+              <li>Ejecución de proyectos de migración masiva de datos desde HubSpot/Pipedrive hacia Salesforce & Attio, reduciendo errores manuales en más de un 90% y ahorrando 15+ hs/semana.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <strong>Orkelya — Founding Forward Deployed AI Engineer</strong>
+              <span class="exp-date">Jun 2025 – Present</span>
+            </div>
+            <ul class="bullet-list lang-content-en">
+              <li>Architected and deployed Orkelya.xyz utilizing Next.js 16, React 19, TypeScript, FastAPI, and Supabase PostgreSQL with RLS policies, achieving sub-second speeds (&lt;800ms) and 0 security flaws under load.</li>
+            </ul>
+            <ul class="bullet-list lang-content-es">
+              <li>Diseño y despliegue de Orkelya.xyz utilizando Next.js 16, React 19, TypeScript, FastAPI y Supabase PostgreSQL con RLS, logrando tiempos &lt;800ms y 0 fallas de seguridad.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <strong>Agency Solutions & Automation Consulting — Lead Automation Architect</strong>
+              <span class="exp-date">Mar 2024 – Present</span>
+            </div>
+            <ul class="bullet-list lang-content-en">
+              <li>Engineered 19+ n8n production workflows in self-hosted Docker containers, cutting agency operational overhead by 70%+ and eliminating 20+ hours of weekly manual reporting.</li>
+            </ul>
+            <ul class="bullet-list lang-content-es">
+              <li>Diseño de 19+ workflows en n8n en contenedores Docker self-hosted, reduciendo costos operativos en un 70%+ y eliminando 20+ hs semanales de trabajo manual.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE & SYSTEMS PROJECTS</h2>
+          <ul class="bullet-list lang-content-en">
+            <li><strong>AgentFlow (tatitoxt/agentflow):</strong> Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).</li>
+            <li><strong>TermaAI (tatitoxt/terma-ai):</strong> Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).</li>
+            <li><strong>FastVault (tatitoxt/fastvault):</strong> Ultra-fast encrypted secrets manager in Rust with AES-256-GCM and Argon2id key derivation (Rust, Cargo).</li>
+            <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+          </ul>
+          <ul class="bullet-list lang-content-es">
+            <li><strong>AgentFlow (tatitoxt/agentflow):</strong> Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).</li>
+            <li><strong>TermaAI (tatitoxt/terma-ai):</strong> Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).</li>
+            <li><strong>FastVault (tatitoxt/fastvault):</strong> Gestor encriptado ultrarrápido de secretos en Rust con AES-256-GCM y Argon2id (Rust, Cargo).</li>
+            <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="EDUCATION & CONTINUOUS LEARNING" data-es="EDUCACIÓN Y APRENDIZAJE CONTINUO">EDUCATION & CONTINUOUS LEARNING</h2>
+          <ul class="simple-list">
+            <li><strong>Self-Taught Continuous Learner</strong> — Hands-on software development & real-world system architecture (2022 - Present)</li>
+            <li><strong>Salesforce & Attio Platform Engineering</strong> — Hands-on Apex, LWC, SOQL & Flow Architecture (2023 - Present)</li>
+            <li><strong>Bartolomé Mitre Day School</strong> — High School Diploma (Buenos Aires, Argentina)</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2 class="section-title" data-en="LANGUAGES" data-es="IDIOMAS">LANGUAGES</h2>
+          <p><strong>Spanish:</strong> Native / Bilingual &nbsp;|&nbsp; <strong>English:</strong> Upper-Intermediate (B2+)</p>
+        </section>
+
+      </div>
+
+    </article>
+  </main>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast hidden">Copied Markdown to clipboard!</div>
+
+  <script src="app.js"></script>
+
+  <!-- Vercel Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>
