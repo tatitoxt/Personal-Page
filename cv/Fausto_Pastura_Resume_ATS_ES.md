@@ -73,6 +73,10 @@ Gestor de secretos ultrarrápido para terminal escrito en Rust con cifrado AES-2
 Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.  
 - **Impacto & Stack:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
 
+### **5. DockNuke — Utilidad de Limpieza Inteligente y Optimización de Docker en Go**
+Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run, filtrado de retención y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker (+85 commits retroactivos).  
+- **Impacto & Stack:** Go (1.22+), SDK Engine Docker, Cobra CLI, Concurrencia, Motor Dry-Run.
+
 ### **5. NeuraDash — Dashboard Analítico en Tiempo Real**
 Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.  
 - **Impacto & Stack:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.

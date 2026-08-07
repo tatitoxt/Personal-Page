@@ -73,6 +73,10 @@ High-performance command-line secrets manager written in Rust with AES-256-GCM e
 Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.  
 - **Impact & Tech:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
 
+### **5. DockNuke — Smart Docker Cleanup & Disk Optimization Utility**
+High-performance command-line utility written in Go for intelligent scanning, dry-run safety previewing, retention filtering, and disk space optimization across Docker containers, images, volumes, and build caches (+85 retro-dated commits).  
+- **Impact & Tech:** Go (1.22+), Docker Engine SDK, Cobra CLI, Concurrency, Dry-Run Engine.
+
 ### **5. NeuraDash — Real-Time Analytics Dashboard**
 Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.  
 - **Impact & Tech:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
