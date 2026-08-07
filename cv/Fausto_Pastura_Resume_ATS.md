@@ -69,7 +69,11 @@ Interactive command-line AI assistant that generates, validates, and safely exec
 High-performance command-line secrets manager written in Rust with AES-256-GCM encryption, master key derivation (Argon2id), and zero-knowledge memory safety.  
 - **Impact & Tech:** Rust, Argon2id, AES-256-GCM, Cargo, Zero-Memory Allocation.
 
-### **4. NeuraDash — Real-Time Analytics Dashboard**
+### **4. Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter**
+Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.  
+- **Impact & Tech:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
+
+### **5. NeuraDash — Real-Time Analytics Dashboard**
 Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.  
 - **Impact & Tech:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
 

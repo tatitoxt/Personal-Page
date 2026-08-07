@@ -149,6 +149,7 @@
               <span class="tech-pill aws"><i class="fa-brands fa-aws"></i> AWS EC2 / S3 / Lambda</span>
               <span class="tech-pill patina">AgentFlow</span>
               <span class="tech-pill patina">TermaAI</span>
+              <span class="tech-pill patina">Gatekeeper-Proxy (TS)</span>
               <span class="tech-pill patina">n8n Architecture</span>
               <span class="tech-pill patina">AI Agents</span>
               <span class="tech-pill">Next.js 16</span>
@@ -344,7 +345,7 @@
           <div class="post-card">
             <div class="post-header">
               <span class="post-title">[SYS_PROJECTS] // FEATURED SYSTEMS & OPEN-SOURCE</span>
-              <span class="post-date">COUNT: 07</span>
+              <span class="post-date">COUNT: 08</span>
             </div>
             <div class="post-body">
               <ul class="project-showcase-list">
@@ -379,7 +380,17 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">04 // NeuraDash — Real-Time Analytics Dashboard</strong>
+                  <strong class="proj-title">04 // Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter (<a href="https://github.com/tatitoxt/gatekeeper-proxy" target="_blank">tatitoxt/gatekeeper-proxy</a>)</strong>
+                  <p class="lang-content-en">Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.</p>
+                  <p class="lang-content-es">Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH STACK ]</span>
+                    <span>TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <strong class="proj-title">05 // NeuraDash — Real-Time Analytics Dashboard</strong>
                   <p class="lang-content-en">Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.</p>
                   <p class="lang-content-es">Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.</p>
                   <div class="project-impact-box">
@@ -389,7 +400,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">05 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
+                  <strong class="proj-title">06 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
                   <p class="lang-content-en">Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing connected directly with Google Workspace, Gmail, and Jira.</p>
                   <p class="lang-content-es">Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación conectada a Google Workspace, Gmail y Jira.</p>
                   <div class="project-impact-box">
@@ -400,7 +411,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">06 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
+                  <strong class="proj-title">07 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
                   <p class="lang-content-en">Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and full responsive design.</p>
                   <p class="lang-content-es">Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.</p>
                   <div class="project-impact-box">
@@ -411,7 +422,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">07 // Salesforce & Attio Enterprise Integration Gateway</strong>
+                  <strong class="proj-title">08 // Salesforce & Attio Enterprise Integration Gateway</strong>
                   <p class="lang-content-en">Developed a custom Apex, LWC, and Attio API integration framework connecting Salesforce & Attio CRM with payment webhooks and automated billing platforms.</p>
                   <p class="lang-content-es">Desarrollo de un framework personalizado de integración en Apex, LWC y API de Attio que conecta Salesforce & Attio CRM con webhooks de pago y plataformas de facturación automatizada.</p>
                   <div class="project-impact-box">
@@ -531,12 +542,14 @@
             <li><strong>AgentFlow (tatitoxt/agentflow):</strong> Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).</li>
             <li><strong>TermaAI (tatitoxt/terma-ai):</strong> Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).</li>
             <li><strong>FastVault (tatitoxt/fastvault):</strong> Ultra-fast encrypted secrets manager in Rust with AES-256-GCM and Argon2id key derivation (Rust, Cargo).</li>
+            <li><strong>Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):</strong> Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).</li>
             <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
           </ul>
           <ul class="bullet-list lang-content-es">
             <li><strong>AgentFlow (tatitoxt/agentflow):</strong> Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).</li>
             <li><strong>TermaAI (tatitoxt/terma-ai):</strong> Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).</li>
             <li><strong>FastVault (tatitoxt/fastvault):</strong> Gestor encriptado ultrarrápido de secretos en Rust con AES-256-GCM y Argon2id (Rust, Cargo).</li>
+            <li><strong>Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):</strong> Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).</li>
             <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
           </ul>
         </section>

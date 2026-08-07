@@ -33,6 +33,7 @@
 - 🧠 **AgentFlow** — Multimodal AI agent framework with persistent vector memory, tool execution pipelines, and autonomous reasoning loops (`Python`, `LangChain`, `OpenAI`, `Redis`).
 - ⚡ **TermaAI** — Interactive command-line terminal AI assistant for safe Bash script generation with dry-run checks (`Python`, `Rich CLI`, `OpenAI`).
 - 🔑 **FastVault** — High-performance encrypted CLI secrets manager written in Rust (`AES-256-GCM`, `Argon2id`, `Cargo`).
+- 🛡️ **Gatekeeper-Proxy** — Dynamic Reverse Proxy & Web Application Firewall (WAF) with sliding-window rate limiting, CIDR filtering, and real-time security dashboard (`TypeScript`, `Node.js`, `WAF Engine`, `Docker`).
 - 💎 **NeuraDash** — Full-stack real-time analytics dashboard (`Next.js 16`, `React 19`, `WebSockets`, `PostgreSQL`).
 - 🌐 [**Plataforma B2B de Agentes de IA & Custom Service**](https://www.orkelya.xyz) — Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service (`orkelya.xyz`).  
   *Impact:* **Sub-second performance (<800ms)**, Supabase RLS security, Turnstile anti-bot protection, and 35% faster B2B lead response.

@@ -69,7 +69,11 @@ Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts
 Gestor de secretos ultrarrápido para terminal escrito en Rust con cifrado AES-256-GCM, derivación de clave maestra con Argon2id y seguridad de memoria de cero asignación residual.  
 - **Impacto & Stack:** Rust, Argon2id, AES-256-GCM, Cargo.
 
-### **4. NeuraDash — Dashboard Analítico en Tiempo Real**
+### **4. Gatekeeper-Proxy — Reverse Proxy Dinámico, WAF & Rate Limiter**
+Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.  
+- **Impacto & Stack:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
+
+### **5. NeuraDash — Dashboard Analítico en Tiempo Real**
 Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.  
 - **Impacto & Stack:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
 
