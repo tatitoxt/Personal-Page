@@ -39,7 +39,7 @@
 #### ⚡ Sistemas, CLI & DevOps
 - 🚀 **[FastVault](https://github.com/tatitoxt/fastvault)** - Gestor de secretos en CLI ultra rápido y encriptado escrito en Rust.
 - 🐳 **[DockNuke](https://github.com/tatitoxt/docknuke)** - Utilidad en Go para limpieza inteligente y optimización de entornos Docker.
-- 🛡️ **[Gatekeeper-Proxy](https://github.com/tatitoxt/gatekeeper-proxy)** - Reverse proxy dinámico con Rate Limiting y reglas de firewall en TypeScript/Node.js.
+- 🛡️ **Gatekeeper-Proxy** - Reverse proxy dinámico con Rate Limiting y reglas de firewall en TypeScript/Node.js.
 
 ---
 
