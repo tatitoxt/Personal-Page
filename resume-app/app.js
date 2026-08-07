@@ -212,11 +212,11 @@ Results-driven Salesforce Consultant and Forward Deployed AI Engineer (FDE) with
 ---
 
 ## FEATURED OPEN-SOURCE & SYSTEMS PROJECTS
-- **AgentFlow (tatitoxt/agentflow):** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
-- **TermaAI (tatitoxt/terma-ai):** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
-- **FastVault (tatitoxt/fastvault):** Ultra-fast encrypted secrets manager in Rust with AES-256-GCM and Argon2id key derivation (Rust, Cargo).
-- **Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
-- **NeuraDash (tatitoxt/neuradash):** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+- **AgentFlow:** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
+- **TermaAI:** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
+- **FastVault:** Ultra-fast encrypted secrets manager in Rust with AES-256-GCM and Argon2id key derivation (Rust, Cargo).
+- **Gatekeeper-Proxy:** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
+- **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
     const rawMarkdownES = `# FAUSTO PASTURA
 **Consultor Salesforce & Ingeniero Forward Deployed de IA**
@@ -231,11 +231,11 @@ Consultor Salesforce e Ingeniero Forward Deployed de IA (FDE) con una sólida fi
 ---
 
 ## PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS
-- **AgentFlow (tatitoxt/agentflow):** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
-- **TermaAI (tatitoxt/terma-ai):** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
-- **FastVault (tatitoxt/fastvault):** Gestor encriptado ultrarrápido de secretos en Rust con AES-256-GCM y Argon2id (Rust, Cargo).
-- **Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
-- **NeuraDash (tatitoxt/neuradash):** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+- **AgentFlow:** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
+- **TermaAI:** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
+- **FastVault:** Gestor encriptado ultrarrápido de secretos en Rust con AES-256-GCM y Argon2id (Rust, Cargo).
+- **Gatekeeper-Proxy:** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
+- **NeuraDash:** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
     const textToCopy = isSpanish ? rawMarkdownES : rawMarkdownEN;
 
