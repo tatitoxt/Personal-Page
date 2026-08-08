@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: orkelya-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-orkelya_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-orkelya_secret_password}
+      POSTGRES_DB: ${POSTGRES_DB:-orkelya_content_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  redis:
+    image: redis:7-alpine
+    container_name: orkelya-redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+  minio:
+    image: minio/minio:RELEASE.2024-01-31T01-32-02Z
+    container_name: orkelya-minio
+    restart: always
+    environment:
+      MINIO_ROOT_USER: ${STORAGE_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${STORAGE_SECRET_KEY:-minioadmin}
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - miniodata:/data
+
+volumes:
+  pgdata:
+  miniodata:

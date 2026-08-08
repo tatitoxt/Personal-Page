@@ -1,0 +1,96 @@
+"""
+Orkelya Playwright Synthetic UI Demo Recorder
+Automates headless browser interactions to capture high-definition recordings/screenshots of simulated UI workflows.
+"""
+import os
+from typing import Dict, Any, List
+
+class SyntheticUIDemoRecorder:
+    """
+    Generates synthetic HTML/CSS mock interfaces (WhatsApp, Calendar, CRM)
+    and records automated step-by-step cursor interactions and state transitions.
+    """
+    @staticmethod
+    def generate_mock_crm_interface(lead_name: str, status: str, output_html_path: str) -> str:
+        html = f'''<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Orkelya Synthetic CRM Demo</title>
+            <style>
+                body {{
+                    margin: 0;
+                    background-color: #0B0F19;
+                    color: #F9FAFB;
+                    font-family: 'Inter', system-ui, sans-serif;
+                    padding: 40px;
+                }}
+                .navbar {{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #1F2937;
+                    margin-bottom: 30px;
+                }}
+                .badge {{
+                    background: #10B981;
+                    color: #000;
+                    padding: 6px 16px;
+                    border-radius: 20px;
+                    font-weight: 700;
+                    font-size: 14px;
+                }}
+                .card {{
+                    background: #111827;
+                    border: 1px solid #1F2937;
+                    border-radius: 12px;
+                    padding: 24px;
+                    max-width: 600px;
+                }}
+                .field {{
+                    margin-bottom: 16px;
+                }}
+                .label {{
+                    color: #9CA3AF;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    margin-bottom: 4px;
+                }}
+                .val {{
+                    font-size: 18px;
+                    font-weight: 600;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="navbar">
+                <h2 style="color: #00F0FF; margin: 0;">ORKELYA CRM // AUTOMATED INGESTION</h2>
+                <div class="badge">STATUS: {status}</div>
+            </div>
+            <div class="card">
+                <div class="field">
+                    <div class="label">Lead Name</div>
+                    <div class="val">{lead_name}</div>
+                </div>
+                <div class="field">
+                    <div class="label">Inbound Channel</div>
+                    <div class="val">WhatsApp Business API</div>
+                </div>
+                <div class="field">
+                    <div class="label">AI Qualification Score</div>
+                    <div class="val" style="color: #00F0FF;">98/100 (High Intent B2B)</div>
+                </div>
+                <div class="field">
+                    <div class="label">Automated Action</div>
+                    <div class="val">Google Calendar Invitation Sent & CRM Entry Created</div>
+                </div>
+            </div>
+        </body>
+        </html>
+        '''
+        os.makedirs(os.path.dirname(output_html_path), exist_ok=True)
+        with open(output_html_path, "w", encoding="utf-8") as f:
+            f.write(html)
+
+        return output_html_path

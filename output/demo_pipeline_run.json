@@ -1,0 +1,163 @@
+[
+  {
+    "pipeline_id": "0ef8f139-fce2-4ec6-8010-e74ffeb1b417",
+    "timestamp": "2026-08-08T01:55:12.355031+00:00",
+    "pillar": "AUTOMATION_DEMOS",
+    "topic": "Automatización de Leads de WhatsApp a Salesforce",
+    "routing_decision": {
+      "topic": "Automatización de Leads de WhatsApp a Salesforce",
+      "primary_format": "VIDEO_DEMO",
+      "secondary_format": "DIAGRAM",
+      "target_platforms": [
+        "instagram",
+        "tiktok",
+        "youtube",
+        "linkedin"
+      ],
+      "scores": {
+        "visual_potential": 95.0,
+        "demonstration_potential": 90.0,
+        "depth_required": 90.0,
+        "educational_value": 75.0,
+        "emotional_impact": 40.0,
+        "shareability": 85.0,
+        "save_potential": 90.0,
+        "conversion_potential": 85.0,
+        "novelty": 70.0
+      },
+      "rationale": "UI workflow demonstration best communicated via short-form video demo."
+    },
+    "generated_assets": [
+      {
+        "type": "diagram_svg",
+        "path": "output/assets/0ef8f139-fce2-4ec6-8010-e74ffeb1b417/architecture.svg"
+      },
+      {
+        "type": "synthetic_demo_html",
+        "path": "output/assets/0ef8f139-fce2-4ec6-8010-e74ffeb1b417/crm_demo.html"
+      }
+    ],
+    "script": {
+      "hook": "Un lead entra por WhatsApp a las 2 AM. Nadie en tu equipo debería copiarlo manualmente.",
+      "body": "En Orkelya configuramos agentes de IA que califican presupuesto, agendan reuniones y sincronizan Salesforce en 3 segundos. Respuesta instantánea 24/7 y calificación automática de presupuesto.",
+      "cta": "Comenta 'AUTOMATIZAR' para recibir el mapa de arquitectura."
+    },
+    "qa_audit": {
+      "passed": true,
+      "total_score": 98.0,
+      "content_score": 100.0,
+      "security_score": 100.0,
+      "brand_score": 90.0,
+      "banned_phrases_found": [],
+      "security_flags": []
+    },
+    "publishing_job": {
+      "idempotency_key": "c2d360832af7b8a8063a73dd645d56cbb84e2f5d1c52c7fdec9580e5e25b09d9",
+      "scheduled_time": "2026-08-08T03:55:12.355858+00:00",
+      "status": "SCHEDULED"
+    }
+  },
+  {
+    "pipeline_id": "8e92210d-1226-4dfc-bdb0-e69bd9a27969",
+    "timestamp": "2026-08-08T01:55:12.355879+00:00",
+    "pillar": "WHAT_I_WOULD_AUTOMATE",
+    "topic": "7 Procesos Administrativos B2B a Automatizar",
+    "routing_decision": {
+      "topic": "7 Procesos Administrativos B2B a Automatizar",
+      "primary_format": "CAROUSEL",
+      "secondary_format": "DIAGRAM",
+      "target_platforms": [
+        "linkedin",
+        "instagram"
+      ],
+      "scores": {
+        "visual_potential": 95.0,
+        "demonstration_potential": 20.0,
+        "depth_required": 100.0,
+        "educational_value": 75.0,
+        "emotional_impact": 40.0,
+        "shareability": 85.0,
+        "save_potential": 90.0,
+        "conversion_potential": 60.0,
+        "novelty": 70.0
+      },
+      "rationale": "High educational depth and save potential routed to multi-slide carousel and architecture diagram."
+    },
+    "generated_assets": [
+      {
+        "type": "carousel_html",
+        "path": "output/assets/8e92210d-1226-4dfc-bdb0-e69bd9a27969/carousel.html"
+      },
+      {
+        "type": "diagram_svg",
+        "path": "output/assets/8e92210d-1226-4dfc-bdb0-e69bd9a27969/architecture.svg"
+      }
+    ],
+    "script": {
+      "hook": "Un lead entra por WhatsApp a las 2 AM. Nadie en tu equipo debería copiarlo manualmente.",
+      "body": "En Orkelya configuramos agentes de IA que califican presupuesto, agendan reuniones y sincronizan Salesforce en 3 segundos. Ahorrar +20 horas semanales de carga manual de datos.",
+      "cta": "Comenta 'AUTOMATIZAR' para recibir el mapa de arquitectura."
+    },
+    "qa_audit": {
+      "passed": true,
+      "total_score": 98.0,
+      "content_score": 100.0,
+      "security_score": 100.0,
+      "brand_score": 90.0,
+      "banned_phrases_found": [],
+      "security_flags": []
+    },
+    "publishing_job": {
+      "idempotency_key": "2c4e90eaec954c4ae073c7e390e932978e4737742b0861a640c5ae7eceec0e94",
+      "scheduled_time": "2026-08-08T03:55:12.356162+00:00",
+      "status": "SCHEDULED"
+    }
+  },
+  {
+    "pipeline_id": "fa8cf936-0bd9-4db3-9fe7-a5139b5db69d",
+    "timestamp": "2026-08-08T01:55:12.356173+00:00",
+    "pillar": "OPINION_CONTRARIAN",
+    "topic": "Automatizar todo sin estrategia es un error costoso",
+    "routing_decision": {
+      "topic": "Automatizar todo sin estrategia es un error costoso",
+      "primary_format": "TEXT_POST",
+      "secondary_format": "STATIC_VISUAL",
+      "target_platforms": [
+        "linkedin",
+        "x"
+      ],
+      "scores": {
+        "visual_potential": 40.0,
+        "demonstration_potential": 20.0,
+        "depth_required": 15.0,
+        "educational_value": 75.0,
+        "emotional_impact": 70.0,
+        "shareability": 85.0,
+        "save_potential": 45.0,
+        "conversion_potential": 60.0,
+        "novelty": 70.0
+      },
+      "rationale": "Contrarian B2B perspective best articulated via strong text post."
+    },
+    "generated_assets": [],
+    "script": {
+      "hook": "Un lead entra por WhatsApp a las 2 AM. Nadie en tu equipo debería copiarlo manualmente.",
+      "body": "En Orkelya configuramos agentes de IA que califican presupuesto, agendan reuniones y sincronizan Salesforce en 3 segundos. Enfocarse en resolver el cuello de botella principal de conversión antes de sumar más herramientas.",
+      "cta": "Comenta 'AUTOMATIZAR' para recibir el mapa de arquitectura."
+    },
+    "qa_audit": {
+      "passed": true,
+      "total_score": 98.0,
+      "content_score": 100.0,
+      "security_score": 100.0,
+      "brand_score": 90.0,
+      "banned_phrases_found": [],
+      "security_flags": []
+    },
+    "publishing_job": {
+      "idempotency_key": "4e81678e503eafda73bdf04951c5edfe3952515e3eba9bacbd5a5c7edba16b23",
+      "scheduled_time": "2026-08-08T03:55:12.356185+00:00",
+      "status": "SCHEDULED"
+    }
+  }
+]
