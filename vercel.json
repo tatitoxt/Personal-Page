@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/resume-app/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/resume-app/styles.css"
+    },
+    {
+      "source": "/app.js",
+      "destination": "/resume-app/app.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/resume-app/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
