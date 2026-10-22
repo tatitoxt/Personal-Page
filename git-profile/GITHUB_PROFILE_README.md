@@ -1,15 +1,16 @@
-# Custom software and business automation | Software a medida y automatización
+# Salesforce & CRM consulting · Custom business software · Automation
 
-I build custom software and systems for businesses, and automate workflows with or without AI. I work across CRM, integrations, and operations, from understanding a process to implementing and documenting the solution.
+I work as a **Salesforce and CRM consultant**, building custom software and systems for businesses and automating workflows with or without AI. I work from understanding the process through implementation, integration, and documentation.
 
-Desarrollo sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Trabajo con CRM, integraciones y operaciones: entiendo el proceso, construyo la solución y dejo claro cómo mantenerla.
+Trabajo como **consultor de Salesforce y CRM**. Desarrollo software y sistemas a medida para empresas, además de automatizaciones con o sin IA. Trabajo desde el relevamiento del proceso hasta la implementación, integración y documentación.
 
 ## Selected projects | Proyectos seleccionados
 
 - [Import Preflight](https://github.com/tatitoxt/crm-import-preflight) — browser-based checks for CRM contact CSV files. Seven JavaScript tests; GitHub Actions passed on the current default branch. The file stays in the browser.
-- [Orkelya Content Engine prototype](https://github.com/tatitoxt/Personal-Page) — FastAPI prototype with deterministic format routing, basic copy checks, and sample HTML/SVG generation. Eleven Python tests pass locally with the documented environment variables. It does not publish to social platforms.
-- [FastVault](https://github.com/tatitoxt/fastvault) — Rust CLI for local encrypted secrets. In development; five workspace tests pass. No independent security audit.
-- [DockNuke](https://github.com/tatitoxt/docknuke) — Go CLI for reviewing and cleaning Docker resources. `go test ./...` passes.
+- [Salesforce Operations Orchestrator](https://github.com/tatitoxt/salesforce-operations-orchestrator) — Salesforce DX practice project for operational task flows, built with Apex, Custom Metadata, and Lightning Web Components. Includes Apex and Jest tests; running Apex tests requires a Salesforce org.
+- [ShipPulse](https://github.com/tatitoxt/shippulse) — deployment and service observability lab with Go services, a Next.js interface, and OpenTelemetry. Under development; `make test` passes three Go tests in the current checkout.
+- [FastVault](https://github.com/tatitoxt/fastvault) — Rust CLI for local encrypted secrets. In development; six workspace tests pass locally. No independent security audit.
+- [DockNuke](https://github.com/tatitoxt/docknuke) — Go CLI for reviewing and cleaning Docker resources, with a dry-run mode.
 
 ## How I work | Cómo trabajo
 
