@@ -31,21 +31,17 @@ I build custom software and systems for businesses, and automate workflows with 
 
 ## SELECTED PROJECTS
 
-### Import Preflight — Local CRM CSV checks
+### [Import Preflight](https://github.com/tatitoxt/crm-import-preflight) — Local CRM CSV checks
 Browser-based tool for mapping columns, finding missing or malformed emails, and flagging duplicates before an import. It exports ready and review rows; the source file is not sent to a server. Includes 7 Node.js tests and a passing GitHub Actions workflow.
-[Source](https://github.com/tatitoxt/crm-import-preflight)
 
-### Orkelya Content Engine — Routing and QA prototype
+### [Orkelya Content Engine](https://github.com/tatitoxt/Personal-Page) — Routing and QA prototype
 Python/FastAPI prototype with deterministic format routing, nine computed signals, basic copy checks, and sample HTML/SVG generation. Its publishing output is simulated: no social integrations, job queue, vector database, or analytics feedback loop is connected. 11 tests passed locally with sample environment variables.
-[Source and current scope](https://github.com/tatitoxt/Personal-Page)
 
-### FastVault — Local encrypted secrets CLI
+### [FastVault](https://github.com/tatitoxt/fastvault) — Local encrypted secrets CLI
 Rust tool for storing local secrets and passing them to processes. In development; 5 workspace tests pass. It has not received an independent security audit.
-[Source](https://github.com/tatitoxt/fastvault)
 
-### DockNuke — Docker resource cleanup
+### [DockNuke](https://github.com/tatitoxt/docknuke) — Docker resource cleanup
 Go CLI for reviewing and cleaning Docker resources, with a preview before applying changes. `go test ./...` passed during this review.
-[Source](https://github.com/tatitoxt/docknuke)
 
 ## EDUCATION
 - Bartolomé Mitre Day School — High School Diploma, Buenos Aires, Argentina.

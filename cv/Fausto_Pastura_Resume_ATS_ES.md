@@ -31,21 +31,17 @@ Desarrollo sistemas y software a medida para empresas y automatizaciones con o s
 
 ## PROYECTOS DESTACADOS
 
-### Import Preflight — Validación local de CSV para CRM
+### [Import Preflight](https://github.com/tatitoxt/crm-import-preflight) — Validación local de CSV para CRM
 Herramienta en navegador para mapear columnas, detectar emails faltantes o inválidos y señalar duplicados antes de una importación. Exporta filas listas y filas para revisar; el archivo no se envía a un servidor. Incluye 7 pruebas de Node.js y un workflow de GitHub Actions aprobado.
-[Código](https://github.com/tatitoxt/crm-import-preflight)
 
-### Orkelya Content Engine — Prototipo de ruteo y QA de contenido
+### [Orkelya Content Engine](https://github.com/tatitoxt/Personal-Page) — Prototipo de ruteo y QA de contenido
 Prototipo en Python/FastAPI con ruteo determinístico, nueve señales calculadas, validaciones básicas de copy y generación de muestras HTML/SVG. La salida de publicación es simulada: no hay conexión a redes, cola de trabajos, base vectorial ni ciclo de analítica. 11 pruebas pasaron localmente con variables de entorno de ejemplo.
-[Código y alcance actual](https://github.com/tatitoxt/Personal-Page)
 
-### FastVault — CLI local de secretos cifrados
+### [FastVault](https://github.com/tatitoxt/fastvault) — CLI local de secretos cifrados
 Herramienta en Rust para guardar secretos localmente y entregarlos a procesos. En desarrollo; 5 pruebas del workspace pasan. No cuenta con auditoría de seguridad independiente.
-[Código](https://github.com/tatitoxt/fastvault)
 
-### DockNuke — Limpieza de recursos Docker
+### [DockNuke](https://github.com/tatitoxt/docknuke) — Limpieza de recursos Docker
 CLI en Go para revisar y limpiar recursos de Docker con una vista previa antes de aplicar cambios. `go test ./...` pasó durante esta revisión.
-[Código](https://github.com/tatitoxt/docknuke)
 
 ## EDUCACIÓN
 - Colegio Bartolomé Mitre — Título secundario, Buenos Aires, Argentina.
