@@ -176,108 +176,68 @@ document.addEventListener('DOMContentLoaded', () => {
     const isSpanish = body.classList.contains('lang-es');
 
     const rawMarkdownEN = `# FAUSTO PASTURA
-**Salesforce Consultant | Custom Business Software & Automation**
+**Custom Business Software & Automation | Salesforce & CRM**
 Buenos Aires, Argentina | fausto@caldentech.llc
-[LinkedIn](https://www.linkedin.com/in/fausto-pastura-582828369/) | [Website](https://www.orkelya.xyz) | [GitHub](https://github.com/tatitoxt)
+LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Website: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
+
+---
 
 ## PROFESSIONAL SUMMARY
-I build custom software and systems for businesses, and automate workflows with or without AI. My work spans CRM processes, integrations, and operations: I map the workflow, implement a solution, and document how to maintain it. Hands-on experience with Salesforce, APIs, workflow automation, and web applications.
+Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator focused on custom software and systems for businesses, plus workflow automation with or without AI. Over 3 years of hands-on work across CRM, integrations, web platforms, developer tools, and 19+ n8n workflows. I work from process discovery through implementation, testing, and documentation.
 
-## CORE SKILLS
-- **CRM:** Salesforce, Sales Cloud, Service Cloud, Apex, LWC, Flows, SOQL, Attio.
-- **Integration and automation:** REST APIs, n8n, Docker, webhooks, and rule-based or AI-assisted workflows.
-- **Development:** Python, FastAPI, JavaScript, TypeScript, Go, Rust, HTML, CSS, and SQL.
-- **Quality and tools:** Git, GitHub Actions, automated testing, technical documentation.
+---
 
-## EXPERIENCE
+## TECHNICAL SKILLS & COMPETENCIES
+- **Salesforce / CRM:** Salesforce Administration & Development (2023 - Present), Sales Cloud, Service Cloud, Apex Triggers & Controllers, Lightning Web Components (LWC), Flow Automation, REST/SOAP Integration APIs.
+- **AI, Agent & Developer Tooling:** AgentFlow, TermaAI, FastVault (Rust), n8n Workflow Architecture, OpenAI/Claude LLM APIs, Autonomous AI Agents, RAG Pipelines, LangChain, Redis.
+- **Full-Stack & Cloud Frameworks:** Next.js 16/15, React 19, FastAPI, Node.js, Express, Tailwind CSS, Supabase, PostgreSQL RLS, Docker, Vercel, Render.
+- **Programming Languages:** Python, TypeScript, JavaScript, Apex (Salesforce), SOQL, SOSL, SQL, C, C++, Rust, Go, HTML5, CSS3/SASS, Shell / Bash.
 
-### Salesforce and CRM Consultant — Independent Consulting
+---
+
+## PROFESSIONAL EXPERIENCE
+
+### Salesforce Consultant & CRM Developer — Enterprise CRM Consulting
 *January 2023 – Present | Remote*
-- Implement CRM solutions with Apex, LWC, Flows, and SOQL for sales and service processes.
-- Work on integrations and data migrations, including field mapping, validation, and record review.
+- Engineered end-to-end Salesforce solutions across Sales Cloud and Service Cloud with custom Apex code, LWC, and Flows, with field mapping, validation, and exception review.
 
-### Orkelya — Custom Software and Automation
+### Orkelya — Founding Forward Deployed AI Engineer
 *June 2025 – Present | Remote*
-- Design and build custom business software and integrations.
-- Implement workflows with explicit rules or AI depending on the problem, with human review where judgment is required.
+- Architected and deployed Orkelya.xyz, an enterprise multi-language AI Agent & Automation platform utilizing Next.js 16, React 19, TypeScript, and FastAPI hosted on Vercel and Render .
 
-### Automation Consultant
+### Agency Solutions & Automation Consulting — Lead Automation Architect
 *March 2024 – Present | Remote*
-- Design n8n and API workflows that connect tools and reduce manual work.
-- Document each automation's steps, inputs, expected errors, and limits.
+- Engineered 19+ production-ready end-to-end agency automation workflows using n8n and self-hosted Docker containers, covering onboarding, handoffs, reporting, triage, and invoicing.
 
-## SELECTED PROJECTS
+---
 
-### [Import Preflight](https://github.com/tatitoxt/crm-import-preflight) — Local CRM CSV checks
-Browser-based tool for mapping columns, finding missing or malformed emails, and flagging duplicates before an import. It exports ready and review rows; the source file is not sent to a server. Includes 7 Node.js tests and a passing GitHub Actions workflow.
-
-### [Orkelya Content Engine](https://github.com/tatitoxt/Personal-Page) — Routing and QA prototype
-Python/FastAPI prototype with deterministic format routing, nine computed signals, basic copy checks, and sample HTML/SVG generation. Its publishing output is simulated: no social integrations, job queue, vector database, or analytics feedback loop is connected. 11 tests passed locally with sample environment variables.
-
-### [FastVault](https://github.com/tatitoxt/fastvault) — Local encrypted secrets CLI
-Rust tool for storing local secrets and passing them to processes. In development; 5 workspace tests pass. It has not received an independent security audit.
-
-### [DockNuke](https://github.com/tatitoxt/docknuke) — Docker resource cleanup
-Go CLI for reviewing and cleaning Docker resources, with a preview before applying changes. \`go test ./...\` passed during this review.
-
-## EDUCATION
-- Bartolomé Mitre Day School — High School Diploma, Buenos Aires, Argentina.
-
-## LANGUAGES
-- Spanish: Native.
-- English: Upper-intermediate (B2+).`;
+## FEATURED OPEN-SOURCE & SYSTEMS PROJECTS
+- **Import Preflight (tatitoxt/crm-import-preflight):** Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. Includes 7 automated tests; no CRM API or server upload.
+- **AgentFlow:** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
+- **TermaAI:** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
+- **FastVault (tatitoxt/fastvault):** Rust CLI for encrypted local secrets. In development; cargo test --workspace passes (5 tests); no independent security audit.
+- **Gatekeeper-Proxy:** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
+- **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
     const rawMarkdownES = `# FAUSTO PASTURA
-**Consultor Salesforce | Sistemas a medida y automatización empresarial**
+**Sistemas a medida y automatización empresarial | Salesforce & CRM**
 Buenos Aires, Argentina | fausto@caldentech.llc
-[LinkedIn](https://www.linkedin.com/in/fausto-pastura-582828369/) | [Sitio web](https://www.orkelya.xyz) | [GitHub](https://github.com/tatitoxt)
+LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
+
+---
 
 ## RESUMEN PROFESIONAL
-Desarrollo sistemas y software a medida para empresas y automatizaciones con o sin IA. Trabajo con procesos de CRM, integraciones y operaciones: relevo el flujo, diseño una solución, la implemento y documento cómo mantenerla. Experiencia práctica con Salesforce, APIs, automatización de procesos y aplicaciones web.
+Consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Más de 3 años de trabajo práctico en CRM, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n.
 
-## COMPETENCIAS
-- **CRM:** Salesforce, Sales Cloud, Service Cloud, Apex, LWC, Flows, SOQL, Attio.
-- **Integración y automatización:** APIs REST, n8n, Docker, webhooks y automatización basada en reglas o IA.
-- **Desarrollo:** Python, FastAPI, JavaScript, TypeScript, Go, Rust, HTML, CSS y SQL.
-- **Calidad y herramientas:** Git, GitHub Actions, pruebas automatizadas, documentación técnica.
+---
 
-## EXPERIENCIA
-
-### Consultor Salesforce y CRM — Consultoría independiente
-*Enero 2023 – Presente | Remoto*
-- Implemento soluciones de CRM con Apex, LWC, Flows y SOQL para adaptar procesos comerciales y de servicio.
-- Trabajo en integraciones y migraciones de datos, incluyendo mapeo de campos, validación y revisión de registros.
-
-### Orkelya — Sistemas a medida y automatización
-*Junio 2025 – Presente | Remoto*
-- Diseño y desarrollo software a medida e integraciones para procesos de negocio.
-- Implemento automatizaciones con reglas explícitas o IA según el problema, con revisión humana cuando la tarea requiere criterio.
-
-### Consultor de automatización
-*Marzo 2024 – Presente | Remoto*
-- Diseño flujos con n8n y APIs para conectar herramientas y reducir trabajo manual.
-- Documento los pasos, entradas, errores esperados y límites de cada automatización.
-
-## PROYECTOS DESTACADOS
-
-### [Import Preflight](https://github.com/tatitoxt/crm-import-preflight) — Validación local de CSV para CRM
-Herramienta en navegador para mapear columnas, detectar emails faltantes o inválidos y señalar duplicados antes de una importación. Exporta filas listas y filas para revisar; el archivo no se envía a un servidor. Incluye 7 pruebas de Node.js y un workflow de GitHub Actions aprobado.
-
-### [Orkelya Content Engine](https://github.com/tatitoxt/Personal-Page) — Prototipo de ruteo y QA de contenido
-Prototipo en Python/FastAPI con ruteo determinístico, nueve señales calculadas, validaciones básicas de copy y generación de muestras HTML/SVG. La salida de publicación es simulada: no hay conexión a redes, cola de trabajos, base vectorial ni ciclo de analítica. 11 pruebas pasaron localmente con variables de entorno de ejemplo.
-
-### [FastVault](https://github.com/tatitoxt/fastvault) — CLI local de secretos cifrados
-Herramienta en Rust para guardar secretos localmente y entregarlos a procesos. En desarrollo; 5 pruebas del workspace pasan. No cuenta con auditoría de seguridad independiente.
-
-### [DockNuke](https://github.com/tatitoxt/docknuke) — Limpieza de recursos Docker
-CLI en Go para revisar y limpiar recursos de Docker con una vista previa antes de aplicar cambios. \`go test ./...\` pasó durante esta revisión.
-
-## EDUCACIÓN
-- Colegio Bartolomé Mitre — Título secundario, Buenos Aires, Argentina.
-
-## IDIOMAS
-- Español: nativo.
-- Inglés: intermedio alto (B2+).`;
+## PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS
+- **Import Preflight (tatitoxt/crm-import-preflight):** Preflight de CSV en el navegador para importaciones a CRM. Mapea campos, valida presencia y formato de email, marca duplicados y exporta filas listas y para revisar. Incluye 7 pruebas automatizadas; no usa API de CRM ni sube el archivo.
+- **AgentFlow:** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
+- **TermaAI:** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
+- **FastVault (tatitoxt/fastvault):** CLI en Rust para secretos cifrados localmente. En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
+- **Gatekeeper-Proxy:** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
+- **NeuraDash:** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
     const textToCopy = isSpanish ? rawMarkdownES : rawMarkdownEN;
 
@@ -303,12 +263,12 @@ CLI en Go para revisar y limpiar recursos de Docker con una vista previa antes d
   const recIndicator = document.getElementById('recIndicator');
   if (recIndicator) {
     let secondsElapsed = 0;
-
+    
     function formatTime(totalSeconds) {
       const hrs = Math.floor(totalSeconds / 3600);
       const mins = Math.floor((totalSeconds % 3600) / 60);
       const secs = totalSeconds % 60;
-
+      
       const pad = (num) => String(num).padStart(2, '0');
       return `● REC ${pad(hrs)}:${pad(mins)}:${pad(secs)}`;
     }
