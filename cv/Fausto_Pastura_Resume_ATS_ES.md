@@ -57,44 +57,46 @@ Flujos Avanzados en Git (Rebase Interactivo, Scripting de Commits, Filter-Repo),
 
 ## PROYECTOS DESTACADOS Y SISTEMAS OPEN-SOURCE
 
-### **1. AgentFlow — Framework de IA y Agentes**
+### **1. Import Preflight — Validación local de CSV para CRM**
+Herramienta web para mapear campos de contactos, detectar emails ausentes o mal formados, marcar direcciones duplicadas y exportar filas listas y para revisar. El CSV permanece en el navegador y la app no se conecta a una API de CRM. Incluye 7 pruebas automatizadas (módulos ES de JavaScript, test runner de Node y GitHub Actions).
+
+### **2. AgentFlow — Framework de IA y Agentes**
 Framework ligero en Python diseñado para orquestar agentes de IA multimodales con memoria vectorial persistente, tuberías de ejecución de herramientas y bucles de razonamiento autónomo.  
 - **Impacto & Stack:** Python, LangChain, APIs de OpenAI/Claude, Redis, Vector Embeddings.
 
-### **2. TermaAI — Asistente Inteligente de Terminal**
+### **3. TermaAI — Asistente Inteligente de Terminal**
 Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts complejos en Bash y Shell de forma segura directamente en la terminal con comprobaciones previas.  
 - **Impacto & Stack:** Python, Rich CLI, API de OpenAI, Sandbox de Seguridad Shell.
 
-### **3. FastVault — Gestor Encriptado de Secretos en CLI**
-Gestor de secretos ultrarrápido para terminal escrito en Rust con cifrado AES-256-GCM, derivación de clave maestra con Argon2id y seguridad de memoria de cero asignación residual.  
-- **Impacto & Stack:** Rust, Argon2id, AES-256-GCM, Cargo.
+### **4. FastVault — Gestor Encriptado de Secretos en CLI**
+CLI en Rust para guardar secretos cifrados localmente y entregarlos a procesos sin escribirlos en un archivo .env. Usa Argon2id para derivar claves y AES-256-GCM para cifrar.
+- **Estado:** En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
 
-### **4. Gatekeeper-Proxy — Reverse Proxy Dinámico, WAF & Rate Limiter**
+### **5. Gatekeeper-Proxy — Reverse Proxy Dinámico, WAF & Rate Limiter**
 Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.  
 - **Impacto & Stack:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
 
-### **5. DockNuke — Utilidad de Limpieza Inteligente y Optimización de Docker en Go**
+### **6. DockNuke — Utilidad de Limpieza Inteligente y Optimización de Docker en Go**
 Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run, filtrado de retención y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker.  
 - **Impacto & Stack:** Go (1.22+), SDK Engine Docker, Cobra CLI, Concurrencia, Motor Dry-Run.
 
-### **5. NeuraDash — Dashboard Analítico en Tiempo Real**
+### **7. NeuraDash — Dashboard Analítico en Tiempo Real**
 Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.  
 - **Impacto & Stack:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
 
-### **5. Suite Operativa de Automatización para Agencias (n8n & Docker)**
+### **8. Suite Operativa de Automatización para Agencias (n8n & Docker)**
 Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación.  
 - **Métricas de Impacto:** Reducción del 70%+ en costos operativos de agencia, ahorro de 20+ horas semanales de reportes manuales y 99.9% de disponibilidad operativa para socios internacionales en Londres y Johannesburgo.
 
-### **6. Plataforma B2B de Agentes de IA & Custom Service (`orkelya.xyz`)**
+### **9. Plataforma B2B de Agentes de IA & Custom Service (`orkelya.xyz`)**
 Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.  
 - **Métricas & Stack:** Sitio Web: `orkelya.xyz`. Velocidad de carga sub-segundo (<800ms), arquitectura Supabase PostgreSQL con políticas de RLS, protección Turnstile y +35% velocidad de respuesta en leads B2B.
 
-### **7. Pasarela de Integración Empresarial para Salesforce**
+### **10. Pasarela de Integración Empresarial para Salesforce**
 Desarrollo de un framework personalizado de integración en Apex y Lightning Web Components (LWC) que conecta Salesforce CRM con webhooks de pago y plataformas de facturación automatizada.  
 - **Métricas de Impacto:** Sincronización automatizada del 100% de registros de facturación, disminución del 90%+ en errores de carga manual en CRM y eliminación de pasos de conciliación manual.
 
 ---
-
 ## EDUCACIÓN Y APRENDIZAJE CONTINUO
 
 - **Desarrollador Autodidacta Continuo** — *Desarrollo de software en producción, análisis de código open-source, arquitectura de historial Git y arquitectura de sistemas reales* (2022 - Presente)

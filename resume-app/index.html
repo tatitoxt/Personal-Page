@@ -349,12 +349,21 @@
           <div class="post-card">
             <div class="post-header">
               <span class="post-title">[SYS_PROJECTS] // FEATURED SYSTEMS & OPEN-SOURCE</span>
-              <span class="post-date">COUNT: 10</span>
+              <span class="post-date">COUNT: 11</span>
             </div>
             <div class="post-body">
               <ul class="project-showcase-list">
                 <li>
-                  <strong class="proj-title">01 // AgentFlow — AI & Multimodal Agent Framework</strong>
+                  <strong class="proj-title">01 // Import Preflight — Local-First CRM CSV Checks (<a href="https://github.com/tatitoxt/crm-import-preflight" target="_blank" rel="noreferrer">source</a>)</strong>
+                  <p class="lang-content-en">Browser-based tool for mapping contact fields, checking missing or malformed email values, flagging duplicates, and exporting ready and review rows. CSV contents stay in the browser; no CRM API or server upload.</p>
+                  <p class="lang-content-es">Herramienta en el navegador para mapear campos de contactos, detectar emails ausentes o mal formados, marcar duplicados y exportar filas listas y para revisar. El CSV permanece en el navegador; no usa una API de CRM ni sube el archivo.</p>
+                  <div class="project-impact-box">
+                    <span class="impact-badge">[ TECH & QUALITY ]</span>
+                    <span>JavaScript ES modules, Node test runner, 7 automated tests, GitHub Actions.</span>
+                  </div>
+                </li>
+                <li>
+                  <strong class="proj-title">02 // AgentFlow — AI & Multimodal Agent Framework</strong>
                   <p class="lang-content-en">Lightweight Python framework designed to orchestrate multimodal AI agents with persistent vector memory, tool-calling execution pipelines, and autonomous reasoning loops.</p>
                   <p class="lang-content-es">Framework ligero en Python diseñado para orquestar agentes de IA multimodales con memoria vectorial persistente, tuberías de ejecución de herramientas y bucles de razonamiento autónomo.</p>
                   <div class="project-impact-box">
@@ -364,7 +373,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">02 // TermaAI — Terminal AI CLI Assistant</strong>
+                  <strong class="proj-title">03 // TermaAI — Terminal AI CLI Assistant</strong>
                   <p class="lang-content-en">Interactive command-line AI assistant that generates, validates, and safely executes complex Bash & Shell scripts directly in the terminal with real-time dry-run security checks.</p>
                   <p class="lang-content-es">Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts complejos en Bash y Shell de forma segura directamente en la terminal con comprobaciones previas.</p>
                   <div class="project-impact-box">
@@ -374,9 +383,9 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">03 // FastVault — Local-First Secrets Manager in Rust (<a href="https://github.com/tatitoxt/fastvault" target="_blank">github.com/tatitoxt/fastvault</a>)</strong>
-                  <p class="lang-content-en">High-performance, offline-first secrets manager in Rust featuring AES-256-GCM AEAD encryption, Argon2id key derivation, a versioned DEK/KEK key-wrapping hierarchy, a local UNIX socket daemon with TTL session caching, process environment injection (`fastvault run`), tamper-evident HMAC-SHA256 audit log, and an interactive Ratatui TUI dashboard. Sensitive key material is zeroized from application-owned buffers when no longer needed.</p>
-                  <p class="lang-content-es">Gestor de secretos ultrarrápido y offline-first en Rust con cifrado AES-256-GCM AEAD, derivación Argon2id, jerarquía de envoltorio de claves DEK/KEK versiónada, daemon IPC por UNIX domain sockets con caché TTL, inyección directa de secretos en entorno de procesos (`fastvault run`), registro de auditoría HMAC-SHA256 inmutable y dashboard TUI en Ratatui. El material sensible de claves se zeroiza en memoria propia de la aplicación cuando no se necesita.</p>
+                  <strong class="proj-title">04 // FastVault — Local-First Secrets Manager in Rust (<a href="https://github.com/tatitoxt/fastvault" target="_blank">github.com/tatitoxt/fastvault</a>)</strong>
+                  <p class="lang-content-en">Local-first secrets manager in Rust using AES-256-GCM encryption and Argon2id key derivation, with a CLI, local daemon, and terminal interface. In development; 5 workspace tests pass; no independent security audit.</p>
+                  <p class="lang-content-es">Gestor local de secretos en Rust con cifrado AES-256-GCM y derivación Argon2id, CLI, daemon local e interfaz de terminal. En desarrollo; pasan 5 pruebas del workspace; sin auditoría de seguridad independiente.</p>
                   <div class="project-impact-box">
                     <span class="impact-badge">[ TECH STACK & BENCHMARKS ]</span>
                     <span class="lang-content-en">Rust, Argon2id (m=64MB, t=3, p=4), AES-256-GCM, Tokio Async IPC, Ratatui TUI, Zeroize. Measured benchmarks: ~45ms Argon2id derivation, ~1.8ms 1,000-secret payload encryption, ~0.3ms cached agent IPC access.</span>
@@ -385,7 +394,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">04 // Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter</strong>
+                  <strong class="proj-title">05 // Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter</strong>
                   <p class="lang-content-en">Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.</p>
                   <p class="lang-content-es">Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.</p>
                   <div class="project-impact-box">
@@ -395,7 +404,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">05 // NeuraDash — Real-Time Analytics Dashboard</strong>
+                  <strong class="proj-title">06 // NeuraDash — Real-Time Analytics Dashboard</strong>
                   <p class="lang-content-en">Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.</p>
                   <p class="lang-content-es">Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.</p>
                   <div class="project-impact-box">
@@ -405,7 +414,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">06 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
+                  <strong class="proj-title">07 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
                   <p class="lang-content-en">Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing connected directly with Google Workspace, Gmail, and Jira.</p>
                   <p class="lang-content-es">Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación conectada a Google Workspace, Gmail y Jira.</p>
                   <div class="project-impact-box">
@@ -416,7 +425,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">07 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
+                  <strong class="proj-title">08 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
                   <p class="lang-content-en">Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and full responsive design.</p>
                   <p class="lang-content-es">Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.</p>
                   <div class="project-impact-box">
@@ -427,7 +436,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">08 // Salesforce Operations & Workflow Orchestrator Pro</strong>
+                  <strong class="proj-title">09 // Salesforce Operations & Workflow Orchestrator Pro</strong>
                   <p class="lang-content-en">Enterprise-grade, high-performance platform architecture engineered in Salesforce DX showcasing Apex Enterprise Patterns (Selector/Domain/Service layers, QueueableChains, Platform Event Async Logger) and a reactive LWC suite (Custom Datatable cell renderers, LMS PubSub, real-time Platform Event stream, and Jest unit tests).</p>
                   <p class="lang-content-es">Arquitectura de plataforma empresarial de alto rendimiento implementada en Salesforce DX que demuestra Patrones Enterprise en Apex (capas Selector/Domain/Service, encadenamiento Queueable, Logger asíncrono con Platform Events) y una suite reactiva en LWC (Datatable personalizada con renderizadores de celdas, PubSub con LMS, flujo de eventos en tiempo real y pruebas unitarias en Jest).</p>
                   <div class="project-impact-box">
@@ -437,7 +446,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">09 // DockNuke — Smart Docker Cleanup & Optimization Utility in Go</strong>
+                  <strong class="proj-title">10 // DockNuke — Smart Docker Cleanup & Optimization Utility in Go</strong>
                   <p class="lang-content-en">High-performance command-line utility written in Go for intelligent scanning, dry-run safety previewing, and disk space optimization across Docker containers, images, volumes, and build caches.</p>
                   <p class="lang-content-es">Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker.</p>
                   <div class="project-impact-box">
@@ -447,7 +456,7 @@
                 </li>
 
                 <li>
-                  <strong class="proj-title">10 // ShipPulse — Deployment Control Plane & Microservice Observability Platform (<a href="https://github.com/tatitoxt/shippulse" target="_blank">github.com/tatitoxt/shippulse</a>)</strong>
+                  <strong class="proj-title">11 // ShipPulse — Deployment Control Plane & Microservice Observability Platform (<a href="https://github.com/tatitoxt/shippulse" target="_blank">github.com/tatitoxt/shippulse</a>)</strong>
                   <p class="lang-content-en">Developer-first deployment control plane, real-time microservice observability platform, incident detection engine, and infrastructure operations suite. Features an event-driven Go control plane, Next.js 16 reactive dashboard, OpenTelemetry OTLP ingest into ClickHouse, NATS JetStream event bus, distributed active health probes, rolling 30-day SLO error budget tracking, HMAC-verified GitHub webhooks, multi-tenant RBAC, and an outbound TLS agent daemon executing container deployment operations.</p>
                   <p class="lang-content-es">Plataforma de control de despliegues para desarrolladores, observabilidad de microservicios en tiempo real, motor de detección de incidentes y suite de operaciones de infraestructura. Incluye plano de control en Go orientado a eventos, dashboard reactivo en Next.js 16, ingesta OpenTelemetry OTLP hacia ClickHouse, bus de eventos NATS JetStream, sondas activas de salud distribuidas, seguimiento de presupuestos de error SLO a 30 días, webhooks de GitHub verificados con HMAC, RBAC multitenant y daemon agente TLS saliente para operaciones en contenedores.</p>
                   <div class="project-impact-box">
@@ -563,17 +572,19 @@
         <section class="doc-section">
           <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE & SYSTEMS PROJECTS</h2>
           <ul class="bullet-list lang-content-en">
+            <li><strong>Import Preflight (<a href="https://github.com/tatitoxt/crm-import-preflight" target="_blank" rel="noreferrer">source</a>):</strong> Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. The file is not uploaded. Includes 7 automated tests.</li>
             <li><strong>AgentFlow:</strong> Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).</li>
             <li><strong>TermaAI:</strong> Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault (<a href="https://github.com/tatitoxt/fastvault" target="_blank">tatitoxt/fastvault</a>):</strong> Production-grade local-first secrets manager in Rust with AES-256-GCM AEAD, Argon2id KDF, DEK/KEK key wrapping, Tokio IPC daemon, process environment injection (`fastvault run`), and Ratatui TUI.</li>
+            <li><strong>FastVault (<a href="https://github.com/tatitoxt/fastvault" target="_blank">tatitoxt/fastvault</a>):</strong> Rust CLI for encrypted local secrets. In development; 5 workspace tests pass; no independent security audit.</li>
             <li><strong>Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):</strong> Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).</li>
             <li><strong>DockNuke:</strong> High-performance Docker cleanup & disk optimization utility in Go.</li>
             <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
           </ul>
           <ul class="bullet-list lang-content-es">
+            <li><strong>Import Preflight (<a href="https://github.com/tatitoxt/crm-import-preflight" target="_blank" rel="noreferrer">código</a>):</strong> Preflight de CSV en el navegador para importaciones a CRM. Mapea campos de contactos, valida presencia y formato de email, marca direcciones duplicadas y exporta filas listas y para revisar. El archivo no se sube. Incluye 7 pruebas automatizadas.</li>
             <li><strong>AgentFlow (tatitoxt/agentflow):</strong> Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).</li>
             <li><strong>TermaAI (tatitoxt/terma-ai):</strong> Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault (<a href="https://github.com/tatitoxt/fastvault" target="_blank">tatitoxt/fastvault</a>):</strong> Gestor local-first de secretos de nivel producción en Rust con AES-256-GCM AEAD, Argon2id KDF, envoltura de claves DEK/KEK, daemon IPC en Tokio, inyección de entorno (`fastvault run`) y TUI en Ratatui.</li>
+            <li><strong>FastVault (<a href="https://github.com/tatitoxt/fastvault" target="_blank">tatitoxt/fastvault</a>):</strong> CLI en Rust para secretos cifrados localmente. En desarrollo; pasan 5 pruebas del workspace; sin auditoría de seguridad independiente.</li>
             <li><strong>Gatekeeper-Proxy (tatitoxt/gatekeeper-proxy):</strong> Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).</li>
             <li><strong>DockNuke:</strong> Utilidad en Go para limpieza inteligente y optimización de entornos Docker.</li>
             <li><strong>NeuraDash (tatitoxt/neuradash):</strong> Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).</li>

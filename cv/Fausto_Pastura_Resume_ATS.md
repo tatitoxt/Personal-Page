@@ -57,44 +57,46 @@ Git Advanced Workflows (Interactive Rebase, Custom Commit Scripting, Filter-Repo
 
 ## FEATURED PROJECTS & OPEN-SOURCE SYSTEMS
 
-### **1. AgentFlow — AI & Agent Framework**
+### **1. Import Preflight — Local-First CRM CSV Checks**
+Browser-based tool for mapping contact fields, checking missing or malformed email values, flagging duplicate addresses, and exporting ready and review rows. CSV contents stay in the browser; the app does not connect to a CRM API. Includes 7 automated tests (JavaScript ES modules, Node test runner, GitHub Actions).
+
+### **2. AgentFlow — AI & Agent Framework**
 Lightweight Python framework designed to orchestrate multimodal AI agents with persistent vector memory, tool-calling pipelines, and autonomous execution loops.  
 - **Impact & Tech:** Python, LangChain, OpenAI/Claude APIs, Redis, Vector Embeddings.
 
-### **2. TermaAI — Terminal AI Assistant**
+### **3. TermaAI — Terminal AI Assistant**
 Interactive command-line AI assistant that generates, validates, and safely executes complex Bash & Shell scripts directly in the terminal with real-time dry-run checks.  
 - **Impact & Tech:** Python, Rich CLI, OpenAI API, Shell Security Sandbox.
 
-### **3. FastVault — Ultra-Fast Encrypted CLI Secrets Manager**
-High-performance command-line secrets manager written in Rust with AES-256-GCM encryption, master key derivation (Argon2id), and zero-knowledge memory safety.  
-- **Impact & Tech:** Rust, Argon2id, AES-256-GCM, Cargo, Zero-Memory Allocation.
+### **4. FastVault — Ultra-Fast Encrypted CLI Secrets Manager**
+Rust CLI for storing encrypted secrets locally and passing them to processes without writing a .env file. It uses Argon2id for key derivation and AES-256-GCM for encryption.
+- **Status:** In development; cargo test --workspace passes (5 tests); no independent security audit.
 
-### **4. Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter**
+### **5. Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter**
 Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.  
 - **Impact & Tech:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
 
-### **5. DockNuke — Smart Docker Cleanup & Disk Optimization Utility**
+### **6. DockNuke — Smart Docker Cleanup & Disk Optimization Utility**
 High-performance command-line utility written in Go for intelligent scanning, dry-run safety previewing, retention filtering, and disk space optimization across Docker containers, images, volumes, and build caches.  
 - **Impact & Tech:** Go (1.22+), Docker Engine SDK, Cobra CLI, Concurrency, Dry-Run Engine.
 
-### **5. NeuraDash — Real-Time Analytics Dashboard**
+### **7. NeuraDash — Real-Time Analytics Dashboard**
 Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.  
 - **Impact & Tech:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
 
-### **5. Enterprise Agency Operations Suite (n8n & Docker)**
+### **8. Enterprise Agency Operations Suite (n8n & Docker)**
 Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing.  
 - **Impact Metrics:** Cut agency operational overhead by 70%+, saved 20+ hours of weekly manual reporting, and maintained 99.9% uptime for international partners across London and Johannesburg.
 
-### **6. Enterprise B2B AI Agents & Custom Service Platform (`orkelya.xyz`)**
+### **9. Enterprise B2B AI Agents & Custom Service Platform (`orkelya.xyz`)**
 Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and responsive design.  
 - **Metrics & Stack:** Website: `orkelya.xyz`. Sub-second performance (<800ms), Supabase RLS security, Turnstile anti-bot protection, and +35% faster B2B lead response.
 
-### **7. Salesforce Enterprise Integration Gateway**
+### **10. Salesforce Enterprise Integration Gateway**
 Developed a custom Apex and Lightning Web Component (LWC) integration framework connecting Salesforce CRM with payment webhooks and automated billing platforms.  
 - **Impact Metrics:** Automated 100% of billing record synchronization, reduced manual CRM data entry errors by over 90%, and eliminated manual reconciliation steps.
 
 ---
-
 ## EDUCATION & CONTINUOUS LEARNING
 
 - **Self-Taught Continuous Learner** — *Hands-on software development, open-source code analysis, Git history architecture, and real-world system architecture* (2022 - Present)
