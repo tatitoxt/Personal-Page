@@ -48,7 +48,7 @@ class FormatRoutingDecision(BaseModel):
 @router.post("/evaluate", response_model=FormatRoutingDecision)
 def evaluate_and_route_format(idea: IdeaInput):
     """
-    Evaluates an idea across 11 dimensions and selects the optimal format(s)
+    Evaluates an idea using nine computed signals and selects suitable formats
     without default bias towards short video.
     """
     # Algorithmic scoring heuristic based on idea attributes

@@ -55,7 +55,7 @@ SECRET_PATTERNS = [
 
 class ContentFormatRouter:
     """
-    Evaluates ideas across 11 dimensions to determine optimal format(s)
+    Evaluates ideas using nine computed signals to determine suitable formats
     without default bias toward short video.
     """
     def route(self, topic: str, angle: str, has_ui_demo: bool = False, 
