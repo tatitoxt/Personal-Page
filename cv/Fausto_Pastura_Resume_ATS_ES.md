@@ -6,7 +6,7 @@ Buenos Aires, Argentina | fausto@caldentech.llc
 ---
 
 ## RESUMEN PROFESIONAL
-**Consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas** enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Más de 3 años de trabajo práctico en CRM empresarial, migraciones de datos, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n para operaciones de negocio. Trabajo desde el relevamiento del proceso hasta la implementación, las pruebas y la documentación para que los equipos puedan mantener sus sistemas.
+**Autodidacta, consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas** enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Aprendo construyendo y tengo más de 3 años de trabajo práctico en CRM empresarial, migraciones de datos, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n para operaciones de negocio. Trabajo desde el relevamiento del proceso hasta la implementación, las pruebas y la documentación para que los equipos puedan mantener sus sistemas.
 
 ---
 

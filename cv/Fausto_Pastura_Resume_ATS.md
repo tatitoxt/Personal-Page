@@ -6,7 +6,7 @@ Buenos Aires, Argentina | fausto@caldentech.llc
 ---
 
 ## PROFESSIONAL SUMMARY
-**Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator** focused on custom software and systems for businesses, plus workflow automation with or without AI. Over 3 years of hands-on work across enterprise CRM solutions, data migrations, integrations, web platforms, developer tools, and 19+ n8n workflows for business operations. I work from process discovery through implementation, testing, and documentation so teams can maintain the systems they use.
+**Self-taught Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator** focused on custom software and systems for businesses, plus workflow automation with or without AI. I learn by building and have over 3 years of hands-on work across enterprise CRM solutions, data migrations, integrations, web platforms, developer tools, and 19+ n8n workflows for business operations. I work from process discovery through implementation, testing, and documentation so teams can maintain the systems they use.
 
 ---
 

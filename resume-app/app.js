@@ -183,7 +183,7 @@ LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Website: https
 ---
 
 ## PROFESSIONAL SUMMARY
-Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator focused on custom software and systems for businesses, plus workflow automation with or without AI. Over 3 years of hands-on work across CRM, integrations, web platforms, developer tools, and 19+ n8n workflows. I work from process discovery through implementation, testing, and documentation.
+Self-taught Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator focused on custom software and systems for businesses, plus workflow automation with or without AI. I learn by building and have over 3 years of hands-on work across CRM, integrations, web platforms, developer tools, and 19+ n8n workflows. I work from process discovery through implementation, testing, and documentation.
 
 ---
 
@@ -212,10 +212,10 @@ Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrato
 ---
 
 ## FEATURED OPEN-SOURCE & SYSTEMS PROJECTS
-- **Import Preflight (tatitoxt/crm-import-preflight):** Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. Includes 7 automated tests; no CRM API or server upload.
+- **Import Preflight:** Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. Includes 7 automated tests; no CRM API or server upload.
 - **AgentFlow:** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
 - **TermaAI:** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
-- **FastVault (tatitoxt/fastvault):** Rust CLI for encrypted local secrets. In development; cargo test --workspace passes (5 tests); no independent security audit.
+- **FastVault:** Rust CLI for encrypted local secrets. In development; cargo test --workspace passes (5 tests); no independent security audit.
 - **Gatekeeper-Proxy:** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
 - **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
@@ -227,15 +227,15 @@ LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: htt
 ---
 
 ## RESUMEN PROFESIONAL
-Consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Más de 3 años de trabajo práctico en CRM, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n.
+Autodidacta, consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Aprendo construyendo y tengo más de 3 años de trabajo práctico en CRM, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n.
 
 ---
 
 ## PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS
-- **Import Preflight (tatitoxt/crm-import-preflight):** Preflight de CSV en el navegador para importaciones a CRM. Mapea campos, valida presencia y formato de email, marca duplicados y exporta filas listas y para revisar. Incluye 7 pruebas automatizadas; no usa API de CRM ni sube el archivo.
+- **Import Preflight:** Preflight de CSV en el navegador para importaciones a CRM. Mapea campos, valida presencia y formato de email, marca duplicados y exporta filas listas y para revisar. Incluye 7 pruebas automatizadas; no usa API de CRM ni sube el archivo.
 - **AgentFlow:** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
 - **TermaAI:** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
-- **FastVault (tatitoxt/fastvault):** CLI en Rust para secretos cifrados localmente. En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
+- **FastVault:** CLI en Rust para secretos cifrados localmente. En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
 - **Gatekeeper-Proxy:** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
 - **NeuraDash:** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
