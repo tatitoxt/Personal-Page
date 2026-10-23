@@ -176,14 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const isSpanish = body.classList.contains('lang-es');
 
     const rawMarkdownEN = `# FAUSTO PASTURA
-**Custom Business Software & Automation | Salesforce & CRM**
+**Software & Systems Builder | Salesforce & CRM Consultant | Forward Deployed Engineer (FDE) | Automation**
 Buenos Aires, Argentina | fausto@caldentech.llc
 LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Website: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
 ---
 
 ## PROFESSIONAL SUMMARY
-Self-taught Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Systems Integrator focused on custom software and systems for businesses, plus workflow automation with or without AI. I learn by building and have over 3 years of hands-on work across CRM, integrations, web platforms, developer tools, and 19+ n8n workflows. I work from process discovery through implementation, testing, and documentation.
+Self-taught software and systems builder, Salesforce & CRM consultant, and Forward Deployed Engineer (FDE). I build custom business software, integrations, and workflow automations with or without AI, from process discovery through implementation and handoff. My 3+ years of hands-on work include CRM, web platforms, developer tools, and 19+ n8n workflows.
 
 ---
 
@@ -220,14 +220,14 @@ Self-taught Salesforce Consultant, Forward Deployed AI Engineer (FDE), and Syste
 - **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
 
     const rawMarkdownES = `# FAUSTO PASTURA
-**Sistemas a medida y automatización empresarial | Salesforce & CRM**
+**Desarrollo de software y sistemas | Consultoría Salesforce y CRM | Forward Deployed Engineer (FDE) | Automatización**
 Buenos Aires, Argentina | fausto@caldentech.llc
 LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
 ---
 
 ## RESUMEN PROFESIONAL
-Autodidacta, consultor Salesforce, Ingeniero Forward Deployed de IA (FDE) e Integrador de Sistemas enfocado en desarrollar sistemas y software a medida para empresas, además de automatizaciones con o sin IA. Aprendo construyendo y tengo más de 3 años de trabajo práctico en CRM, integraciones, plataformas web, herramientas para desarrolladores y 19+ flujos n8n.
+Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesforce y CRM, e ingeniero Forward Deployed (FDE). Construyo software empresarial, integraciones y automatizaciones con o sin IA, desde el relevamiento hasta la implementación y transferencia. Mis más de 3 años de trabajo práctico incluyen CRM, plataformas web, herramientas para desarrolladores y más de 19 flujos n8n.
 
 ---
 
