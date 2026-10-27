@@ -202,7 +202,9 @@ Self-taught software and systems builder, Salesforce & CRM consultant, and Forwa
 
 Client engagements overlapped as part of independent consulting.
 
-- **Orkelya — Founder & Lead Engineer (March 2024 – Present):** Built a B2B software and automation platform with Next.js, React, FastAPI, and Supabase. Founder and engineering work continued in 2026.
+- **Orkelya — Founder & Lead Engineer (March 2024 – Present):**
+  - Built and shipped a B2B operations platform on Next.js 16, React 19, FastAPI and Supabase PostgreSQL, with self-hosted Docker infrastructure that cut partner operational overhead by 70% and removed 20+ hours of weekly manual reporting.
+  - Built AI customer-service and lead-qualification agents on the WhatsApp API, Redis and the OpenAI API that automate 80%+ of initial qualification and lifted commercial response speed by 35%.
 - **CRM implementations and migrations (2023 – 2025):** Reduced manual CRM data-entry errors by 90% and saved 15+ team hours per week.
 - **Automation and AI engagements (2024 – 2025):** Designed 19+ n8n workflows that cut partner operational overhead by 70%. WhatsApp lead-qualification agents automated 80% of initial qualification and improved response speed by 35%.
 - **B2B services company, 12-person team — United States (May 2024 – December 2025; concurrent client engagement):** Set up the Salesforce org from scratch, then designed and built a custom system for the client.
@@ -238,7 +240,9 @@ Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesfo
 
 Los proyectos con clientes se realizaron en paralelo dentro de la consultoría independiente.
 
-- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):** Construí una plataforma B2B de software y automatización con Next.js, React, FastAPI y Supabase. El trabajo de fundador y desarrollo continuó en 2026.
+- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):**
+  - Construí y puse en producción una plataforma B2B de operaciones con Next.js 16, React 19, FastAPI y Supabase PostgreSQL, con infraestructura Docker self-hosted que redujo el overhead operativo de partners en un 70% y eliminó más de 20 horas semanales de reportes manuales.
+  - Construí agentes de IA de atención al cliente y calificación de leads sobre la API de WhatsApp, Redis y la API de OpenAI, que automatizan más del 80% de la calificación inicial y aumentaron un 35% la velocidad de respuesta comercial.
 - **Implementaciones y migraciones de CRM (2023 – 2025):** Reduje los errores manuales de datos en CRM un 90% y ahorré más de 15 horas semanales al equipo.
 - **Proyectos de automatización e IA (2024 – 2025):** Diseñé más de 19 flujos n8n que redujeron un 70% la carga operativa de los partners. Agentes de calificación por WhatsApp automatizaron el 80% de la calificación inicial y mejoraron un 35% la velocidad de respuesta.
 - **Empresa de servicios B2B, equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025; engagement en paralelo):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa.
