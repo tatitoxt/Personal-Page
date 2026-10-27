@@ -197,17 +197,13 @@ Self-taught software and systems builder, Salesforce & CRM consultant, and Forwa
 
 ## PROFESSIONAL EXPERIENCE
 
-### Salesforce Consultant & CRM Developer — Enterprise CRM Consulting
-*January 2023 – Present | Remote*
-- Engineered end-to-end Salesforce solutions across Sales Cloud and Service Cloud with custom Apex code, LWC, and Flows, with field mapping, validation, and exception review.
+### Independent Consultant, CRM & Automation
+*January 2023 – Present | Buenos Aires, Argentina*
 
-### Orkelya — Founding Forward Deployed AI Engineer
-*June 2025 – Present | Remote*
-- Architected and deployed Orkelya.xyz, an enterprise multi-language AI Agent & Automation platform utilizing Next.js 16, React 19, TypeScript, and FastAPI hosted on Vercel and Render .
-
-### Agency Solutions & Automation Consulting — Lead Automation Architect
-*March 2024 – Present | Remote*
-- Engineered 19+ production-ready end-to-end agency automation workflows using n8n and self-hosted Docker containers, covering onboarding, handoffs, reporting, triage, and invoicing.
+- **Orkelya — Founder & Lead Engineer (March 2024 – Present):** Built a B2B software and automation platform with Next.js, React, FastAPI, and Supabase.
+- **Salesforce & Attio CRM engagements (2023 – Present):** Delivered Sales Cloud and Service Cloud implementations using Apex, Lightning Web Components, and Flows. Coordinated the preparation and quality validation of a 56,000-lead migration from Salesforce to Aestheticx CRM using cross-file lookups, normalization, deduplication, field correction, and sample/count validation before import.
+- **Automation and AI engagements (2024 – Present):** Designed 19+ n8n workflows for reporting, onboarding, handoffs, triage, and invoicing, plus WhatsApp-based lead qualification agents.
+- Additional client details available on request, subject to confidentiality.
 
 ---
 
@@ -227,7 +223,19 @@ LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: htt
 ---
 
 ## RESUMEN PROFESIONAL
-Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesforce y CRM, e ingeniero Forward Deployed (FDE). Construyo software empresarial, integraciones y automatizaciones con o sin IA, desde el relevamiento hasta la implementación y transferencia. Mis más de 3 años de trabajo práctico incluyen CRM, plataformas web, herramientas para desarrolladores y más de 19 flujos n8n.
+Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesforce y CRM, e ingeniero Forward Deployed (FDE). Construyo software empresarial, integraciones y automatizaciones con o sin IA, desde el relevamiento hasta la implementación y transferencia. Mi experiencia práctica incluye CRM, plataformas web, herramientas para desarrolladores y más de 19 flujos n8n.
+
+---
+
+## EXPERIENCIA PROFESIONAL
+
+### Consultor independiente de CRM y automatización
+*Enero 2023 – Presente | Buenos Aires, Argentina*
+
+- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):** Construí una plataforma B2B de software y automatización con Next.js, React, FastAPI y Supabase.
+- **Proyectos Salesforce y Attio CRM (2023 – presente):** Implementé soluciones para Sales Cloud y Service Cloud con Apex, Lightning Web Components y Flows. Coordiné la preparación y validación de calidad de una migración de 56.000 leads desde Salesforce a Aestheticx CRM, con búsquedas entre archivos, normalización, deduplicación, corrección de campos y validación de muestras y cantidades antes de la importación.
+- **Proyectos de automatización e IA (2024 – presente):** Diseñé más de 19 flujos n8n para reportes, onboarding, traspasos, triaje y facturación, además de agentes de calificación de leads por WhatsApp.
+- Puedo compartir más detalles de clientes a pedido, respetando la confidencialidad.
 
 ---
 
