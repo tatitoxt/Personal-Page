@@ -198,11 +198,11 @@ Self-taught software and systems builder, Salesforce & CRM consultant, and Forwa
 ## PROFESSIONAL EXPERIENCE
 
 ### Independent Consultant, CRM & Automation
-*January 2023 – Present | Buenos Aires, Argentina*
+*January 2023 – December 2025 | Buenos Aires, Argentina*
 
 Client engagements overlapped as part of independent consulting.
 
-- **Orkelya — Founder & Lead Engineer (March 2024 – Present):** Built a B2B software and automation platform with Next.js, React, FastAPI, and Supabase.
+- **Orkelya — Founder & Lead Engineer (March 2024 – Present):** Built a B2B software and automation platform with Next.js, React, FastAPI, and Supabase. Founder and engineering work at Orkelya continued in 2026.
 - **Automation engagements (2024 – Present):** Designed 19+ n8n workflows for reporting, onboarding, handoffs, triage, and invoicing, plus WhatsApp-based lead qualification agents.
 - **B2B services company, 12-person team — United States (May 2024 – December 2025; concurrent client engagement):** Set up the Salesforce org from scratch, then designed and built a custom system for the client.
 - **B2C company, 23-person team — United States (2023):** Set up and administered Salesforce, including reports, Apex-based workflows, and page layouts. Later coordinated the migration of 56,000 records from Salesforce to another CRM, including data preparation and quality validation.
@@ -233,11 +233,11 @@ Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesfo
 ## EXPERIENCIA PROFESIONAL
 
 ### Consultor independiente de CRM y automatización
-*Enero 2023 – Presente | Buenos Aires, Argentina*
+*Enero 2023 – Diciembre 2025 | Buenos Aires, Argentina*
 
 Los proyectos con clientes se realizaron en paralelo dentro de la consultoría independiente.
 
-- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):** Construí una plataforma B2B de software y automatización con Next.js, React, FastAPI y Supabase.
+- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):** Construí una plataforma B2B de software y automatización con Next.js, React, FastAPI y Supabase. El trabajo de fundador y desarrollo en Orkelya continuó en 2026.
 - **Proyectos de automatización (2024 – presente):** Diseñé más de 19 flujos n8n para reportes, onboarding, traspasos, triaje y facturación, además de agentes de calificación de leads por WhatsApp.
 - **Empresa de servicios B2B, equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025; engagement en paralelo):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa.
 - **Empresa B2C, equipo de 23 personas — Estados Unidos (2023):** Configuré y administré Salesforce, incluidos reportes, flujos con Apex y diseños de página. Luego coordiné la migración de 56.000 registros desde Salesforce a otro CRM, incluida la preparación y validación de calidad de los datos.
