@@ -201,8 +201,8 @@ Self-taught software and systems builder, Salesforce & CRM consultant, and Forwa
 *January 2023 – Present | Buenos Aires, Argentina*
 
 - **Orkelya — Founder & Lead Engineer (March 2024 – Present):** Built a B2B software and automation platform with Next.js, React, FastAPI, and Supabase.
-- **B2C company, 23-person team — United States (May 2024 – February 2026):** Set up and administered Salesforce, including reports, Apex-based workflows, and page layouts. Later coordinated the migration of 56,000 records from Salesforce to another CRM, including data preparation and quality validation.
-- **B2B services company, 12-person team — United States (May 2024 – December 2025):** Delivered CRM consulting and migration work for a services business.
+- **B2C company, 23-person team — United States (2023):** Set up and administered Salesforce, including reports, Apex-based workflows, and page layouts. Later coordinated the migration of 56,000 records from Salesforce to another CRM, including data preparation and quality validation.
+- **B2B services company, 12-person team — United States (May 2024 – December 2025):** Set up the Salesforce org from scratch, then designed and built a custom system for the client. The engagement ended in December 2025.
 - **Automation engagements (2024 – Present):** Designed 19+ n8n workflows for reporting, onboarding, handoffs, triage, and invoicing, plus WhatsApp-based lead qualification agents.
 - Client names withheld where required by confidentiality.
 
@@ -234,8 +234,8 @@ Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesfo
 *Enero 2023 – Presente | Buenos Aires, Argentina*
 
 - **Orkelya — Fundador y líder técnico (marzo 2024 – presente):** Construí una plataforma B2B de software y automatización con Next.js, React, FastAPI y Supabase.
-- **Empresa B2C, equipo de 23 personas — Estados Unidos (mayo 2024 – febrero 2026):** Configuré y administré Salesforce, incluidos reportes, flujos con Apex y diseños de página. Luego coordiné la migración de 56.000 registros desde Salesforce a otro CRM, incluida la preparación y validación de calidad de los datos.
-- **Empresa de servicios B2B, equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025):** Realicé consultoría de CRM y trabajo de migración para una empresa de servicios.
+- **Empresa B2C, equipo de 23 personas — Estados Unidos (2023):** Configuré y administré Salesforce, incluidos reportes, flujos con Apex y diseños de página. Luego coordiné la migración de 56.000 registros desde Salesforce a otro CRM, incluida la preparación y validación de calidad de los datos.
+- **Empresa de servicios B2B, equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa. El engagement terminó en diciembre de 2025.
 - **Proyectos de automatización (2024 – presente):** Diseñé más de 19 flujos n8n para reportes, onboarding, traspasos, triaje y facturación, además de agentes de calificación de leads por WhatsApp.
 - Omito los nombres de clientes cuando lo requiere la confidencialidad.
 
