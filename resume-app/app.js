@@ -208,7 +208,7 @@ Client engagements overlapped as part of independent consulting.
   - Designed 19+ n8n workflows for reporting, onboarding, handoffs, triage, and invoicing, plus WhatsApp-based lead qualification agents.
 - **CRM implementations and migrations (2023 – 2025):** Reduced manual CRM data-entry errors by 90% and saved 15+ team hours per week.
 - **Automation and AI engagements (2024 – 2025):** Designed 19+ n8n workflows that cut partner operational overhead by 70%. WhatsApp lead-qualification agents automated 80% of initial qualification and improved response speed by 35%.
-- **B2B services company, 12-person team — United States (May 2024 – December 2025; concurrent client engagement):** Set up the Salesforce org from scratch, then designed and built a custom system for the client.
+- **B2B services company — 12-person team — United States (May 2024 – December 2025; concurrent client engagement):** Set up the Salesforce org from scratch, then designed and built a custom system for the client.
 - **B2C company, 23-person team — United States (2023):** Set up and administered Salesforce, including reports, Apex-based workflows, and page layouts. Later coordinated the migration of 56,000 records from Salesforce to another CRM, including data preparation and quality validation.
 - Client names withheld where required by confidentiality.
 
@@ -247,7 +247,7 @@ Los proyectos con clientes se realizaron en paralelo dentro de la consultoría i
   - Diseñé más de 19 flujos n8n para reportes, onboarding, traspasos, triaje y facturación, además de agentes de calificación de leads por WhatsApp.
 - **Implementaciones y migraciones de CRM (2023 – 2025):** Reduje los errores manuales de datos en CRM un 90% y ahorré más de 15 horas semanales al equipo.
 - **Proyectos de automatización e IA (2024 – 2025):** Diseñé más de 19 flujos n8n que redujeron un 70% la carga operativa de los partners. Agentes de calificación por WhatsApp automatizaron el 80% de la calificación inicial y mejoraron un 35% la velocidad de respuesta.
-- **Empresa de servicios B2B, equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025; engagement en paralelo):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa.
+- **Empresa de servicios B2B — equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025; engagement en paralelo):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa.
 - **Empresa B2C, equipo de 23 personas — Estados Unidos (2023):** Configuré y administré Salesforce, incluidos reportes, flujos con Apex y diseños de página. Luego coordiné la migración de 56.000 registros desde Salesforce a otro CRM, incluida la preparación y validación de calidad de los datos.
 - Omito los nombres de clientes cuando lo requiere la confidencialidad.
 
