@@ -1,6 +1,6 @@
 # FAUSTO PASTURA
 **Custom Business Software & Automation | Salesforce & CRM**  
-Buenos Aires, Argentina | fausto@caldentech.llc  
+Buenos Aires, Argentina | pasturafausto@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/fausto-pastura-582828369/) | [Website](https://www.orkelya.xyz) | [GitHub](https://github.com/tatitoxt)
 
 ---

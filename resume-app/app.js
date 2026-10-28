@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const rawMarkdownEN = `# FAUSTO PASTURA
 **Software & Systems Builder | Salesforce & CRM Consultant | Forward Deployed Engineer (FDE) | Automation**
-Buenos Aires, Argentina | fausto@caldentech.llc
+Buenos Aires, Argentina | pasturafausto@gmail.com
 LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Website: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
 ---
@@ -227,7 +227,7 @@ Client engagements overlapped as part of independent consulting.
 
     const rawMarkdownES = `# FAUSTO PASTURA
 **Desarrollo de software y sistemas | Consultoría Salesforce y CRM | Forward Deployed Engineer (FDE) | Automatización**
-Buenos Aires, Argentina | fausto@caldentech.llc
+Buenos Aires, Argentina | pasturafausto@gmail.com
 LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
 ---
