@@ -606,22 +606,30 @@
         <section class="doc-section">
           <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE & SYSTEMS PROJECTS</h2>
           <ul class="bullet-list lang-content-en">
-            <li><strong>Import Preflight:</strong> Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. The file is not uploaded. Includes 7 automated tests.</li>
-            <li><strong>AgentFlow:</strong> Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).</li>
-            <li><strong>TermaAI:</strong> Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault:</strong> Rust CLI for encrypted local secrets. In development; 5 workspace tests pass; no independent security audit.</li>
-            <li><strong>Gatekeeper-Proxy:</strong> Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).</li>
-            <li><strong>DockNuke:</strong> High-performance Docker cleanup & disk optimization utility in Go.</li>
-            <li><strong>NeuraDash:</strong> Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+            <li><strong>Aurora:</strong> Cross-platform desktop music companion (Tauri 2, Rust core, React/TypeScript): ambient edge lighting, glass mini player, synced karaoke lyrics, stats and playlists. Rust tests + Vitest + Playwright + WebDriver E2E in CI.</li>
+            <li><strong>Salesforce Integration Gateway:</strong> Apex + LWC integration framework: signed webhooks, async reconciliation, billing sync, admin console and event simulator. 70 Apex test methods in 9 classes.</li>
+            <li><strong>Pipeline Clinic:</strong> CI failure triage for GitHub Actions — deterministic fingerprinting/grouping, secret redaction, API + CLI + React UI. 116 tests on SQLite/PostgreSQL + Playwright E2E.</li>
+            <li><strong>Compose Doctor:</strong> Go CLI that diagnoses Docker Compose projects fully offline (17 rule classes). 156 tests incl. golden and fuzz.</li>
+            <li><strong>CargoDesk:</strong> Logistics operations desk (Go API + Next.js): request→delivery state machine, SLA, audit timeline, RBAC, multi-tenancy. Unit + integration + 7 E2E tests.</li>
+            <li><strong>Gatekeeper-Proxy:</strong> Hardened TypeScript/Node reverse proxy + WAF + rate limiter (fixed IP-spoofing, stored XSS, request smuggling). 143 unit/integration + 17 E2E tests.</li>
+            <li><strong>NeuraDash:</strong> Multi-tenant real-time analytics dashboard (Next.js 16, React 19, WebSockets, Postgres RLS). 73 tests + compose smoke CI.</li>
+            <li><strong>ShipPulse:</strong> Go release-safety slice: outbox → NATS JetStream → idempotent worker → health probes → automatic rollback. 52 unit+integration tests + Playwright.</li>
+            <li><strong>AgentFlow:</strong> Typed Python framework for tool-calling agents with pluggable providers, vector memory and agent handoff. 65 tests; mypy --strict.</li>
+            <li><strong>TermaAI:</strong> Terminal AI assistant for safe Bash script generation with dry-run checks and audit log. 222 tests.</li>
+            <li><strong>Also public:</strong> Staff Suite Lite (FiveM MIT resource, SHA-256 audit chain), Import Preflight (7 tests), FastVault (Rust secrets CLI, in development), DockNuke (Go Docker cleanup).</li>
           </ul>
           <ul class="bullet-list lang-content-es">
-            <li><strong>Import Preflight:</strong> Preflight de CSV en el navegador para importaciones a CRM. Mapea campos de contactos, valida presencia y formato de email, marca direcciones duplicadas y exporta filas listas y para revisar. El archivo no se sube. Incluye 7 pruebas automatizadas.</li>
-            <li><strong>AgentFlow:</strong> Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).</li>
-            <li><strong>TermaAI:</strong> Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault:</strong> CLI en Rust para secretos cifrados localmente. En desarrollo; pasan 5 pruebas del workspace; sin auditoría de seguridad independiente.</li>
-            <li><strong>Gatekeeper-Proxy:</strong> Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).</li>
-            <li><strong>DockNuke:</strong> Utilidad en Go para limpieza inteligente y optimización de entornos Docker.</li>
-            <li><strong>NeuraDash:</strong> Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+            <li><strong>Aurora:</strong> App de escritorio multiplataforma (Tauri 2, núcleo en Rust, React/TypeScript): iluminación ambiental, mini reproductor glass, letras karaoke sincronizadas, estadísticas y playlists. Tests Rust + Vitest + Playwright + E2E WebDriver en CI.</li>
+            <li><strong>Salesforce Integration Gateway:</strong> Framework de integración en Apex + LWC: webhooks firmados, conciliación asíncrona, sincronización de facturación, consola admin y simulador de eventos. 70 métodos de test Apex en 9 clases.</li>
+            <li><strong>Pipeline Clinic:</strong> Triaje de fallos de CI para GitHub Actions — fingerprinting/agrupación determinística, enmascarado de secretos, API + CLI + UI React. 116 tests en SQLite/PostgreSQL + E2E Playwright.</li>
+            <li><strong>Compose Doctor:</strong> CLI en Go que diagnostica proyectos Docker Compose totalmente offline (17 clases de reglas). 156 tests incl. golden y fuzz.</li>
+            <li><strong>CargoDesk:</strong> Mesa de operaciones logísticas (API en Go + Next.js): máquina de estados pedido→entrega, SLA, línea de tiempo auditable, RBAC, multi-tenancy. Tests unitarios + integración + 7 E2E.</li>
+            <li><strong>Gatekeeper-Proxy:</strong> Reverse proxy endurecido en TypeScript/Node + WAF + rate limiter (corregidos IP-spoofing, XSS persistente, request smuggling). 143 tests unitarios/integración + 17 E2E.</li>
+            <li><strong>NeuraDash:</strong> Dashboard analítico multi-tenant en tiempo real (Next.js 16, React 19, WebSockets, Postgres RLS). 73 tests + smoke de compose en CI.</li>
+            <li><strong>ShipPulse:</strong> Pipeline de releases en Go: outbox → NATS JetStream → worker idempotente → sondas de salud → rollback automático. 52 tests unitarios/integración + Playwright.</li>
+            <li><strong>AgentFlow:</strong> Framework tipado en Python para agentes con tool-calling, proveedores intercambiables, memoria vectorial y delegación entre agentes. 65 tests; mypy --strict.</li>
+            <li><strong>TermaAI:</strong> Asistente de terminal con IA para generación segura de scripts Bash con dry-run y log de auditoría. 222 tests.</li>
+            <li><strong>También públicos:</strong> Staff Suite Lite (recurso MIT para FiveM, auditoría SHA-256), Import Preflight (7 tests), FastVault (CLI de secretos en Rust, en desarrollo), DockNuke (limpieza Docker en Go).</li>
           </ul>
         </section>
 

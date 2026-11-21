@@ -24,7 +24,8 @@ Administración y Desarrollo en Salesforce (2023 - Presente), Sales Cloud, Servi
 
 ### 🤖 IA, Full-Stack & Sistemas de Automatización
 - **Ingeniería de IA & Agentes:** AgentFlow, TermaAI, APIs de OpenAI y Claude LLM, Agentes de IA Autónomos, Tuberías RAG, LangChain, Bots de WhatsApp (Evolution API & Redis).
-- **Full-Stack Web & Micro-SaaS:** Next.js (16/15), React 19, FastAPI, Flask, Node.js, Express, Tailwind CSS, PostgreSQL, Supabase RLS, Docker, Vercel, Render.
+- **Full-Stack Web & Micro-SaaS:** Next.js (16/15), React 19/18, FastAPI, Flask, Node.js, Express, Tailwind CSS, PostgreSQL (incl. RLS), Supabase, NATS JetStream, Docker, Vercel, Render.
+- **Desktop & Sistemas:** Tauri 2 (Rust + React), Playwright, E2E con WebDriver, CI/CD en GitHub Actions.
 - **Lenguajes de Programación:** Python, TypeScript, JavaScript, Apex (Salesforce), SOQL/SOSL, SQL (PostgreSQL, SQLite), C, C++, Rust, Go, HTML5, CSS3 / Sass, Shell / Bash.
 
 ### ⚙️ Control de Versiones, DevOps & Sistemas
@@ -56,45 +57,53 @@ Flujos Avanzados en Git (Rebase Interactivo, Scripting de Commits, Filter-Repo),
 ---
 
 ## PROYECTOS DESTACADOS Y SISTEMAS OPEN-SOURCE
+Todo público en [github.com/tatitoxt](https://github.com/tatitoxt); las cifras de tests y CI están verificadas en el README y en los runs de CI de cada repo.
 
-### **1. Import Preflight — Validación local de CSV para CRM**
-Herramienta web para mapear campos de contactos, detectar emails ausentes o mal formados, marcar direcciones duplicadas y exportar filas listas y para revisar. El CSV permanece en el navegador y la app no se conecta a una API de CRM. Incluye 7 pruebas automatizadas (módulos ES de JavaScript, test runner de Node y GitHub Actions).
+### **1. Aurora — Compañero de Música Ambiental para Escritorio**
+App de escritorio multiplataforma (Tauri 2, núcleo en Rust, React + TypeScript) que sigue lo que suena: iluminación ambiental de bordes según la carátula, mini reproductor estilo liquid-glass, letras sincronizadas tipo karaoke, visualizador, estadísticas de escucha y playlists, más streaming de YouTube/SoundCloud. Tests de workspace en Rust, Vitest, Playwright y E2E con WebDriver en cada PR; incluye landing pública.  
+- **Stack:** Rust, Tauri 2, React 18, TypeScript, Vite, GitHub Actions.
 
-### **2. AgentFlow — Framework de IA y Agentes**
-Framework ligero en Python diseñado para orquestar agentes de IA multimodales con memoria vectorial persistente, tuberías de ejecución de herramientas y bucles de razonamiento autónomo.  
-- **Impacto & Stack:** Python, LangChain, APIs de OpenAI/Claude, Redis, Vector Embeddings.
+### **2. Salesforce Integration Gateway — Apex + LWC**
+Framework de integración que conecta Salesforce con webhooks de pago y plataformas de facturación: verificación de firmas en webhooks, jobs asíncronos de conciliación, sincronización de facturación, consola de administración en LWC y un simulador completo de eventos para pruebas en sandbox. 70 métodos de test en Apex en 9 clases, más tests Jest.  
+- **Stack:** Apex, Lightning Web Components, Salesforce DX, Jest.
 
-### **3. TermaAI — Asistente Inteligente de Terminal**
-Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts complejos en Bash y Shell de forma segura directamente en la terminal con comprobaciones previas.  
-- **Impacto & Stack:** Python, Rich CLI, API de OpenAI, Sandbox de Seguridad Shell.
+### **3. Pipeline Clinic — Triaje de Fallos de CI**
+Importa runs y logs de GitHub Actions, enmascara secretos, genera fingerprints determinísticos y agrupa fallos recurrentes con su explicación; triaje vía API HTTP, CLI y UI en React, con tokens de GitHub cifrados con Fernet en reposo. 116 tests pasan en SQLite y PostgreSQL + E2E con Playwright; cero vulnerabilidades conocidas.  
+- **Stack:** Python 3.12, FastAPI, PostgreSQL/SQLite, React, Docker Compose.
 
-### **4. FastVault — Gestor Encriptado de Secretos en CLI**
-CLI en Rust para guardar secretos cifrados localmente y entregarlos a procesos sin escribirlos en un archivo .env. Usa Argon2id para derivar claves y AES-256-GCM para cifrar.
-- **Estado:** En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
+### **4. Compose Doctor — Diagnóstico Offline de Docker Compose**
+CLI en Go que carga un proyecto Compose igual que Docker Compose v2 (interpolación, merge keys, profiles, overrides multi-archivo) y reporta 17 clases de problemas sin ejecutar nada — sin Docker, red ni escritura de archivos. 156 tests incluyendo cobertura golden y fuzz.  
+- **Stack:** Go, yaml.v3, staticcheck, govulncheck.
 
-### **5. Gatekeeper-Proxy — Reverse Proxy Dinámico, WAF & Rate Limiter**
-Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.  
-- **Impacto & Stack:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
+### **5. CargoDesk — Mesa de Operaciones Logísticas**
+Plataforma de transporte de punta a punta: máquina de estados pedido → cotización → asignación → entrega, seguimiento de SLA, línea de tiempo auditable, RBAC y multi-tenancy. API en Go + UI en Next.js; tests unitarios + integración + 7 E2E con Playwright en CI.  
+- **Stack:** Go, Next.js, TypeScript, PostgreSQL, Docker Compose.
 
-### **6. DockNuke — Utilidad de Limpieza Inteligente y Optimización de Docker en Go**
-Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run, filtrado de retención y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker.  
-- **Impacto & Stack:** Go (1.22+), SDK Engine Docker, Cobra CLI, Concurrencia, Motor Dry-Run.
+### **6. Gatekeeper-Proxy — Reverse Proxy, WAF & Rate Limiter**
+Reverse proxy en TypeScript/Node con firewall WAF, rate limiting de ventana deslizante, filtrado por CIDR y dashboard de telemetría de seguridad. Endurecido de punta a punta: corregidos spoofing de IP vía X-Forwarded-For, XSS persistente en el dashboard, API de administración sin autenticación, request smuggling y corrupción en recarga en caliente. 143 tests unitarios/de integración + 17 E2E.  
+- **Stack:** TypeScript, Node.js, Docker, Playwright, Jest.
 
 ### **7. NeuraDash — Dashboard Analítico en Tiempo Real**
-Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.  
-- **Impacto & Stack:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
+Dashboard multi-tenant en tiempo real: los servicios envían eventos a una API de ingesta, Postgres RLS + filtros explícitos por tenant aplican el aislamiento, y WebSockets empujan KPIs en vivo con resume/backfill. 73 tests (30 unitarios, 31 de integración, 12 Playwright) más un smoke test de compose en CI.  
+- **Stack:** Next.js 16, React 19, TypeScript, WebSockets, PostgreSQL RLS.
 
-### **8. Suite Operativa de Automatización para Agencias (n8n & Docker)**
-Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación.  
-- **Alcance del proyecto:** 19 flujos n8n para seguimiento de entregas, traspasos, onboarding, triaje y facturación, con Docker y persistencia SQLite/PostgreSQL.
+### **8. ShipPulse — Pipeline de Releases Seguro**
+Pipeline de releases en Go: solicitud de deploy → outbox transaccional → NATS JetStream → worker idempotente → sondas de salud → rollback automático a la última versión estable, con webhooks firmados, claves de idempotencia y log de auditoría de solo-escritura. 52 tests unitarios/de integración + Playwright sobre el stack en compose.  
+- **Stack:** Go, NATS JetStream, PostgreSQL, Next.js, Docker Compose.
 
-### **9. Plataforma B2B de Agentes de IA & Custom Service (`orkelya.xyz`)**
-Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.  
-- **Stack tecnológico:** Sitio web: `orkelya.xyz`. Next.js, React, TypeScript, FastAPI, Supabase PostgreSQL con RLS y Cloudflare Turnstile.
+### **9. AgentFlow — Framework de IA y Agentes**
+Framework tipado en Python 3.11+ para agentes con tool-calling: proveedores intercambiables (OpenAI, Anthropic, Groq) con reintentos, memoria vectorial (en memoria o KNN en Redis), trazado estructurado, delegación entre agentes y CLI. Corre completamente offline por defecto. 65 tests; ruff + mypy --strict.  
+- **Stack:** Python, Pydantic, httpx, Redis, GitHub Actions.
 
-### **10. Pasarela de Integración Empresarial para Salesforce**
-Desarrollo de un framework personalizado de integración en Apex y Lightning Web Components (LWC) que conecta Salesforce CRM con webhooks de pago y plataformas de facturación automatizada.  
-- **Alcance del proyecto:** Integración de Salesforce Apex y LWC con webhooks de pago y plataformas de facturación para sincronizar registros y reducir conciliaciones manuales.
+### **10. TermaAI — Asistente Inteligente de Terminal**
+Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts Bash complejos de forma segura con comprobaciones dry-run en tiempo real y log de auditoría. 222 tests.  
+- **Stack:** Python, Rich CLI, API de OpenAI, sandbox de seguridad shell.
+
+### **Herramientas públicas adicionales**
+- **Staff Suite Lite** — recurso MIT gratuito para FiveM: reportes de staff, cola de tickets y log de auditoría encadenado con SHA-256.
+- **Import Preflight** — validación de CSV para CRM íntegramente en el navegador (7 tests automatizados; el archivo nunca sale del navegador).
+- **FastVault** — CLI en Rust para secretos cifrados localmente (Argon2id + AES-256-GCM); en desarrollo, los tests del workspace pasan, sin auditoría de seguridad independiente.
+- **DockNuke** — CLI en Go para revisar y limpiar recursos Docker, con modo dry-run.
 
 ---
 ## EDUCACIÓN Y APRENDIZAJE CONTINUO

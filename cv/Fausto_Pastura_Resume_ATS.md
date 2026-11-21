@@ -24,7 +24,8 @@ Salesforce Administration & Development (2023 - Present), Sales Cloud, Service C
 
 ### 🤖 AI, Full-Stack & Automation Systems
 - **AI & Agent Engineering:** AgentFlow, TermaAI, OpenAI & Claude LLM APIs, Autonomous AI Agents, RAG Pipelines, LangChain, WhatsApp Evolution API, Redis.
-- **Full-Stack Web & Micro-SaaS:** Next.js (16/15), React 19, FastAPI, Flask, Node.js, Express, Tailwind CSS, PostgreSQL, Supabase RLS, Docker, Vercel, Render.
+- **Full-Stack Web & Micro-SaaS:** Next.js (16/15), React 19/18, FastAPI, Flask, Node.js, Express, Tailwind CSS, PostgreSQL (incl. RLS), Supabase, NATS JetStream, Docker, Vercel, Render.
+- **Desktop & Systems:** Tauri 2 (Rust + React), Playwright, WebDriver E2E, GitHub Actions CI/CD.
 - **Programming Languages:** Python, TypeScript, JavaScript, Apex (Salesforce), SOQL/SOSL, SQL (PostgreSQL, SQLite), C, C++, Rust, Go, HTML5, CSS3 / Sass, Shell / Bash.
 
 ### ⚙️ Version Control, DevOps & Systems
@@ -56,45 +57,53 @@ Git Advanced Workflows (Interactive Rebase, Custom Commit Scripting, Filter-Repo
 ---
 
 ## FEATURED PROJECTS & OPEN-SOURCE SYSTEMS
+All public at [github.com/tatitoxt](https://github.com/tatitoxt); test and CI figures are verified in each repo's README and CI runs.
 
-### **1. Import Preflight — Local-First CRM CSV Checks**
-Browser-based tool for mapping contact fields, checking missing or malformed email values, flagging duplicate addresses, and exporting ready and review rows. CSV contents stay in the browser; the app does not connect to a CRM API. Includes 7 automated tests (JavaScript ES modules, Node test runner, GitHub Actions).
+### **1. Aurora — Ambient Desktop Music Companion**
+Cross-platform desktop app (Tauri 2, Rust core, React + TypeScript) that follows whatever you play: ambient edge lighting driven by album art, a liquid-glass mini player, synced karaoke-style lyrics, visualizer, listening stats and playlists, plus YouTube/SoundCloud streaming. Rust workspace tests, Vitest, Playwright and WebDriver E2E run on every PR; includes a public landing site.  
+- **Tech:** Rust, Tauri 2, React 18, TypeScript, Vite, GitHub Actions.
 
-### **2. AgentFlow — AI & Agent Framework**
-Lightweight Python framework designed to orchestrate multimodal AI agents with persistent vector memory, tool-calling pipelines, and autonomous execution loops.  
-- **Impact & Tech:** Python, LangChain, OpenAI/Claude APIs, Redis, Vector Embeddings.
+### **2. Salesforce Integration Gateway — Apex + LWC**
+Integration framework connecting Salesforce with payment webhooks and billing platforms: signed webhook verification, async reconciliation jobs, billing sync, an LWC admin console, and a full event simulator for sandbox testing. 70 Apex test methods in 9 classes plus Jest tests.  
+- **Tech:** Apex, Lightning Web Components, Salesforce DX, Jest.
 
-### **3. TermaAI — Terminal AI Assistant**
-Interactive command-line AI assistant that generates, validates, and safely executes complex Bash & Shell scripts directly in the terminal with real-time dry-run checks.  
-- **Impact & Tech:** Python, Rich CLI, OpenAI API, Shell Security Sandbox.
+### **3. Pipeline Clinic — CI Failure Triage**
+Imports GitHub Actions runs/logs, redacts secrets, fingerprints failures deterministically and groups recurring ones with explanations; triage via HTTP API, CLI and React UI, with GitHub tokens Fernet-encrypted at rest. 116 tests pass on SQLite and PostgreSQL + Playwright E2E; zero known vulnerabilities.  
+- **Tech:** Python 3.12, FastAPI, PostgreSQL/SQLite, React, Docker Compose.
 
-### **4. FastVault — Ultra-Fast Encrypted CLI Secrets Manager**
-Rust CLI for storing encrypted secrets locally and passing them to processes without writing a .env file. It uses Argon2id for key derivation and AES-256-GCM for encryption.
-- **Status:** In development; cargo test --workspace passes (5 tests); no independent security audit.
+### **4. Compose Doctor — Offline Docker Compose Diagnostics**
+Go CLI that loads a Compose project the way Docker Compose v2 does (interpolation, merge keys, profiles, multi-file overrides) and reports 17 classes of problems without running anything — no Docker, network or file writes. 156 tests including golden-file and fuzz coverage.  
+- **Tech:** Go, yaml.v3, staticcheck, govulncheck.
 
-### **5. Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter**
-Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.  
-- **Impact & Tech:** TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.
+### **5. CargoDesk — Logistics Operations Desk**
+End-to-end transport workflow platform: request → quote → assignment → delivery state machine, SLA tracking, auditable event timeline, RBAC and multi-tenancy. Go API + Next.js UI; unit + integration + 7 Playwright E2E tests in CI.  
+- **Tech:** Go, Next.js, TypeScript, PostgreSQL, Docker Compose.
 
-### **6. DockNuke — Smart Docker Cleanup & Disk Optimization Utility**
-High-performance command-line utility written in Go for intelligent scanning, dry-run safety previewing, retention filtering, and disk space optimization across Docker containers, images, volumes, and build caches.  
-- **Impact & Tech:** Go (1.22+), Docker Engine SDK, Cobra CLI, Concurrency, Dry-Run Engine.
+### **6. Gatekeeper-Proxy — Reverse Proxy, WAF & Rate Limiter**
+TypeScript/Node reverse proxy with a Web Application Firewall, sliding-window rate limiting, CIDR filtering and a security telemetry dashboard. Hardened end-to-end: fixed IP-spoofing via X-Forwarded-For, stored XSS in the dashboard, unauthenticated admin API, request smuggling and hot-reload corruption. 143 unit/integration + 17 E2E tests.  
+- **Tech:** TypeScript, Node.js, Docker, Playwright, Jest.
 
 ### **7. NeuraDash — Real-Time Analytics Dashboard**
-Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.  
-- **Impact & Tech:** Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.
+Multi-tenant real-time dashboard: services post events to an ingest API, Postgres RLS + explicit tenant filters enforce isolation, WebSockets push live KPIs with resume/backfill. 73 tests (30 unit, 31 integration, 12 Playwright) plus a compose smoke test in CI.  
+- **Tech:** Next.js 16, React 19, TypeScript, WebSockets, PostgreSQL RLS.
 
-### **8. Enterprise Agency Operations Suite (n8n & Docker)**
-Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing.  
-- **Project scope:** 19 n8n workflows covering client delivery status, handoffs, onboarding, triage, and invoicing, with Docker and SQLite/PostgreSQL persistence.
+### **8. ShipPulse — Release Safety Slice**
+Go release pipeline: deploy request → transactional outbox → NATS JetStream → idempotent worker → health probes → automatic rollback to last stable, with signed webhooks, idempotency keys and an append-only audit log. 52 unit+integration tests + Playwright against the compose stack.  
+- **Tech:** Go, NATS JetStream, PostgreSQL, Next.js, Docker Compose.
 
-### **9. Enterprise B2B AI Agents & Custom Service Platform (`orkelya.xyz`)**
-Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and responsive design.  
-- **Technology stack:** Website: `orkelya.xyz`. Next.js, React, TypeScript, FastAPI, Supabase PostgreSQL with RLS, and Cloudflare Turnstile.
+### **9. AgentFlow — AI & Agent Framework**
+Typed Python 3.11+ framework for tool-calling agents: pluggable providers (OpenAI, Anthropic, Groq) with retry, vector memory (in-memory or Redis KNN), structured tracing, agent-to-agent handoff and a CLI. Runs fully offline by default. 65 tests; ruff + mypy --strict.  
+- **Tech:** Python, Pydantic, httpx, Redis, GitHub Actions.
 
-### **10. Salesforce Enterprise Integration Gateway**
-Developed a custom Apex and Lightning Web Component (LWC) integration framework connecting Salesforce CRM with payment webhooks and automated billing platforms.  
-- **Project scope:** Connected Salesforce Apex and LWC workflows with payment webhooks and billing platforms to support record synchronization and reduce manual reconciliation.
+### **10. TermaAI — Terminal AI Assistant**
+Interactive command-line AI assistant that generates, validates, and safely executes complex Bash scripts with real-time dry-run checks and an audit log. 222 tests.  
+- **Tech:** Python, Rich CLI, OpenAI API, shell security sandbox.
+
+### **Additional public tools**
+- **Staff Suite Lite** — free MIT FiveM resource: staff reports, ticket queue, SHA-256 hash-chained audit log.
+- **Import Preflight** — browser-only CSV checks for CRM imports (7 automated tests; the file never leaves the browser).
+- **FastVault** — Rust CLI for encrypted local secrets (Argon2id + AES-256-GCM); in development, workspace tests pass, no independent security audit.
+- **DockNuke** — Go CLI for reviewing and cleaning Docker resources, with a dry-run mode.
 
 ---
 ## EDUCATION & CONTINUOUS LEARNING

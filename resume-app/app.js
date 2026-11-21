@@ -218,12 +218,17 @@ Client engagements overlapped as part of independent consulting.
 ---
 
 ## FEATURED OPEN-SOURCE & SYSTEMS PROJECTS
-- **Import Preflight:** Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. Includes 7 automated tests; no CRM API or server upload.
-- **AgentFlow:** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
-- **TermaAI:** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
-- **FastVault:** Rust CLI for encrypted local secrets. In development; cargo test --workspace passes (5 tests); no independent security audit.
-- **Gatekeeper-Proxy:** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
-- **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+- **Aurora:** Cross-platform desktop music companion (Tauri 2, Rust core, React/TypeScript): ambient edge lighting, glass mini player, synced karaoke lyrics, stats and playlists. Rust tests + Vitest + Playwright + WebDriver E2E in CI.
+- **Salesforce Integration Gateway:** Apex + LWC integration framework: signed webhooks, async reconciliation, billing sync, admin console and event simulator. 70 Apex test methods in 9 classes.
+- **Pipeline Clinic:** CI failure triage for GitHub Actions — deterministic fingerprinting/grouping, secret redaction, API + CLI + React UI. 116 tests on SQLite/PostgreSQL + Playwright E2E.
+- **Compose Doctor:** Go CLI that diagnoses Docker Compose projects fully offline (17 rule classes). 156 tests incl. golden and fuzz.
+- **CargoDesk:** Logistics operations desk (Go API + Next.js): request→delivery state machine, SLA, audit timeline, RBAC, multi-tenancy. Unit + integration + 7 E2E tests.
+- **Gatekeeper-Proxy:** Hardened TypeScript/Node reverse proxy + WAF + rate limiter. 143 unit/integration + 17 E2E tests.
+- **NeuraDash:** Multi-tenant real-time analytics dashboard (Next.js 16, React 19, WebSockets, Postgres RLS). 73 tests + compose smoke CI.
+- **ShipPulse:** Go release-safety slice: outbox → NATS JetStream → idempotent worker → health probes → automatic rollback. 52 unit+integration tests + Playwright.
+- **AgentFlow:** Typed Python framework for tool-calling agents with pluggable providers, vector memory and agent handoff. 65 tests; mypy --strict.
+- **TermaAI:** Terminal AI assistant for safe Bash script generation with dry-run checks and audit log. 222 tests.
+- **Also public:** Staff Suite Lite (FiveM MIT resource, SHA-256 audit chain), Import Preflight (7 tests), FastVault (Rust secrets CLI, in development), DockNuke (Go Docker cleanup).`;
 
     const rawMarkdownES = `# FAUSTO PASTURA
 **Desarrollo de software y sistemas | Consultoría Salesforce y CRM | Forward Deployed Engineer (FDE) | Automatización**
@@ -260,12 +265,17 @@ Los proyectos con clientes se realizaron en paralelo dentro de la consultoría i
 ---
 
 ## PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS
-- **Import Preflight:** Preflight de CSV en el navegador para importaciones a CRM. Mapea campos, valida presencia y formato de email, marca duplicados y exporta filas listas y para revisar. Incluye 7 pruebas automatizadas; no usa API de CRM ni sube el archivo.
-- **AgentFlow:** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
-- **TermaAI:** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
-- **FastVault:** CLI en Rust para secretos cifrados localmente. En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
-- **Gatekeeper-Proxy:** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
-- **NeuraDash:** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+- **Aurora:** App de escritorio multiplataforma (Tauri 2, núcleo en Rust, React/TypeScript): iluminación ambiental, mini reproductor glass, letras karaoke sincronizadas, estadísticas y playlists. Tests Rust + Vitest + Playwright + E2E WebDriver en CI.
+- **Salesforce Integration Gateway:** Framework de integración en Apex + LWC: webhooks firmados, conciliación asíncrona, sincronización de facturación, consola admin y simulador de eventos. 70 métodos de test Apex en 9 clases.
+- **Pipeline Clinic:** Triaje de fallos de CI para GitHub Actions — fingerprinting/agrupación determinística, enmascarado de secretos, API + CLI + UI React. 116 tests en SQLite/PostgreSQL + E2E Playwright.
+- **Compose Doctor:** CLI en Go que diagnostica proyectos Docker Compose totalmente offline (17 clases de reglas). 156 tests incl. golden y fuzz.
+- **CargoDesk:** Mesa de operaciones logísticas (API en Go + Next.js): máquina de estados pedido→entrega, SLA, línea de tiempo auditable, RBAC, multi-tenancy. Tests unitarios + integración + 7 E2E.
+- **Gatekeeper-Proxy:** Reverse proxy endurecido en TypeScript/Node + WAF + rate limiter. 143 tests unitarios/integración + 17 E2E.
+- **NeuraDash:** Dashboard analítico multi-tenant en tiempo real (Next.js 16, React 19, WebSockets, Postgres RLS). 73 tests + smoke de compose en CI.
+- **ShipPulse:** Pipeline de releases en Go: outbox → NATS JetStream → worker idempotente → sondas de salud → rollback automático. 52 tests unitarios/integración + Playwright.
+- **AgentFlow:** Framework tipado en Python para agentes con tool-calling, proveedores intercambiables, memoria vectorial y delegación entre agentes. 65 tests; mypy --strict.
+- **TermaAI:** Asistente de terminal con IA para generación segura de scripts Bash con dry-run y log de auditoría. 222 tests.
+- **También públicos:** Staff Suite Lite (recurso MIT para FiveM, auditoría SHA-256), Import Preflight (7 tests), FastVault (CLI de secretos en Rust, en desarrollo), DockNuke (limpieza Docker en Go).`;
 
     const textToCopy = isSpanish ? rawMarkdownES : rawMarkdownEN;
 
