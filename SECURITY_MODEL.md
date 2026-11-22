@@ -1,6 +1,6 @@
 # Security model — Personal-Page
 
-Written with the user on 2026-11-19 for Devin security scans; edit it as the system changes.
+Last reviewed 2026-11-19; edit it as the system changes.
 
 ## Components
 
