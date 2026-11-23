@@ -740,3 +740,115 @@ body.lang-es .lang-content-en { display: none !important; }
 .project-showcase-list .proj-title a:hover {
   text-decoration: underline;
 }
+
+
+/* Flagship and six-project showcase */
+.project-flagship {
+  margin-bottom: 1.25rem;
+  padding: 1.2rem 1.35rem;
+  border: 2px solid var(--cloudflare-orange);
+  border-radius: 8px;
+  background: #fff8ed;
+  box-shadow: 4px 4px 0 var(--cloudflare-orange);
+}
+
+.project-flagship .proj-title {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--cloudflare-orange);
+  font-size: 1.12rem;
+}
+
+.ats-print-content .ats-project-list {
+  margin: 0.35rem 0 0.7rem;
+  padding-left: 1.2rem;
+}
+
+.ats-print-content .ats-project-list li {
+  margin-bottom: 0.3rem;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 15mm;
+  }
+
+  html,
+  body,
+  body.mode-portfolio,
+  body.mode-ats {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font: 10pt/1.35 Arial, Helvetica, sans-serif !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #vintageCanvas,
+  .app-header,
+  .metrics-strip,
+  .showcase-grid,
+  .toast,
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-wrapper,
+  .resume-document,
+  .ats-print-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+
+  .ats-print-content {
+    color: #111111 !important;
+  }
+
+  .doc-header,
+  .doc-section {
+    break-inside: avoid;
+  }
+
+  .doc-section {
+    margin: 0 0 0.8rem !important;
+    padding: 0 !important;
+  }
+
+  .doc-section a {
+    color: #111111 !important;
+    text-decoration: none !important;
+  }
+
+  .ats-print-content .section-title {
+    margin: 0.7rem 0 0.35rem !important;
+    border-bottom: 1px solid #777 !important;
+    color: #111 !important;
+    font-size: 11pt !important;
+  }
+
+  .ats-print-content p,
+  .ats-print-content li {
+    font-size: 9pt !important;
+  }
+
+  .ats-print-content li {
+    margin-bottom: 0.2rem !important;
+  }
+
+  .ats-print-content .lang-content-en,
+  .ats-print-content .lang-content-es {
+    display: none !important;
+  }
+
+  body.lang-en .ats-print-content .lang-content-en,
+  body.lang-es .ats-print-content .lang-content-es {
+    display: block !important;
+  }
+}
