@@ -384,97 +384,54 @@
           <div class="post-card">
             <div class="post-header">
               <span class="post-title">[SYS_PROJECTS] // FEATURED SYSTEMS & OPEN-SOURCE</span>
-              <span class="post-date">FEATURED: 6 · PROJECTS: 14</span>
+              <span class="post-date">FLAGSHIP: AURORA · PROJECTS: 6</span>
             </div>
             <div class="post-body">
+              <div class="project-flagship">
+                <strong class="proj-title">FLAGSHIP // Aurora — Noctbeat desktop music HUD</strong>
+                <p class="lang-content-en">A floating, always-on-top music HUD with synced lyrics, a full-screen stage, browser playback controls and a native Rust core. Open core; signed, licensed builds are the commercial product.</p>
+                <p class="lang-content-es">HUD musical flotante siempre visible, con letras sincronizadas, escenario fullscreen, controles de reproducción del navegador y núcleo nativo en Rust. Core abierto; las versiones firmadas y licenciadas son el producto comercial.</p>
+                <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Tauri 2, Rust, React 18, TypeScript, Vite</span></div>
+              </div>
               <ul class="project-showcase-list">
                 <li class="featured-project">
-                  <strong class="proj-title">★ CargoDesk — Logistics Operations Desk · <a href="https://github.com/tatitoxt/cargodesk" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Portfolio/demo logistics workflow platform for requests, quotes, assignment and delivery. Uses an explicit state machine, ownership, internal SLA tracking, business-hours calendars, signed notification webhooks and an auditable event timeline. Synthetic data only; not production validated.</p>
-                  <p class="lang-content-es">Plataforma demo de operaciones logísticas para gestionar solicitudes, cotizaciones, asignación y entregas. Incluye máquina de estados explícita, responsables, seguimiento de SLA, calendarios laborales, webhooks firmados y una línea de tiempo auditable. Usa datos sintéticos; no está validada en producción.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, TypeScript, PostgreSQL, Docker, CI</span></div>
+                  <strong class="proj-title">Salesforce Integration Gateway · <a href="https://github.com/tatitoxt/salesforce-integration-gateway" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Apex + LWC integration framework for signed payment webhooks, asynchronous reconciliation, billing sync and an admin console. <strong>Tests:</strong> 15 LWC Jest + 28 simulator unit/integration + 1 simulator E2E; 75 Apex test methods in 10 classes (not executed in an org).</p>
+                  <p class="lang-content-es">Framework de integración Apex + LWC para webhooks de pago firmados, conciliación asíncrona, sincronización de facturación y consola administrativa. <strong>Pruebas:</strong> 15 LWC Jest + 28 unitarias/integración del simulador + 1 E2E del simulador; 75 métodos Apex en 10 clases (sin ejecutar en una org).</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Salesforce DX, Apex, LWC, Jest, Node.js</span></div>
                 </li>
                 <li class="featured-project">
-                  <strong class="proj-title">★ Salesforce Integration Gateway — Signed Payment Webhooks · <a href="https://github.com/tatitoxt/salesforce-integration-gateway" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Salesforce DX project that receives signed payment webhooks, handles them idempotently and asynchronously, reconciles payments against invoices, syncs billing status and surfaces exceptions for operators.</p>
-                  <p class="lang-content-es">Proyecto Salesforce DX que recibe webhooks de pago firmados, los procesa de forma idempotente y asíncrona, concilia pagos con facturas, sincroniza el estado de facturación y muestra excepciones para el equipo operativo.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH & QUALITY ]</span><span>Apex, LWC, Jest, webhook simulator, CI · Apex org execution requires Salesforce credentials</span></div>
+                  <strong class="proj-title">AgentFlow · <a href="https://github.com/tatitoxt/agentflow" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Typed Python 3.11+ framework for tool-calling agents, pluggable providers, vector memory, streaming traces and handoffs. <strong>Tests:</strong> 148 unit, integration and E2E run in CI across Python 3.11 and 3.12; 6 live provider smoke tests are opt-in. Strict mypy type checking.</p>
+                  <p class="lang-content-es">Framework tipado en Python 3.11+ para agentes con tool calling, providers intercambiables, memoria vectorial, trazas de streaming y handoffs. <strong>Pruebas:</strong> 148 unitarias, de integración y E2E en CI con Python 3.11 y 3.12; 6 pruebas live de providers son opt-in. Tipado estricto con mypy.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Python 3.11+, pytest, mypy --strict, Redis, pgvector</span></div>
                 </li>
                 <li class="featured-project">
-                  <strong class="proj-title">★ Compose Doctor — Docker Compose Diagnostics · <a href="https://github.com/tatitoxt/compose-doctor" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Offline CLI that diagnoses Compose projects before startup and reports stable rule IDs, source locations, evidence and fixes. Supports JSON and SARIF for CI without starting containers or opening network connections.</p>
-                  <p class="lang-content-es">CLI offline que diagnostica proyectos Compose antes del inicio y reporta reglas estables, ubicación, evidencia y sugerencias. Genera JSON y SARIF para CI sin iniciar contenedores ni abrir conexiones de red.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Docker Compose, JSON, SARIF, CI</span></div>
+                  <strong class="proj-title">CargoDesk · <a href="https://github.com/tatitoxt/cargodesk" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Logistics operations desk for the request → quote → assignment → delivery lifecycle, with SLA tracking, an auditable timeline, RBAC and multi-tenancy. <strong>Tests:</strong> 185 Go unit/integration passes across 7 packages and 13 Playwright E2E passes in Chromium.</p>
+                  <p class="lang-content-es">Mesa de operaciones logísticas para el ciclo solicitud → cotización → asignación → entrega, con seguimiento de SLA, timeline auditable, RBAC y multitenancy. <strong>Pruebas:</strong> 185 pruebas Go unitarias/de integración en 7 paquetes y 13 E2E con Playwright en Chromium.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Go, Next.js, TypeScript, PostgreSQL, Playwright</span></div>
                 </li>
                 <li class="featured-project">
-                  <strong class="proj-title">★ ShipPulse — Deployment Control Plane & Observability · <a href="https://github.com/tatitoxt/shippulse" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Event-driven deployment control plane and microservice observability platform with OpenTelemetry ingestion, ClickHouse, NATS JetStream, SLO tracking, health probes and a secure remote agent.</p>
-                  <p class="lang-content-es">Plano de control de despliegues y plataforma de observabilidad de microservicios con ingesta OpenTelemetry, ClickHouse, NATS JetStream, seguimiento de SLO, chequeos de salud y agente remoto seguro.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Next.js, PostgreSQL, ClickHouse, NATS, OpenTelemetry, Docker</span></div>
+                  <strong class="proj-title">Gatekeeper Proxy · <a href="https://github.com/tatitoxt/gatekeeper-proxy" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">TypeScript reverse proxy with WAF, rate limiting and a security dashboard. <strong>Tests:</strong> 183 Jest unit/integration, 20 process E2E and 1 Playwright dashboard test pass; 4 Redis integration tests require Redis.</p>
+                  <p class="lang-content-es">Reverse proxy en TypeScript con WAF, rate limiting y dashboard de seguridad. <strong>Pruebas:</strong> pasan 183 unitarias/de integración con Jest, 20 E2E de procesos y 1 prueba Playwright del dashboard; 4 pruebas de integración Redis requieren Redis.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>TypeScript, Node.js, Jest, Playwright, Redis</span></div>
                 </li>
                 <li class="featured-project">
-                  <strong class="proj-title">★ Gatekeeper-Proxy — Reverse Proxy, WAF & Rate Limiting · <a href="https://github.com/tatitoxt/gatekeeper-proxy" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Dynamic reverse proxy with a WAF, sliding-window rate limiting, hot configuration reload, CIDR/IP filtering and a live security telemetry dashboard.</p>
-                  <p class="lang-content-es">Reverse proxy dinámico con WAF, rate limiting de ventana deslizante, recarga de configuración, filtrado CIDR/IP y dashboard de telemetría de seguridad en vivo.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>TypeScript, Node.js, Docker</span></div>
+                  <strong class="proj-title">Pipeline Clinic · <a href="https://github.com/tatitoxt/pipeline-clinic" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">GitHub Actions failure triage with fingerprinting and secret redaction, exposed through an API, CLI and React UI. README documents SQLite/PostgreSQL test runs and Playwright E2E but does not state a test count.</p>
+                  <p class="lang-content-es">Triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI en React. El README documenta ejecuciones de pruebas en SQLite/PostgreSQL y E2E con Playwright, pero no indica un conteo.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright</span></div>
                 </li>
                 <li class="featured-project">
-                  <strong class="proj-title">★ Import Preflight — Local-First CRM CSV Checks · <a href="https://github.com/tatitoxt/crm-import-preflight" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Browser-based CRM import preflight that maps contact fields, checks email quality, flags duplicates and exports ready/review rows while keeping file contents local.</p>
-                  <p class="lang-content-es">Preflight de importaciones CRM en el navegador: mapea campos, valida emails, marca duplicados y exporta filas listas o para revisar manteniendo el archivo local.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH & QUALITY ]</span><span>JavaScript ES modules, 7 automated tests, GitHub Actions</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">AgentFlow — AI & Multimodal Agent Framework · <a href="https://github.com/tatitoxt/agentflow" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Python framework for multimodal AI agents with persistent vector memory and tool-calling execution pipelines.</p>
-                  <p class="lang-content-es">Framework Python para agentes de IA multimodales con memoria vectorial persistente y ejecución de herramientas.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Python, LangChain, OpenAI/Claude APIs, Redis</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">TermaAI — Terminal AI CLI Assistant · <a href="https://github.com/tatitoxt/termaai" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Interactive terminal assistant for generating and validating shell scripts with safety checks.</p>
-                  <p class="lang-content-es">Asistente de terminal para generar y validar scripts de shell con controles de seguridad.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Python, Rich CLI, OpenAI API</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">FastVault — Local-First Secrets Manager · <a href="https://github.com/tatitoxt/fastvault" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Local-first Rust secrets manager using authenticated encryption and Argon2id key derivation. In development; no independent security audit.</p>
-                  <p class="lang-content-es">Gestor local de secretos en Rust con cifrado autenticado y derivación Argon2id. En desarrollo; sin auditoría de seguridad independiente.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Rust, AES-256-GCM, Argon2id, Tokio</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">NeuraDash — Real-Time Analytics Dashboard · <a href="https://github.com/tatitoxt/neuradash" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Full-stack analytics dashboard with live WebSocket telemetry, reactive visualizations and multi-tenant access controls.</p>
-                  <p class="lang-content-es">Dashboard analítico full-stack con telemetría WebSocket en vivo, visualizaciones reactivas y control de acceso multitenant.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Next.js, React, TypeScript, PostgreSQL, WebSockets</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">DockNuke — Docker Cleanup Utility · <a href="https://github.com/tatitoxt/docknuke" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Go CLI for scanning Docker resources, previewing cleanup safely and reclaiming disk space.</p>
-                  <p class="lang-content-es">CLI en Go para escanear recursos Docker, previsualizar limpiezas seguras y recuperar espacio.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Docker Engine SDK, Cobra</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">Orkelya B2B Platform — AI Agents & Custom Service · <a href="https://www.orkelya.xyz" target="_blank" rel="noopener">Live ↗</a></strong>
-                  <p class="lang-content-en">B2B platform for custom service automation and AI agents, with a solutions catalog, demos and a FastAPI-connected contact form.</p>
-                  <p class="lang-content-es">Plataforma B2B de automatización de servicio y agentes IA, con catálogo de soluciones, demos y formulario conectado a FastAPI.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Next.js, React, TypeScript, FastAPI, Supabase, Turnstile</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">Salesforce Operations Orchestrator · <a href="https://github.com/tatitoxt/salesforce-operations-orchestrator" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Salesforce DX practice project for operational tasks and workflow rules, with Apex, Custom Metadata and Lightning components.</p>
-                  <p class="lang-content-es">Proyecto práctico en Salesforce DX para tareas operativas y reglas de flujo, con Apex, Custom Metadata y componentes Lightning.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Salesforce DX, Apex, LWC, Jest</span></div>
-                </li>
-                <li>
-                  <strong class="proj-title">Salesforce Operations Orchestrator Pro · <a href="https://github.com/tatitoxt/salesforce-operations-orchestrator" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Enterprise architecture demonstration with layered Apex patterns, async processing, Platform Events and a reactive LWC suite.</p>
-                  <p class="lang-content-es">Demostración de arquitectura empresarial con patrones Apex por capas, procesos asíncronos, Platform Events y una suite LWC reactiva.</p>
-                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Salesforce DX, Apex Enterprise Patterns, LWC, Jest</span></div>
+                  <strong class="proj-title">NeuraDash · <a href="https://github.com/tatitoxt/neuradash" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Real-time multi-tenant analytics dashboard using authenticated WebSockets and PostgreSQL Row-Level Security. <strong>Tests:</strong> 39 unit, 78 integration against real PostgreSQL and 12 Playwright Chromium E2E.</p>
+                  <p class="lang-content-es">Dashboard de analítica en tiempo real y multitenant, con WebSockets autenticados y Row-Level Security de PostgreSQL. <strong>Pruebas:</strong> 39 unitarias, 78 de integración con PostgreSQL real y 12 E2E con Playwright Chromium.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright</span></div>
                 </li>
               </ul>
-            </div>
-          </div>
+            </div>          </div>
 
         </div>
 
@@ -577,24 +534,24 @@
         </section>
 
         <section class="doc-section">
-          <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE & SYSTEMS PROJECTS</h2>
-          <ul class="bullet-list lang-content-en">
-            <li><strong>Import Preflight:</strong> Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. The file is not uploaded. Includes 7 automated tests.</li>
-            <li><strong>AgentFlow:</strong> Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).</li>
-            <li><strong>TermaAI:</strong> Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault:</strong> Rust CLI for encrypted local secrets. In development; 5 workspace tests pass; no independent security audit.</li>
-            <li><strong>Gatekeeper-Proxy:</strong> Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).</li>
-            <li><strong>DockNuke:</strong> High-performance Docker cleanup & disk optimization utility in Go.</li>
-            <li><strong>NeuraDash:</strong> Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+          <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE &amp; SYSTEMS PROJECTS</h2>
+          <p class="lang-content-en">Aurora (Tauri 2, Rust, React 18, TypeScript): floating music HUD with synced lyrics and native playback; test counts documented in its README.</p>
+          <p class="lang-content-es">Aurora (Tauri 2, Rust, React 18, TypeScript): HUD musical flotante con letras sincronizadas y reproducción nativa; conteos de pruebas documentados en su README.</p>
+          <ul class="bullet-list lang-content-en ats-project-list">
+            <li>Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): signed payment webhooks, async reconciliation, billing sync and admin console; 15 LWC Jest + 28 simulator unit/integration + 1 simulator E2E passing; 75 Apex test methods in 10 classes, not executed in a Salesforce org.</li>
+            <li>AgentFlow (Python 3.11+, pytest, Redis, pgvector): typed tool-calling agent framework with pluggable providers, vector memory, tracing and handoffs; 148 automated tests passing in CI; 6 live provider smoke tests opt-in; mypy strict.</li>
+            <li>CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): logistics operations desk for request, quote, assignment and delivery with SLA, auditable timeline, RBAC and multi-tenancy; 185 Go unit/integration tests passing and 13 Chromium E2E tests passing.</li>
+            <li>Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): reverse proxy with WAF, rate limiting and security dashboard; 183 Jest unit/integration + 20 process E2E + 1 dashboard Playwright test passing; 4 Redis integration tests require Redis.</li>
+            <li>Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): GitHub Actions failure triage with fingerprinting and secret redaction through API, CLI and UI; README documents SQLite/PostgreSQL and Playwright suites without a total test count.</li>
+            <li>NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): real-time multi-tenant analytics dashboard; 39 unit + 78 PostgreSQL integration + 12 Chromium E2E tests passing.</li>
           </ul>
-          <ul class="bullet-list lang-content-es">
-            <li><strong>Import Preflight:</strong> Preflight de CSV en el navegador para importaciones a CRM. Mapea campos de contactos, valida presencia y formato de email, marca direcciones duplicadas y exporta filas listas y para revisar. El archivo no se sube. Incluye 7 pruebas automatizadas.</li>
-            <li><strong>AgentFlow:</strong> Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).</li>
-            <li><strong>TermaAI:</strong> Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).</li>
-            <li><strong>FastVault:</strong> CLI en Rust para secretos cifrados localmente. En desarrollo; pasan 5 pruebas del workspace; sin auditoría de seguridad independiente.</li>
-            <li><strong>Gatekeeper-Proxy:</strong> Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).</li>
-            <li><strong>DockNuke:</strong> Utilidad en Go para limpieza inteligente y optimización de entornos Docker.</li>
-            <li><strong>NeuraDash:</strong> Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).</li>
+          <ul class="bullet-list lang-content-es ats-project-list">
+            <li>Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): framework de integración con webhooks de pago firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 15 pruebas LWC Jest + 28 de unit/integración del simulador + 1 E2E del simulador pasando; 75 métodos Apex en 10 clases, no ejecutados en una org Salesforce.</li>
+            <li>AgentFlow (Python 3.11+, pytest, Redis, pgvector): framework tipado de agentes con tool calling, providers intercambiables, memoria vectorial, tracing y handoffs; 148 pruebas automatizadas pasando en CI; 6 pruebas live de providers opt-in; mypy estricto.</li>
+            <li>CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): mesa logística para solicitudes, cotizaciones, asignaciones y entregas con SLA, timeline auditable, RBAC y multitenancy; 185 pruebas Go unitarias/de integración y 13 E2E Chromium pasando.</li>
+            <li>Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): reverse proxy con WAF, rate limiting y dashboard de seguridad; 183 pruebas Jest unitarias/de integración + 20 E2E de procesos + 1 prueba Playwright del dashboard pasando; 4 pruebas Redis requieren Redis.</li>
+            <li>Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI; el README documenta suites SQLite/PostgreSQL y Playwright, sin indicar un total.</li>
+            <li>NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): dashboard de analítica multitenant en tiempo real; 39 pruebas unitarias + 78 de integración con PostgreSQL + 12 E2E Chromium pasando.</li>
           </ul>
         </section>
 
