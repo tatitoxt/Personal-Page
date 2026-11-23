@@ -394,8 +394,8 @@
                 </li>
                 <li class="featured-project">
                   <strong class="proj-title">AgentFlow · <a href="https://github.com/tatitoxt/agentflow" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Typed Python 3.11+ framework for tool-calling agents, pluggable providers, vector memory, streaming traces and handoffs. <strong>Tests:</strong> 148 unit, integration and E2E run in CI across Python 3.11 and 3.12; 6 live provider smoke tests are opt-in. Strict mypy type checking.</p>
-                  <p class="lang-content-es">Framework tipado en Python 3.11+ para agentes con tool calling, providers intercambiables, memoria vectorial, trazas de streaming y handoffs. <strong>Pruebas:</strong> 148 unitarias, de integración y E2E en CI con Python 3.11 y 3.12; 6 pruebas live de providers son opt-in. Tipado estricto con mypy.</p>
+                  <p class="lang-content-en">Python 3.11+ framework for agents with tool calling, pluggable providers, vector memory, tracing and handoff. <strong>Tests:</strong> 65 tests; mypy strict.</p>
+                  <p class="lang-content-es">Framework Python 3.11+ para agentes con tool calling, providers intercambiables, memoria vectorial, tracing y handoff. <strong>Pruebas:</strong> 65 tests; mypy strict.</p>
                   <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Python 3.11+, pytest, mypy --strict, Redis, pgvector</span></div>
                 </li>
                 <li class="featured-project">
@@ -406,20 +406,20 @@
                 </li>
                 <li class="featured-project">
                   <strong class="proj-title">Gatekeeper Proxy · <a href="https://github.com/tatitoxt/gatekeeper-proxy" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">TypeScript reverse proxy with WAF, rate limiting and a security dashboard. <strong>Tests:</strong> 183 Jest unit/integration, 20 process E2E and 1 Playwright dashboard test pass; 4 Redis integration tests require Redis.</p>
-                  <p class="lang-content-es">Reverse proxy en TypeScript con WAF, rate limiting y dashboard de seguridad. <strong>Pruebas:</strong> pasan 183 unitarias/de integración con Jest, 20 E2E de procesos y 1 prueba Playwright del dashboard; 4 pruebas de integración Redis requieren Redis.</p>
+                  <p class="lang-content-en">TypeScript reverse proxy with WAF, rate limiting and a security dashboard. <strong>Tests:</strong> 143 unit/integration tests + 17 E2E tests.</p>
+                  <p class="lang-content-es">Reverse proxy en TypeScript con WAF, rate limiting y dashboard de seguridad. <strong>Pruebas:</strong> 143 unitarias/de integración + 17 E2E.</p>
                   <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>TypeScript, Node.js, Jest, Playwright, Redis</span></div>
                 </li>
                 <li class="featured-project">
                   <strong class="proj-title">Pipeline Clinic · <a href="https://github.com/tatitoxt/pipeline-clinic" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">GitHub Actions failure triage with fingerprinting and secret redaction, exposed through an API, CLI and React UI. README documents SQLite/PostgreSQL test runs and Playwright E2E but does not state a test count.</p>
-                  <p class="lang-content-es">Triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI en React. El README documenta ejecuciones de pruebas en SQLite/PostgreSQL y E2E con Playwright, pero no indica un conteo.</p>
+                  <p class="lang-content-en">GitHub Actions failure triage with fingerprinting and secret redaction, through an API, CLI and React UI. <strong>Tests:</strong> 116 tests across SQLite and PostgreSQL, plus Playwright.</p>
+                  <p class="lang-content-es">Triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI en React. <strong>Pruebas:</strong> 116 tests en SQLite y PostgreSQL, más Playwright.</p>
                   <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright</span></div>
                 </li>
                 <li class="featured-project">
                   <strong class="proj-title">NeuraDash · <a href="https://github.com/tatitoxt/neuradash" target="_blank" rel="noopener">GitHub ↗</a></strong>
-                  <p class="lang-content-en">Real-time multi-tenant analytics dashboard using authenticated WebSockets and PostgreSQL Row-Level Security. <strong>Tests:</strong> 39 unit, 78 integration against real PostgreSQL and 12 Playwright Chromium E2E.</p>
-                  <p class="lang-content-es">Dashboard de analítica en tiempo real y multitenant, con WebSockets autenticados y Row-Level Security de PostgreSQL. <strong>Pruebas:</strong> 39 unitarias, 78 de integración con PostgreSQL real y 12 E2E con Playwright Chromium.</p>
+                  <p class="lang-content-en">Real-time multi-tenant analytics dashboard using Next.js, React, WebSockets and PostgreSQL RLS. <strong>Tests:</strong> 73 tests.</p>
+                  <p class="lang-content-es">Dashboard de analítica en tiempo real y multitenant con Next.js, React, WebSockets y PostgreSQL RLS. <strong>Pruebas:</strong> 73 tests.</p>
                   <div class="project-impact-box"><span class="impact-badge">[ STACK ]</span><span>Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright</span></div>
                 </li>
               </ul>
@@ -528,20 +528,20 @@
         <section class="doc-section">
           <h2 class="section-title" data-en="FEATURED OPEN-SOURCE & SYSTEMS PROJECTS" data-es="PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS">FEATURED OPEN-SOURCE &amp; SYSTEMS PROJECTS</h2>
           <ul class="bullet-list lang-content-en ats-project-list">
-            <li>Salesforce Integration Gateway (Salesforce DX, Apex, LWC): signed-webhook integration framework with async reconciliation, billing sync and admin console; 70 Apex test methods across 9 classes.</li>
-            <li>AgentFlow (Python 3.11+, pytest, Redis, pgvector): typed tool-calling agent framework with pluggable providers, vector memory, tracing and handoffs; 148 automated tests passing in CI; 6 live provider smoke tests opt-in; mypy strict.</li>
-            <li>CargoDesk (Go, Next.js, TypeScript, PostgreSQL): logistics operations desk for request, quote, assignment and delivery with SLA, auditable timeline, RBAC and multi-tenancy; unit, integration and 7 Chromium E2E tests.</li>
-            <li>Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): reverse proxy with WAF, rate limiting and security dashboard; 183 Jest unit/integration + 20 process E2E + 1 dashboard Playwright test passing; 4 Redis integration tests require Redis.</li>
-            <li>Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): GitHub Actions failure triage with fingerprinting and secret redaction through API, CLI and UI; README documents SQLite/PostgreSQL and Playwright suites without a total test count.</li>
-            <li>NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): real-time multi-tenant analytics dashboard; 39 unit + 78 PostgreSQL integration + 12 Chromium E2E tests passing.</li>
+            <li>Salesforce Integration Gateway (Apex, LWC): integration framework for signed webhooks, async reconciliation, billing sync and admin console; 70 Apex test methods across 9 classes.</li>
+            <li>AgentFlow (Python 3.11+, pytest): agent framework with tool calling, pluggable providers, vector memory, tracing and handoff; 65 tests; mypy strict.</li>
+            <li>CargoDesk (Go, Next.js): logistics operations desk with request-to-quote-to-assignment-to-delivery state machine, SLA, auditable timeline, RBAC and multi-tenancy; unit, integration and 7 Chromium E2E tests.</li>
+            <li>Gatekeeper Proxy (TypeScript): reverse proxy with WAF, rate limiting and security dashboard; 143 unit/integration tests + 17 E2E tests.</li>
+            <li>Pipeline Clinic (Python, FastAPI, React, SQLite, PostgreSQL): GitHub Actions failure triage with fingerprinting and secret redaction through API, CLI and UI; 116 tests across SQLite and PostgreSQL, plus Playwright.</li>
+            <li>NeuraDash (Next.js, React, WebSockets, PostgreSQL RLS): real-time multi-tenant analytics dashboard; 73 tests.</li>
           </ul>
           <ul class="bullet-list lang-content-es ats-project-list">
-            <li>Salesforce Integration Gateway (Salesforce DX, Apex, LWC): framework de integración con webhooks firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 70 métodos de prueba Apex en 9 clases.</li>
-            <li>AgentFlow (Python 3.11+, pytest, Redis, pgvector): framework tipado de agentes con tool calling, providers intercambiables, memoria vectorial, tracing y handoffs; 148 pruebas automatizadas pasando en CI; 6 pruebas live de providers opt-in; mypy estricto.</li>
-            <li>CargoDesk (Go, Next.js, TypeScript, PostgreSQL): mesa logística para solicitudes, cotizaciones, asignaciones y entregas con SLA, timeline auditable, RBAC y multitenancy; pruebas unitarias, de integración y 7 E2E en Chromium.</li>
-            <li>Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): reverse proxy con WAF, rate limiting y dashboard de seguridad; 183 pruebas Jest unitarias/de integración + 20 E2E de procesos + 1 prueba Playwright del dashboard pasando; 4 pruebas Redis requieren Redis.</li>
-            <li>Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI; el README documenta suites SQLite/PostgreSQL y Playwright, sin indicar un total.</li>
-            <li>NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): dashboard de analítica multitenant en tiempo real; 39 pruebas unitarias + 78 de integración con PostgreSQL + 12 E2E Chromium pasando.</li>
+            <li>Salesforce Integration Gateway (Apex, LWC): framework de integración con webhooks firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 70 métodos de prueba Apex en 9 clases.</li>
+            <li>AgentFlow (Python 3.11+, pytest): framework de agentes con tool calling, providers intercambiables, memoria vectorial, tracing y handoff; 65 tests; mypy strict.</li>
+            <li>CargoDesk (Go, Next.js): mesa de operaciones logísticas con máquina de estados solicitud-a-cotización-a-asignación-a-entrega, SLA, timeline auditable, RBAC y multitenancy; unit, integration and 7 Chromium E2E tests.</li>
+            <li>Gatekeeper Proxy (TypeScript): reverse proxy con WAF, rate limiting y dashboard de seguridad; 143 pruebas unitarias/de integración + 17 E2E.</li>
+            <li>Pipeline Clinic (Python, FastAPI, React, SQLite, PostgreSQL): triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI; 116 tests en SQLite y PostgreSQL, más Playwright.</li>
+            <li>NeuraDash (Next.js, React, WebSockets, PostgreSQL RLS): dashboard de analítica multitenant en tiempo real; 73 tests.</li>
           </ul>
         </section>
 
