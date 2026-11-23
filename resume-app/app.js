@@ -179,10 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## FEATURED SYSTEMS PROJECTS
 
-Aurora (Tauri 2, Rust, React 18, TypeScript): Floating music HUD with synced lyrics and native playback; test counts documented in its README.
-Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Signed payment webhooks, asynchronous reconciliation, billing sync and admin console; 15 LWC Jest + 28 simulator unit/integration + 1 simulator E2E passing; 75 Apex test methods in 10 classes, not executed in a Salesforce org.
+Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Signed webhooks, async reconciliation, billing sync and admin console; 70 Apex test methods across 9 classes.
 AgentFlow (Python 3.11+, pytest, Redis, pgvector): Tool-calling agents with pluggable providers, vector memory, tracing and handoffs; 148 automated tests passing in CI; 6 live provider smoke tests opt-in; mypy strict.
-CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Logistics operations desk with SLA tracking, auditable timeline, RBAC and multi-tenancy; 185 Go unit/integration tests passing and 13 Chromium E2E tests passing.
+CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Logistics operations desk with SLA tracking, auditable timeline, RBAC and multi-tenancy; unit, integration and 7 Chromium E2E tests.
 Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): Reverse proxy with WAF, rate limiting and security dashboard; 183 Jest unit/integration + 20 process E2E + 1 dashboard Playwright test passing; 4 Redis integration tests require Redis.
 Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): GitHub Actions failure triage with fingerprinting and secret redaction through API, CLI and UI; README documents SQLite/PostgreSQL and Playwright suites without a total test count.
 NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): Real-time multi-tenant analytics dashboard; 39 unit + 78 PostgreSQL integration + 12 Chromium E2E tests passing.`;
@@ -191,10 +190,9 @@ NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): 
 
 ## PROYECTOS DESTACADOS
 
-Aurora (Tauri 2, Rust, React 18, TypeScript): HUD musical flotante con letras sincronizadas y reproducción nativa; conteos de pruebas documentados en su README.
-Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Webhooks de pago firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 15 pruebas LWC Jest + 28 unitarias/de integración del simulador + 1 E2E del simulador pasando; 75 métodos Apex en 10 clases, no ejecutados en una org Salesforce.
+Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Webhooks firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 70 métodos de prueba Apex en 9 clases.
 AgentFlow (Python 3.11+, pytest, Redis, pgvector): Agentes con tool calling, providers intercambiables, memoria vectorial, trazas y handoffs; 148 pruebas automatizadas pasando en CI; 6 pruebas live de providers opt-in; mypy estricto.
-CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Mesa logística con SLA, timeline auditable, RBAC y multitenancy; 185 pruebas Go unitarias/de integración y 13 E2E Chromium pasando.
+CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Mesa logística con SLA, timeline auditable, RBAC y multitenancy; pruebas unitarias, de integración y 7 E2E en Chromium.
 Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): Reverse proxy con WAF, rate limiting y dashboard de seguridad; 183 Jest unitarias/de integración + 20 E2E de procesos + 1 prueba Playwright del dashboard pasando; 4 pruebas Redis requieren Redis.
 Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): Triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI; README documenta suites SQLite/PostgreSQL y Playwright, sin indicar un total.
 NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): Dashboard de analítica multitenant en tiempo real; 39 pruebas unitarias + 78 de integración con PostgreSQL + 12 E2E Chromium pasando.`;
