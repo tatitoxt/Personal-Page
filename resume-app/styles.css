@@ -718,3 +718,25 @@ body.lang-es .lang-content-en { display: none !important; }
   .resume-document { background: #ffffff !important; color: #000000 !important; border: none !important; padding: 0 !important; }
   a { color: #000000 !important; text-decoration: none !important; }
 }
+
+/* Featured repository cards */
+.project-showcase-list li.featured-project {
+  border-color: var(--cloudflare-orange);
+  box-shadow: 3px 3px 0 var(--cloudflare-orange);
+  background: #fffdf8;
+}
+
+.project-showcase-list li.featured-project .proj-title::before {
+  color: var(--cloudflare-orange);
+}
+
+.project-showcase-list .proj-title a {
+  font-size: 0.78em;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.project-showcase-list .proj-title a:hover {
+  text-decoration: underline;
+}
