@@ -384,120 +384,93 @@
           <div class="post-card">
             <div class="post-header">
               <span class="post-title">[SYS_PROJECTS] // FEATURED SYSTEMS & OPEN-SOURCE</span>
-              <span class="post-date">COUNT: 11</span>
+              <span class="post-date">FEATURED: 6 · PROJECTS: 14</span>
             </div>
             <div class="post-body">
               <ul class="project-showcase-list">
-                <li>
-                  <strong class="proj-title">01 // Import Preflight — Local-First CRM CSV Checks</strong>
-                  <p class="lang-content-en">Browser-based tool for mapping contact fields, checking missing or malformed email values, flagging duplicates, and exporting ready and review rows. CSV contents stay in the browser; no CRM API or server upload.</p>
-                  <p class="lang-content-es">Herramienta en el navegador para mapear campos de contactos, detectar emails ausentes o mal formados, marcar duplicados y exportar filas listas y para revisar. El CSV permanece en el navegador; no usa una API de CRM ni sube el archivo.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH & QUALITY ]</span>
-                    <span>JavaScript ES modules, Node test runner, 7 automated tests, GitHub Actions.</span>
-                  </div>
+                <li class="featured-project">
+                  <strong class="proj-title">★ CargoDesk — Logistics Operations Desk · <a href="https://github.com/tatitoxt/cargodesk" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Portfolio/demo logistics workflow platform for requests, quotes, assignment and delivery. Uses an explicit state machine, ownership, internal SLA tracking, business-hours calendars, signed notification webhooks and an auditable event timeline. Synthetic data only; not production validated.</p>
+                  <p class="lang-content-es">Plataforma demo de operaciones logísticas para gestionar solicitudes, cotizaciones, asignación y entregas. Incluye máquina de estados explícita, responsables, seguimiento de SLA, calendarios laborales, webhooks firmados y una línea de tiempo auditable. Usa datos sintéticos; no está validada en producción.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, TypeScript, PostgreSQL, Docker, CI</span></div>
+                </li>
+                <li class="featured-project">
+                  <strong class="proj-title">★ Salesforce Integration Gateway — Signed Payment Webhooks · <a href="https://github.com/tatitoxt/salesforce-integration-gateway" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Salesforce DX project that receives signed payment webhooks, handles them idempotently and asynchronously, reconciles payments against invoices, syncs billing status and surfaces exceptions for operators.</p>
+                  <p class="lang-content-es">Proyecto Salesforce DX que recibe webhooks de pago firmados, los procesa de forma idempotente y asíncrona, concilia pagos con facturas, sincroniza el estado de facturación y muestra excepciones para el equipo operativo.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH & QUALITY ]</span><span>Apex, LWC, Jest, webhook simulator, CI · Apex org execution requires Salesforce credentials</span></div>
+                </li>
+                <li class="featured-project">
+                  <strong class="proj-title">★ Compose Doctor — Docker Compose Diagnostics · <a href="https://github.com/tatitoxt/compose-doctor" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Offline CLI that diagnoses Compose projects before startup and reports stable rule IDs, source locations, evidence and fixes. Supports JSON and SARIF for CI without starting containers or opening network connections.</p>
+                  <p class="lang-content-es">CLI offline que diagnostica proyectos Compose antes del inicio y reporta reglas estables, ubicación, evidencia y sugerencias. Genera JSON y SARIF para CI sin iniciar contenedores ni abrir conexiones de red.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Docker Compose, JSON, SARIF, CI</span></div>
+                </li>
+                <li class="featured-project">
+                  <strong class="proj-title">★ ShipPulse — Deployment Control Plane & Observability · <a href="https://github.com/tatitoxt/shippulse" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Event-driven deployment control plane and microservice observability platform with OpenTelemetry ingestion, ClickHouse, NATS JetStream, SLO tracking, health probes and a secure remote agent.</p>
+                  <p class="lang-content-es">Plano de control de despliegues y plataforma de observabilidad de microservicios con ingesta OpenTelemetry, ClickHouse, NATS JetStream, seguimiento de SLO, chequeos de salud y agente remoto seguro.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Next.js, PostgreSQL, ClickHouse, NATS, OpenTelemetry, Docker</span></div>
+                </li>
+                <li class="featured-project">
+                  <strong class="proj-title">★ Gatekeeper-Proxy — Reverse Proxy, WAF & Rate Limiting · <a href="https://github.com/tatitoxt/gatekeeper-proxy" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Dynamic reverse proxy with a WAF, sliding-window rate limiting, hot configuration reload, CIDR/IP filtering and a live security telemetry dashboard.</p>
+                  <p class="lang-content-es">Reverse proxy dinámico con WAF, rate limiting de ventana deslizante, recarga de configuración, filtrado CIDR/IP y dashboard de telemetría de seguridad en vivo.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>TypeScript, Node.js, Docker</span></div>
+                </li>
+                <li class="featured-project">
+                  <strong class="proj-title">★ Import Preflight — Local-First CRM CSV Checks · <a href="https://github.com/tatitoxt/crm-import-preflight" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Browser-based CRM import preflight that maps contact fields, checks email quality, flags duplicates and exports ready/review rows while keeping file contents local.</p>
+                  <p class="lang-content-es">Preflight de importaciones CRM en el navegador: mapea campos, valida emails, marca duplicados y exporta filas listas o para revisar manteniendo el archivo local.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH & QUALITY ]</span><span>JavaScript ES modules, 7 automated tests, GitHub Actions</span></div>
                 </li>
                 <li>
-                  <strong class="proj-title">02 // AgentFlow — AI & Multimodal Agent Framework</strong>
-                  <p class="lang-content-en">Lightweight Python framework designed to orchestrate multimodal AI agents with persistent vector memory, tool-calling execution pipelines, and autonomous reasoning loops.</p>
-                  <p class="lang-content-es">Framework ligero en Python diseñado para orquestar agentes de IA multimodales con memoria vectorial persistente, tuberías de ejecución de herramientas y bucles de razonamiento autónomo.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Python, LangChain, OpenAI/Claude APIs, Redis Vector Embeddings.</span>
-                  </div>
+                  <strong class="proj-title">AgentFlow — AI & Multimodal Agent Framework · <a href="https://github.com/tatitoxt/agentflow" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Python framework for multimodal AI agents with persistent vector memory and tool-calling execution pipelines.</p>
+                  <p class="lang-content-es">Framework Python para agentes de IA multimodales con memoria vectorial persistente y ejecución de herramientas.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Python, LangChain, OpenAI/Claude APIs, Redis</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">03 // TermaAI — Terminal AI CLI Assistant</strong>
-                  <p class="lang-content-en">Interactive command-line AI assistant that generates, validates, and safely executes complex Bash & Shell scripts directly in the terminal with real-time dry-run security checks.</p>
-                  <p class="lang-content-es">Asistente interactivo de línea de comandos que genera, valida y ejecuta scripts complejos en Bash y Shell de forma segura directamente en la terminal con comprobaciones previas.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Python, Rich CLI, OpenAI API, Shell Security Sandbox.</span>
-                  </div>
+                  <strong class="proj-title">TermaAI — Terminal AI CLI Assistant · <a href="https://github.com/tatitoxt/termaai" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Interactive terminal assistant for generating and validating shell scripts with safety checks.</p>
+                  <p class="lang-content-es">Asistente de terminal para generar y validar scripts de shell con controles de seguridad.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Python, Rich CLI, OpenAI API</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">04 // FastVault — Local-First Secrets Manager in Rust</strong>
-                  <p class="lang-content-en">Local-first secrets manager in Rust using AES-256-GCM encryption and Argon2id key derivation, with a CLI, local daemon, and terminal interface. In development; 5 workspace tests pass; no independent security audit.</p>
-                  <p class="lang-content-es">Gestor local de secretos en Rust con cifrado AES-256-GCM y derivación Argon2id, CLI, daemon local e interfaz de terminal. En desarrollo; pasan 5 pruebas del workspace; sin auditoría de seguridad independiente.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ IMPLEMENTATION & TESTS ]</span>
-                    <span class="lang-content-en">Rust, Argon2id (m=64MB, t=3, p=4), AES-256-GCM, Tokio Async IPC, Ratatui TUI, Zeroize; 5 workspace tests pass. No independent security audit.</span>
-                    <span class="lang-content-es">Rust, Argon2id (m=64MB, t=3, p=4), AES-256-GCM, Tokio Async IPC, Ratatui TUI, Zeroize; pasan 5 pruebas del workspace. Sin auditoría de seguridad independiente.</span>
-                  </div>
+                  <strong class="proj-title">FastVault — Local-First Secrets Manager · <a href="https://github.com/tatitoxt/fastvault" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Local-first Rust secrets manager using authenticated encryption and Argon2id key derivation. In development; no independent security audit.</p>
+                  <p class="lang-content-es">Gestor local de secretos en Rust con cifrado autenticado y derivación Argon2id. En desarrollo; sin auditoría de seguridad independiente.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Rust, AES-256-GCM, Argon2id, Tokio</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">05 // Gatekeeper-Proxy — Dynamic Reverse Proxy, WAF & Rate Limiter</strong>
-                  <p class="lang-content-en">Dynamic Reverse Proxy and Web Application Firewall (WAF) engine built in TypeScript & Node.js with sliding-window rate limiting, hot configuration reloading, CIDR/IP filtering, and embedded real-time dark-mode security telemetry dashboard.</p>
-                  <p class="lang-content-es">Reverse Proxy dinámico y motor Firewall WAF construido en TypeScript & Node.js con rate limiting de ventana deslizante, recarga de configuración en caliente, filtrado por IP/CIDR y dashboard de telemetría de seguridad en tiempo real.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>TypeScript, Node.js (v22+), WAF Engine, Sliding-Window Rate Limiter, Docker.</span>
-                  </div>
+                  <strong class="proj-title">NeuraDash — Real-Time Analytics Dashboard · <a href="https://github.com/tatitoxt/neuradash" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Full-stack analytics dashboard with live WebSocket telemetry, reactive visualizations and multi-tenant access controls.</p>
+                  <p class="lang-content-es">Dashboard analítico full-stack con telemetría WebSocket en vivo, visualizaciones reactivas y control de acceso multitenant.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Next.js, React, TypeScript, PostgreSQL, WebSockets</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">06 // NeuraDash — Real-Time Analytics Dashboard</strong>
-                  <p class="lang-content-en">Full-stack real-time analytics dashboard featuring live WebSocket telemetry, reactive data visualizations, and multi-tenant access controls.</p>
-                  <p class="lang-content-es">Dashboard analítico full-stack con telemetría en vivo vía WebSockets, visualizaciones de datos reactivas y control de acceso multitenant.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Next.js 16, React 19, TypeScript, WebSockets, TailwindCSS, PostgreSQL.</span>
-                  </div>
+                  <strong class="proj-title">DockNuke — Docker Cleanup Utility · <a href="https://github.com/tatitoxt/docknuke" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Go CLI for scanning Docker resources, previewing cleanup safely and reclaiming disk space.</p>
+                  <p class="lang-content-es">CLI en Go para escanear recursos Docker, previsualizar limpiezas seguras y recuperar espacio.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Go, Docker Engine SDK, Cobra</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">07 // Enterprise Agency Operations Suite (n8n & Docker)</strong>
-                  <p class="lang-content-en">Designed and deployed a suite of 19 production-grade n8n automation workflows self-hosted on Docker containers with SQLite/PostgreSQL persistence. Automated client delivery status tracking, project handoffs, onboarding, triage, and invoicing connected directly with Google Workspace, Gmail, and Jira.</p>
-                  <p class="lang-content-es">Diseño y despliegue de una suite de 19 flujos de automatización en n8n alojados en contenedores Docker self-hosted con persistencia SQLite/PostgreSQL. Automatización del seguimiento del estado de entregas a clientes, traspasos de proyectos, onboarding, triaje y facturación conectada a Google Workspace, Gmail y Jira.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ PROJECT SCOPE ]</span>
-                    <span class="lang-content-en">19 n8n workflows for client delivery tracking, handoffs, onboarding, triage and invoicing, self-hosted with Docker and SQLite/PostgreSQL persistence.</span>
-                    <span class="lang-content-es">19 flujos n8n para seguimiento de entregas, traspasos, onboarding, triaje y facturación, alojados con Docker y persistencia SQLite/PostgreSQL.</span>
-                  </div>
+                  <strong class="proj-title">Orkelya B2B Platform — AI Agents & Custom Service · <a href="https://www.orkelya.xyz" target="_blank" rel="noopener">Live ↗</a></strong>
+                  <p class="lang-content-en">B2B platform for custom service automation and AI agents, with a solutions catalog, demos and a FastAPI-connected contact form.</p>
+                  <p class="lang-content-es">Plataforma B2B de automatización de servicio y agentes IA, con catálogo de soluciones, demos y formulario conectado a FastAPI.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Next.js, React, TypeScript, FastAPI, Supabase, Turnstile</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">08 // Plataforma B2B de Agentes de IA & Custom Service (<a href="https://www.orkelya.xyz" target="_blank">orkelya.xyz</a>)</strong>
-                  <p class="lang-content-en">Enterprise B2B platform to showcase AI agents and custom customer service automations. Features B2B solutions catalog, detailed service pages, Loom demo embeds, interactive helper assistant, FastAPI-connected contact form, and full responsive design.</p>
-                  <p class="lang-content-es">Plataforma B2B y landing profesional para presentar agentes de IA y automatizaciones de Custom Service. Incluye catálogo de soluciones B2B, páginas detalladas, soporte para demos Loom, asistente interactivo de ayuda, formulario conectado a FastAPI y diseño responsive.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ PROJECT SCOPE ]</span>
-                    <span class="lang-content-en">Next.js, React, TypeScript, FastAPI, Supabase RLS and Turnstile protection for a responsive B2B service platform.</span>
-                    <span class="lang-content-es">Next.js, React, TypeScript, FastAPI, Supabase RLS y Turnstile en una plataforma B2B responsive.</span>
-                  </div>
+                  <strong class="proj-title">Salesforce Operations Orchestrator · <a href="https://github.com/tatitoxt/salesforce-operations-orchestrator" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Salesforce DX practice project for operational tasks and workflow rules, with Apex, Custom Metadata and Lightning components.</p>
+                  <p class="lang-content-es">Proyecto práctico en Salesforce DX para tareas operativas y reglas de flujo, con Apex, Custom Metadata y componentes Lightning.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Salesforce DX, Apex, LWC, Jest</span></div>
                 </li>
-
                 <li>
-                  <strong class="proj-title">09 // Salesforce Operations & Workflow Orchestrator Pro</strong>
-                  <p class="lang-content-en">Enterprise-grade, high-performance platform architecture engineered in Salesforce DX showcasing Apex Enterprise Patterns (Selector/Domain/Service layers, QueueableChains, Platform Event Async Logger) and a reactive LWC suite (Custom Datatable cell renderers, LMS PubSub, real-time Platform Event stream, and Jest unit tests).</p>
-                  <p class="lang-content-es">Arquitectura de plataforma empresarial de alto rendimiento implementada en Salesforce DX que demuestra Patrones Enterprise en Apex (capas Selector/Domain/Service, encadenamiento Queueable, Logger asíncrono con Platform Events) y una suite reactiva en LWC (Datatable personalizada con renderizadores de celdas, PubSub con LMS, flujo de eventos en tiempo real y pruebas unitarias en Jest).</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Salesforce DX, Apex Enterprise Patterns, LWC, LMS PubSub, Streaming API, Platform Events, Jest.</span>
-                  </div>
-                </li>
-
-                <li>
-                  <strong class="proj-title">10 // DockNuke — Smart Docker Cleanup & Optimization Utility in Go</strong>
-                  <p class="lang-content-en">High-performance command-line utility written in Go for intelligent scanning, dry-run safety previewing, and disk space optimization across Docker containers, images, volumes, and build caches.</p>
-                  <p class="lang-content-es">Utilidad de línea de comandos en Go de alto rendimiento para escaneo inteligente, previsualización en modo dry-run y optimización de espacio en disco en contenedores, imágenes, volúmenes y cachés de Docker.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Go (1.22+), Docker Engine SDK, Cobra CLI, Concurrency, Dry-Run Engine.</span>
-                  </div>
-                </li>
-
-                <li>
-                  <strong class="proj-title">11 // ShipPulse — Deployment Control Plane & Microservice Observability Platform</strong>
-                  <p class="lang-content-en">Developer-first deployment control plane, real-time microservice observability platform, incident detection engine, and infrastructure operations suite. Features an event-driven Go control plane, Next.js 16 reactive dashboard, OpenTelemetry OTLP ingest into ClickHouse, NATS JetStream event bus, distributed active health probes, rolling 30-day SLO error budget tracking, HMAC-verified GitHub webhooks, multi-tenant RBAC, and an outbound TLS agent daemon executing container deployment operations.</p>
-                  <p class="lang-content-es">Plataforma de control de despliegues para desarrolladores, observabilidad de microservicios en tiempo real, motor de detección de incidentes y suite de operaciones de infraestructura. Incluye plano de control en Go orientado a eventos, dashboard reactivo en Next.js 16, ingesta OpenTelemetry OTLP hacia ClickHouse, bus de eventos NATS JetStream, sondas activas de salud distribuidas, seguimiento de presupuestos de error SLO a 30 días, webhooks de GitHub verificados con HMAC, RBAC multitenant y daemon agente TLS saliente para operaciones en contenedores.</p>
-                  <div class="project-impact-box">
-                    <span class="impact-badge">[ TECH STACK ]</span>
-                    <span>Go (1.22+), Next.js 16, TypeScript, PostgreSQL 16, ClickHouse, NATS JetStream, OpenTelemetry (OTLP), Redis 7, WebSockets, Docker, Kubernetes, GitHub Actions CI/CD.</span>
-                  </div>
+                  <strong class="proj-title">Salesforce Operations Orchestrator Pro · <a href="https://github.com/tatitoxt/salesforce-operations-orchestrator" target="_blank" rel="noopener">GitHub ↗</a></strong>
+                  <p class="lang-content-en">Enterprise architecture demonstration with layered Apex patterns, async processing, Platform Events and a reactive LWC suite.</p>
+                  <p class="lang-content-es">Demostración de arquitectura empresarial con patrones Apex por capas, procesos asíncronos, Platform Events y una suite LWC reactiva.</p>
+                  <div class="project-impact-box"><span class="impact-badge">[ TECH STACK ]</span><span>Salesforce DX, Apex Enterprise Patterns, LWC, Jest</span></div>
                 </li>
               </ul>
             </div>
