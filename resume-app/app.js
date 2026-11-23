@@ -176,96 +176,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const isSpanish = body.classList.contains('lang-es');
 
     const rawMarkdownEN = `# FAUSTO PASTURA
-**Software & Systems Builder | Salesforce & CRM Consultant | Forward Deployed Engineer (FDE) | Automation**
-Buenos Aires, Argentina | pasturafausto@gmail.com
-LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Website: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
----
+## FEATURED SYSTEMS PROJECTS
 
-## PROFESSIONAL SUMMARY
-Self-taught software and systems builder, Salesforce & CRM consultant, and Forward Deployed Engineer (FDE). I build custom business software, integrations, and workflow automations with or without AI, from process discovery through implementation and handoff. My 3+ years of hands-on work include CRM, web platforms, developer tools, and 19+ n8n workflows.
-
----
-
-## TECHNICAL SKILLS & COMPETENCIES
-- **Salesforce / CRM:** Salesforce Administration & Development (2023 - Present), Sales Cloud, Service Cloud, Apex Triggers & Controllers, Lightning Web Components (LWC), Flow Automation, REST/SOAP Integration APIs.
-- **AI, Agent & Developer Tooling:** AgentFlow, TermaAI, FastVault (Rust), n8n Workflow Architecture, OpenAI/Claude LLM APIs, Autonomous AI Agents, RAG Pipelines, LangChain, Redis.
-- **Full-Stack & Cloud Frameworks:** Next.js 16/15, React 19, FastAPI, Node.js, Express, Tailwind CSS, Supabase, PostgreSQL RLS, Docker, Vercel, Render.
-- **Programming Languages:** Python, TypeScript, JavaScript, Apex (Salesforce), SOQL, SOSL, SQL, C, C++, Rust, Go, HTML5, CSS3/SASS, Shell / Bash.
-
----
-
-## PROFESSIONAL EXPERIENCE
-
-### Independent Consultant, CRM & Automation
-*January 2023 – December 2025 | Buenos Aires, Argentina*
-
-Client engagements overlapped as part of independent consulting.
-
-- **Orkelya — Founder & Lead Engineer (March 2024 – Present):**
-  - Built and shipped a B2B operations platform on Next.js 16, React 19, FastAPI and Supabase PostgreSQL, with self-hosted Docker infrastructure that cut partner operational overhead by 70% and removed 20+ hours of weekly manual reporting.
-  - Built AI customer-service and lead-qualification agents on the WhatsApp API, Redis and the OpenAI API that automate 80%+ of initial qualification and lifted commercial response speed by 35%.
-  - Designed 19+ n8n workflows for reporting, onboarding, handoffs, triage, and invoicing, plus WhatsApp-based lead qualification agents.
-- **CRM implementations and migrations (2023 – 2025):** Reduced manual CRM data-entry errors by 90% and saved 15+ team hours per week.
-- **Automation and AI engagements (2024 – 2025):** Designed 19+ n8n workflows that cut partner operational overhead by 70%. WhatsApp lead-qualification agents automated 80% of initial qualification and improved response speed by 35%.
-- **CRM migration and reconciliation engagements (2026)**
-  - Reconciled a Salesforce to Attio migration for a US clinical trials company (May 6–July 8 2026). Worked through roughly 1,840 records across seven sales reps rep by rep, removed duplicate opportunities, fixed records attached to the wrong account, and rebuilt Attio reports and dashboards so they matched the Salesforce source of truth. Source data arrived as CSV exports and the reconciliation was done end to end.
-  - Executed a Salesforce to Aesthetix CRM migration for a US medical aesthetics company (Feb 2026 - Apr 2026). The client sent the data in Google Sheets; I formatted and cleaned it, uploaded it into Aesthetix CRM, and resolved the records that failed on upload, validating approximately 15,000 clean records in the new CRM.
-- **B2B services company — 12-person team — United States (May 2024 – December 2025; concurrent client engagement):** Set up the Salesforce org from scratch, then designed and built a custom system for the client.
-- **B2C company, 23-person team — United States (2023):** Set up and administered Salesforce, including reports, Apex-based workflows, and page layouts. Later coordinated the migration of 56,000 records from Salesforce to another CRM, including data preparation and quality validation.
-- Client names withheld where required by confidentiality.
-
----
-
-## FEATURED OPEN-SOURCE & SYSTEMS PROJECTS
-- **Import Preflight:** Browser-only CSV preflight for CRM imports. Maps contact fields, checks email presence and format, flags duplicate addresses, and exports ready and review rows. Includes 7 automated tests; no CRM API or server upload.
-- **AgentFlow:** Multimodal AI agent framework with vector memory & autonomous tool-execution loops (Python, LangChain, OpenAI, Redis).
-- **TermaAI:** Interactive command-line terminal AI assistant for safe Bash script generation (Python, Rich CLI, OpenAI).
-- **FastVault:** Rust CLI for encrypted local secrets. In development; cargo test --workspace passes (5 tests); no independent security audit.
-- **Gatekeeper-Proxy:** Dynamic reverse proxy with WAF security firewall & sliding-window rate limiting (TypeScript, Node.js, Docker).
-- **NeuraDash:** Real-time WebSocket analytics dashboard (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+Aurora (Tauri 2, Rust, React 18, TypeScript): Floating music HUD with synced lyrics and native playback; test counts documented in its README.
+Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Signed payment webhooks, asynchronous reconciliation, billing sync and admin console; 15 LWC Jest + 28 simulator unit/integration + 1 simulator E2E passing; 75 Apex test methods in 10 classes, not executed in a Salesforce org.
+AgentFlow (Python 3.11+, pytest, Redis, pgvector): Tool-calling agents with pluggable providers, vector memory, tracing and handoffs; 148 automated tests passing in CI; 6 live provider smoke tests opt-in; mypy strict.
+CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Logistics operations desk with SLA tracking, auditable timeline, RBAC and multi-tenancy; 185 Go unit/integration tests passing and 13 Chromium E2E tests passing.
+Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): Reverse proxy with WAF, rate limiting and security dashboard; 183 Jest unit/integration + 20 process E2E + 1 dashboard Playwright test passing; 4 Redis integration tests require Redis.
+Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): GitHub Actions failure triage with fingerprinting and secret redaction through API, CLI and UI; README documents SQLite/PostgreSQL and Playwright suites without a total test count.
+NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): Real-time multi-tenant analytics dashboard; 39 unit + 78 PostgreSQL integration + 12 Chromium E2E tests passing.`;
 
     const rawMarkdownES = `# FAUSTO PASTURA
-**Desarrollo de software y sistemas | Consultoría Salesforce y CRM | Forward Deployed Engineer (FDE) | Automatización**
-Buenos Aires, Argentina | pasturafausto@gmail.com
-LinkedIn: https://www.linkedin.com/in/fausto-pastura-582828369/ | Sitio Web: https://www.orkelya.xyz | GitHub: https://github.com/tatitoxt
 
----
+## PROYECTOS DESTACADOS
 
-## RESUMEN PROFESIONAL
-Autodidacta, desarrollador de software y sistemas a medida, consultor de Salesforce y CRM, e ingeniero Forward Deployed (FDE). Construyo software empresarial, integraciones y automatizaciones con o sin IA, desde el relevamiento hasta la implementación y transferencia. Mi experiencia práctica incluye CRM, plataformas web, herramientas para desarrolladores y más de 19 flujos n8n.
-
----
-
-## EXPERIENCIA PROFESIONAL
-
-### Consultor independiente de CRM y automatización
-*Enero 2023 – Diciembre 2025 | Buenos Aires, Argentina*
-
-Los proyectos con clientes se realizaron en paralelo dentro de la consultoría independiente.
-
-- **Orkelya — Fundador y líder técnico (marzo 2024 – presente):**
-  - Construí y puse en producción una plataforma B2B de operaciones con Next.js 16, React 19, FastAPI y Supabase PostgreSQL, con infraestructura Docker self-hosted que redujo el overhead operativo de partners en un 70% y eliminó más de 20 horas semanales de reportes manuales.
-  - Construí agentes de IA de atención al cliente y calificación de leads sobre la API de WhatsApp, Redis y la API de OpenAI, que automatizan más del 80% de la calificación inicial y aumentaron un 35% la velocidad de respuesta comercial.
-  - Diseñé más de 19 flujos n8n para reportes, onboarding, traspasos, triaje y facturación, además de agentes de calificación de leads por WhatsApp.
-- **Implementaciones y migraciones de CRM (2023 – 2025):** Reduje los errores manuales de datos en CRM un 90% y ahorré más de 15 horas semanales al equipo.
-- **Proyectos de automatización e IA (2024 – 2025):** Diseñé más de 19 flujos n8n que redujeron un 70% la carga operativa de los partners. Agentes de calificación por WhatsApp automatizaron el 80% de la calificación inicial y mejoraron un 35% la velocidad de respuesta.
-- **Proyectos de migración y conciliación de CRM (2026)**
-  - Concilié una migración de Salesforce a Attio para una empresa estadounidense de ensayos clínicos (6 de mayo–8 de julio de 2026). Revisé aproximadamente 1.840 registros con siete representantes de ventas, uno por uno; eliminé oportunidades duplicadas, corregí registros asociados a la cuenta equivocada y reconstruí los reportes y dashboards de Attio para que coincidieran con la fuente de verdad de Salesforce. Los datos de origen llegaron como exportaciones CSV y realicé la conciliación de principio a fin.
-  - Ejecuté una migración de Salesforce a Aesthetix CRM para una empresa estadounidense de medicina estética (feb 2026 - abr 2026). El cliente envió los datos en Google Sheets; los formateé y limpié, los cargué en Aesthetix CRM y resolví los registros que fallaban en la carga, validando aproximadamente 15.000 registros limpios en el nuevo CRM.
-- **Empresa de servicios B2B — equipo de 12 personas — Estados Unidos (mayo 2024 – diciembre 2025; engagement en paralelo):** Configuré Salesforce desde cero y luego diseñé y construí un sistema a medida para la empresa.
-- **Empresa B2C, equipo de 23 personas — Estados Unidos (2023):** Configuré y administré Salesforce, incluidos reportes, flujos con Apex y diseños de página. Luego coordiné la migración de 56.000 registros desde Salesforce a otro CRM, incluida la preparación y validación de calidad de los datos.
-- Omito los nombres de clientes cuando lo requiere la confidencialidad.
-
----
-
-## PROYECTOS Y SISTEMAS OPEN-SOURCE DESTACADOS
-- **Import Preflight:** Preflight de CSV en el navegador para importaciones a CRM. Mapea campos, valida presencia y formato de email, marca duplicados y exporta filas listas y para revisar. Incluye 7 pruebas automatizadas; no usa API de CRM ni sube el archivo.
-- **AgentFlow:** Framework de agentes de IA multimodales con memoria vectorial y ejecución autónoma (Python, LangChain, OpenAI, Redis).
-- **TermaAI:** Asistente interactivo de terminal para generación segura de scripts en Bash (Python, Rich CLI, OpenAI).
-- **FastVault:** CLI en Rust para secretos cifrados localmente. En desarrollo; cargo test --workspace pasa (5 pruebas); sin auditoría de seguridad independiente.
-- **Gatekeeper-Proxy:** Reverse proxy dinámico con firewall WAF de seguridad y rate limiting de ventana deslizante (TypeScript, Node.js, Docker).
-- **NeuraDash:** Dashboard analítico en tiempo real vía WebSockets (Next.js 16, React 19, WebSockets, PostgreSQL).`;
+Aurora (Tauri 2, Rust, React 18, TypeScript): HUD musical flotante con letras sincronizadas y reproducción nativa; conteos de pruebas documentados en su README.
+Salesforce Integration Gateway (Salesforce DX, Apex, LWC, Jest): Webhooks de pago firmados, conciliación asíncrona, sincronización de facturación y consola administrativa; 15 pruebas LWC Jest + 28 unitarias/de integración del simulador + 1 E2E del simulador pasando; 75 métodos Apex en 10 clases, no ejecutados en una org Salesforce.
+AgentFlow (Python 3.11+, pytest, Redis, pgvector): Agentes con tool calling, providers intercambiables, memoria vectorial, trazas y handoffs; 148 pruebas automatizadas pasando en CI; 6 pruebas live de providers opt-in; mypy estricto.
+CargoDesk (Go, Next.js, TypeScript, PostgreSQL, Playwright): Mesa logística con SLA, timeline auditable, RBAC y multitenancy; 185 pruebas Go unitarias/de integración y 13 E2E Chromium pasando.
+Gatekeeper Proxy (TypeScript, Node.js, Jest, Playwright, Redis): Reverse proxy con WAF, rate limiting y dashboard de seguridad; 183 Jest unitarias/de integración + 20 E2E de procesos + 1 prueba Playwright del dashboard pasando; 4 pruebas Redis requieren Redis.
+Pipeline Clinic (Python, FastAPI, React, TypeScript, SQLite, PostgreSQL, Playwright): Triage de fallas de GitHub Actions con fingerprinting y redacción de secretos, mediante API, CLI y UI; README documenta suites SQLite/PostgreSQL y Playwright, sin indicar un total.
+NeuraDash (Next.js, React, TypeScript, WebSockets, PostgreSQL RLS, Playwright): Dashboard de analítica multitenant en tiempo real; 39 pruebas unitarias + 78 de integración con PostgreSQL + 12 E2E Chromium pasando.`;
 
     const textToCopy = isSpanish ? rawMarkdownES : rawMarkdownEN;
 
