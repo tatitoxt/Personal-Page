@@ -730,25 +730,19 @@ body.lang-es .lang-content-en { display: none !important; }
 }
 
 
-/* Flagship and six-project showcase */
-.project-flagship {
-  margin-bottom: 1.25rem;
-  padding: 1.2rem 1.35rem;
-  border: 2px solid var(--cloudflare-orange);
-  border-radius: 8px;
+/* Flagship repository is highlighted in the six-project showcase */
+.project-showcase-list li.flagship-project {
+  border-width: 2px;
+  border-color: var(--cloudflare-orange);
   background: #fff8ed;
   box-shadow: 4px 4px 0 var(--cloudflare-orange);
 }
 
-.project-flagship .proj-title {
-  display: block;
-  margin-bottom: 0.6rem;
+.project-showcase-list li.flagship-project .proj-title {
   color: var(--cloudflare-orange);
-  font-size: 1.12rem;
 }
 
-.project-flagship .proj-title a {
-  font-size: 0.78em;
+.project-showcase-list li.flagship-project .proj-title a {
   color: var(--text-black);
 }
 
